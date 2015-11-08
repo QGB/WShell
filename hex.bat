@@ -1,0 +1,1 @@
+od -A x -t x1 %1%|more
