@@ -1,6 +1,13 @@
-:echo %path%
-@set path=D:\Program Files\Git\usr\bin;D:\Program Files\nodejs;C:\Python27;C:\Python27\Scripts;D:\Program Files\CodeBlocks\MinGW\bin;E:\SourceCode\shell;D:\Program Files\Git\bin;D:\cygwin\bin;D:\Program Files\Java\jdk1.8.0_45\bin;C:\Python27;c:\hp\bin;%path%
-
-
-:secho %path%
-:CMD
+@set path=%path%
+@set path=%path%
+@set path=C:\HP\bin;%path%
+@set path=C:\Python27;%path%
+@set path=C:\Python27\Scripts;%path%
+@set path=D:\Cygwin\bin;%path%
+@set path=D:\Program Files\CodeBlocks\MinGW\bin;%path%
+@set path=D:\Program Files\Git\bin;%path%
+@set path=D:\Program Files\Git\mingw32\bin;%path%
+@set path=D:\Program Files\Git\usr\bin;%path%
+@set path=D:\Program Files\Java\jdk1.8.0_45\bin;%path%
+@set path=D:\Program Files\nodejs;%path%
+@set path=E:\SourceCode\shell;%path%
