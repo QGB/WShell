@@ -4,7 +4,10 @@
 
 git add -A
 git commit -m %2%
-git push %1%
+git push %1% master
+@goto end
 
 :help
 @echo %0% repo commitMsg
+
+:end
