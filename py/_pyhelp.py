@@ -42,7 +42,6 @@ if(browser):os.system('''start "" '''+sf)
 
 if(bprint):
 	sys.stdout=std
-	help(open)
 	print _open(sf).read()[43:-13]
 
 
