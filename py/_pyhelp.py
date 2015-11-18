@@ -1,7 +1,7 @@
 _open=open
 from sys import *
 import sys,os
-from qgb import U,T
+# from qgb import U,T
 
 
 def helpc():
