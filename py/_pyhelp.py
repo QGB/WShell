@@ -2,7 +2,7 @@ _open=open
 from sys import *
 import sys,os
 # from qgb import U,T
-
+sfp=r'd:\test\pyhelp\\'
 
 def helpc():
 	print 'pyhelp  obj [package] [-s :print to screen] [-b :No browser]'
@@ -21,7 +21,7 @@ for i in argv[1:]:
 		if(i[1]=='b'):browser=False
 if(len(ls)<1 or len(ls)>2):helpc();exit()
 sp,sn=ls[-1],ls[0]
-sf='d:/test/pyhelp/'+sn+'.html'
+sf=sfp+sn+'.html'
 def check():
 	try:
 		exec('import '+sp)
@@ -31,7 +31,7 @@ def check():
 		print err
 		exit()
 check()
-
+os.system('''mkdir '''+sfp)
 std,sys.stdout=sys.stdout,open(sf,'w+')
 print '<textarea style="width:100%; height:100%;">'
 exec('from %s import *;help(%s)'%(sp,sn))
