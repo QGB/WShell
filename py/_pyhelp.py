@@ -1,6 +1,6 @@
 _open=open
 import sys,os
-# from qgb import U,T
+# 
 sfp=r'd:\test\pyhelp\\';sf,sn,sp='','',''
 bprint=False;browser=True
 
@@ -8,6 +8,7 @@ def helpc():
 	print 'pyhelp  obj [package] [-s :print to screen] [-b :No browser]'
 
 def cmdargs():
+	global sf,sfp,sn,sp
 	from sys import argv
 	if(len(argv)<2):helpc();exit()		
 	ls=[]
@@ -16,7 +17,7 @@ def cmdargs():
 		if(len(i)>0):
 			if(i[0]!='-'):ls.append(i);continue
 			if(len(i)<1):continue
-			i=i.lower()  
+			i=i.lower() 
 			if(i[1]=='s'):bprint=True	
 			if(i[1]=='b'):browser=False
 	if(len(ls)<1 or len(ls)>2):helpc();exit()
@@ -34,21 +35,24 @@ def check():
 		
 def display():
 	os.system('''mkdir '''+sfp)
-	std,sys.stdout=sys.stdout,open(sf,'w+')
+	from qgb import U,T
+	U.setOut(sf)
 	print '<textarea style="width:100%; height:100%;">'
 	exec('from %s import *;help(%s)'%(sp,sn))
 	print '</textarea>'
-	sys.stdout.close()
+	U.resetOut()
+	print 233
+	# if(browser):os.system('''start "" '''+sf)
 
-	if(browser):os.system('''start "" '''+sf)
-
-	if(bprint):
-		sys.stdout=std
-		print _open(sf).read()[43:-13]
+	# if(bprint):
+		# print _open(sf).read()[43:-13]
 		
-def U.set
+
+		
 if(__name__=='__main__'):
+	# from qgb i 
 	cmdargs()
+	# print sn,sp,sf,bprint,browser
 	check()
 	display()
 
