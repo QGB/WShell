@@ -29,7 +29,7 @@ start "" "%fn%.%st%"
 @goto end
 
 :help
-@echo %0% XX[.dot] OutType(jpg,ps,etc) 
+@echo %0% XX[.dot] [OutType(jpg,ps,etc)] 
 @goto end
 
 :end
