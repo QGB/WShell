@@ -3,7 +3,7 @@
 @goto out
 
 :outdf
-@set st=jpg
+@set st=png
 @goto setf
 
 :out
