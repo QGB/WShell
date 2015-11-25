@@ -1,0 +1,3 @@
+pipDouban chardet
+pipDouban xlrd
+pipDouban xlwt
