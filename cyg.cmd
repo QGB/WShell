@@ -1,1 +1,1 @@
-@"E:\SourceCode\shell\cyg.cmd"
+@"E:\SourceCode\shell\cyg.bat"
