@@ -29,6 +29,7 @@ start "" "%fn%.%st%"
 @goto end
 
 :help
+set path=D:\Program Files\Graphviz2.38\bin;%path%
 @echo %0% XX[.dot] [OutType(jpg,ps,etc)] 
 @goto end
 
