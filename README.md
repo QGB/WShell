@@ -1,9 +1,10 @@
-# Wshell
+#Wshell
 More commands for Windows shell (base cygwin git mingw python and more)
-#Install:
+##Install:
 copy cyg.cmd to %windir%
 and move others to "E:\SourceCode\shell\" (TODO: Set up)
-#Usage:
+##Usage:
+```
 >cyg
 >ip
 Windows IP Configuration
@@ -13,3 +14,4 @@ Windows IP Configuration
 f759a9e920957ba27cfdad988c8eb127 *!.cmd
 .....
 >
+```
