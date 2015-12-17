@@ -6,6 +6,7 @@
 @set path=D:\Cygwin\bin;%path%
 @set path=D:\Program Files\CodeBlocks\MinGW\bin;%path%
 @set path=D:\Program Files\Git\bin;%path%
+@set path=D:\Program Files\Git\cmd\gitk.exe;%path%
 @set path=D:\Program Files\Git\mingw32\bin;%path%
 @set path=D:\Program Files\Git\usr\bin;%path%
 @set path=D:\Program Files\Java\jdk1.8.0_45\bin;%path%
