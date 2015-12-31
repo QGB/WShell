@@ -1,2 +1,0 @@
-cmd /c E:\SourceCode\shell\pipDouban.bat 
-cmd /c E:\SourceCode\shell\pipDouban.bat 

@@ -3,3 +3,8 @@ cmd /c pipDouban chardet
 cmd /c pipDouban xlrd
 cmd /c pipDouban xlwt
 cmd /c pipDouban PIL
+cmd /c pipDouban pyopenssl
+cmd /c pipDouban ndg-httpsclien
+cmd /c pipDouban pyasn1
+cmd /c pipDouban requests
+cmd /c pipDouban pyasn1
