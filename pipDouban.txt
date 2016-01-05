@@ -8,3 +8,5 @@ cmd /c pipDouban ndg-httpsclien
 cmd /c pipDouban pyasn1
 cmd /c pipDouban requests
 cmd /c pipDouban pyasn1
+cmd /c pipDouban pymedia
+cmd /c pipDouban pydub

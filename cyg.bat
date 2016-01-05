@@ -1,5 +1,5 @@
 @set path=%path%
-@set path=%path%
+@set path=D:\Program Files\FreeTime\FormatFactory\FFModules;%path%
 @set path=C:\HP\bin;%path%
 @set path=C:\Python27;%path%
 @set path=C:\Python27\Scripts;%path%
