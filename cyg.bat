@@ -12,3 +12,5 @@
 @set path=D:\Program Files\Java\jdk1.8.0_45\bin;%path%
 @set path=D:\Program Files\nodejs;%path%
 @set path=E:\SourceCode\shell;%path%
+
+@set HOME=D:\Program Files\Git\
