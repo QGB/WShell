@@ -14,7 +14,7 @@ if %c1%==- goto cmd
 goto py
 
 :py
-python %1%.py
+python -m profile -s time %1%.py
 goto end
 
 :cmd
