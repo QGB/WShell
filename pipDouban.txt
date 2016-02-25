@@ -10,3 +10,11 @@ cmd /c pipDouban requests
 cmd /c pipDouban pyasn1
 cmd /c pipDouban pymedia
 cmd /c pipDouban pydub
+cmd /c pipDouban django
+cmd /c pipDouban ipython
+cmd /c pipDouban pyreadline
+cmd /c pipDouban pytesser
+cmd /c pipDouban docopt
+cmd /c pipDouban pysmb
+cmd /c pipDouban pysmb
+cmd /c pipDouban qrcode

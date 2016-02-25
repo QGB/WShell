@@ -1,3 +1,6 @@
+@python %~dp0py/npp.py %*
+@goto end
+
 @set path=%path%
 @set path=C:\Program Files\Notepad++;%path%
 

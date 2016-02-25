@@ -1,1 +1,1 @@
-pipDouban %1 %2 %3
+pipDouban %*

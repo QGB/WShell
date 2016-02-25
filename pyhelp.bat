@@ -1,4 +1,4 @@
-@python "E:\SourceCode\shell\py\_pyhelp.py" %1 %2 %3 %4 %5 %6 %7 %8 %9
+@python "E:\SourceCode\shell\py\_pyhelp.py" %*
 @goto end
 if "%1%"=="" (goto help)
 if "%2%"=="" (goto setp)

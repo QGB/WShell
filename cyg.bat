@@ -14,3 +14,5 @@
 @set path=E:\SourceCode\shell;%path%
 
 @set HOME=D:\Program Files\Git\
+
+@REM "D:\Program Files\ConEmu\ConEmu\CmdInit.cmd"
