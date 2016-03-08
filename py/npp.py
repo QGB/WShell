@@ -1,4 +1,4 @@
-import sys,os,S
+import S
 sf=r''':\Program Files\Notepad++\notepad++.exe'''
 for i in 'cdef':
 	i+=sf
@@ -14,6 +14,5 @@ if len(S.a)==1:
 	os.startfile(sf)
 	exit()
 
-import subprocess
 S.a[0]=sf
-subprocess.call(S.a)
+U.run(S.a)

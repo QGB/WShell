@@ -18,3 +18,9 @@ cmd /c pipDouban docopt
 cmd /c pipDouban pysmb
 cmd /c pipDouban pysmb
 cmd /c pipDouban qrcode
+cmd /c pipDouban ALSA
+cmd /c pipDouban amixer
+cmd /c pipDouban ptpython
+cmd /c pipDouban q
+cmd /c pipDouban speech
+cmd /c pipDouban notebook

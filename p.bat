@@ -1,3 +1,6 @@
+@python %~dp0py/p.py %*
+@goto end
+
 @echo off
 
 set c=%1%
