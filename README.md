@@ -1,5 +1,5 @@
 #Wshell
-More commands for Windows shell (base cygwin git mingw python and more)
+More commands for Windows shell (base clink cygwin git mingw python and more)
 ##Install:
 copy cyg.cmd to %windir%
 and move others to "E:\SourceCode\shell\" (TODO: Set up)
@@ -22,3 +22,4 @@ f759a9e920957ba27cfdad988c8eb127 *!.cmd
 .....
 >
 ```
+

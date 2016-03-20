@@ -1,0 +1,72 @@
+test
+c
+ping qxsq
+ipy
+ping qxsq
+ping 1
+ping 127
+ping.exe /h
+c
+ping 12
+ping q
+ping g
+ping 9
+ping 7
+ping .
+ping m
+ping b
+ping c
+ping 
+ping -h
+ping /h
+ping ?
+ping /?
+cdt
+md java
+cdt java
+exp
+java A_Sample
+javac A_Sample.java 
+alias j -p
+javac -h
+javac /h
+javac /?
+javac -help
+java -help
+j
+j A_Sample
+j A_Sample.java
+j A_.Sam.ple.java
+md qgb
+mv A_Sample.java  qgb
+cd qgb 
+ll\
+ll
+javac qgb/A_Sample.java 
+javac "qgb/A_Sample.java" 
+javac "qgb\A_Sample.java" 
+echo %~dp
+echo "%~dp"
+test
+java
+pwd
+javac \test\java\qgb\A_Sample.java 
+cd ..
+cdspy
+npp test.py
+python test.py
+p test
+p p
+python -c
+ping zhihu.com
+ping www.zhihu.com
+ping http://public-tools.zhihu.com/network-analyzer.html
+ping z
+ping amazonaws.com.cn
+ping amazonaws.com
+ping 
+ipy
+alias tracert
+ping http://tools.zhihu.com/network-analyzer.html
+tracert 443
+tracert -h

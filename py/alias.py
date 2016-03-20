@@ -13,7 +13,9 @@ def _py():
 	U.write(ss,'''@python %~dp0py/{0}.py %*'''.format(a[1]))
 	
 	sp=S.py+a[1]+'.py'	
-	U.write(sp,'import S\n')
+	U.write(sp,'''import S
+if len(S.a)==1:print S.name,''   ;exit()
+	''')
 	os.system('npp '+sp)
 	exit()
 	

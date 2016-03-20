@@ -1,1 +1,1 @@
-start "" "E:\software\NET\proxy\XX-Net-2.3.0\start.bat"
+"E:\software\NET\proxy\XX-Net-2.3.0\start.bat"

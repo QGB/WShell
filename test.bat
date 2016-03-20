@@ -1,1 +1,1 @@
-@python %~dp0py/test.py %*
+python %~dp0py/test.py %*

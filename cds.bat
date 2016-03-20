@@ -1,1 +1,1 @@
-@cdshell
+@cdshell %*

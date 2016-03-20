@@ -16,3 +16,5 @@
 @set HOME=D:\Program Files\Git\
 
 @REM "D:\Program Files\ConEmu\ConEmu\CmdInit.cmd"
+
+@%~dp0clink/clink inject

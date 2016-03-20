@@ -1,0 +1,1 @@
+@python D:\temp\sqlmap-master\sqlmap.py %*
