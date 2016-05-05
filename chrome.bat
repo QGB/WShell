@@ -1,0 +1,1 @@
+start "" C:\Users\QGB\AppData\Local\Google\Chrome\Application\chrome.exe %*

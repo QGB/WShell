@@ -1,0 +1,1 @@
+@start "" "D:\Program Files\Tencent0\QQGAME\QQGame.exe"

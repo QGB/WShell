@@ -1,0 +1,107 @@
+<textarea style="width:100%; height:100%;">module select
+
+NNAAMMEE
+    select - This module supports asynchronous I/O on multiple file descriptors.
+
+FFIILLEE
+    c:\python27\dlls\select.pyd
+
+DDEESSCCRRIIPPTTIIOONN
+    *** IMPORTANT NOTICE ***
+    On Windows and OpenVMS, only sockets are supported; on Unix, all file descriptors.
+
+CCLLAASSSSEESS
+    exceptions.Exception(exceptions.BaseException)
+        error
+    
+    class eerrrroorr(exceptions.Exception)
+     |  Method resolution order:
+     |      error
+     |      exceptions.Exception
+     |      exceptions.BaseException
+     |      __builtin__.object
+     |  
+     |  Data descriptors defined here:
+     |  
+     |  ____wweeaakkrreeff____
+     |      list of weak references to the object (if defined)
+     |  
+     |  ----------------------------------------------------------------------
+     |  Methods inherited from exceptions.Exception:
+     |  
+     |  ____iinniitt____(...)
+     |      x.__init__(...) initializes x; see help(type(x)) for signature
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data and other attributes inherited from exceptions.Exception:
+     |  
+     |  ____nneeww____ = <built-in method __new__ of type object>
+     |      T.__new__(S, ...) -> a new object with type S, a subtype of T
+     |  
+     |  ----------------------------------------------------------------------
+     |  Methods inherited from exceptions.BaseException:
+     |  
+     |  ____ddeellaattttrr____(...)
+     |      x.__delattr__('name') <==> del x.name
+     |  
+     |  ____ggeettaattttrriibbuuttee____(...)
+     |      x.__getattribute__('name') <==> x.name
+     |  
+     |  ____ggeettiitteemm____(...)
+     |      x.__getitem__(y) <==> x[y]
+     |  
+     |  ____ggeettsslliiccee____(...)
+     |      x.__getslice__(i, j) <==> x[i:j]
+     |      
+     |      Use of negative indices is not supported.
+     |  
+     |  ____rreedduuccee____(...)
+     |  
+     |  ____rreepprr____(...)
+     |      x.__repr__() <==> repr(x)
+     |  
+     |  ____sseettaattttrr____(...)
+     |      x.__setattr__('name', value) <==> x.name = value
+     |  
+     |  ____sseettssttaattee____(...)
+     |  
+     |  ____ssttrr____(...)
+     |      x.__str__() <==> str(x)
+     |  
+     |  ____uunniiccooddee____(...)
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors inherited from exceptions.BaseException:
+     |  
+     |  ____ddiicctt____
+     |  
+     |  aarrggss
+     |  
+     |  mmeessssaaggee
+
+FFUUNNCCTTIIOONNSS
+    sseelleecctt(...)
+        select(rlist, wlist, xlist[, timeout]) -> (rlist, wlist, xlist)
+        
+        Wait until one or more file descriptors are ready for some kind of I/O.
+        The first three arguments are sequences of file descriptors to be waited for:
+        rlist -- wait until ready for reading
+        wlist -- wait until ready for writing
+        xlist -- wait for an ``exceptional condition''
+        If only one kind of condition is required, pass [] for the other lists.
+        A file descriptor is either a socket or file object, or a small integer
+        gotten from a fileno() method call on one of those.
+        
+        The optional 4th argument specifies a timeout in seconds; it may be
+        a floating point number to specify fractions of seconds.  If it is absent
+        or None, the call will never time out.
+        
+        The return value is a tuple of three lists corresponding to the first three
+        arguments; each contains the subset of the corresponding file descriptors
+        that are ready.
+        
+        *** IMPORTANT NOTICE ***
+        On Windows and OpenVMS, only sockets are supported; on Unix, all file
+        descriptors can be used.
+
+</textarea>

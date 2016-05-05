@@ -1,1 +1,1 @@
-@start "" cmd /k %*
+@python %~dp0py/run.py %*

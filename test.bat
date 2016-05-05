@@ -1,1 +1,2 @@
-python %~dp0py/test.py %*
+@ECHO %~dp0py/p.py %*
+pause

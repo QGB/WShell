@@ -2,17 +2,24 @@ import S
 sf=r''':\Program Files\Notepad++\notepad++.exe'''
 for i in 'cdef':
 	i+=sf
-	try:
-		os.path.getsize(i)
+	if os.path.exists(i):
 		sf=i
-	except Exception as e:
-		pass
-		# print e
-# exit() 
+		break
+
 if len(S.a)==1:
-	print 'npp FileName...'
-	os.startfile(sf)
-	exit()
+	sin=U.getStdin()
+	if sin and os.path.exists(sin):S.a.append(sin)
+	else:
+		U.cd('npp')
+		S.a.append(T.string(U.time())+'.txt')
+		U.write(S.a[-1],sin)
+	
+	if not S.a[1]:	
+		print 'npp FileName...'
+		os.startfile(sf)
+		exit()
 
 S.a[0]=sf
+
+print S.a
 U.run(S.a)

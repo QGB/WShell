@@ -19,6 +19,37 @@ def __backImport():
 	return T.sub(name,'','.')
 name=__backImport()
 #################################################
+
+stdin=sys.stdin
+
+def autoPath(a):
+	pass
+
+
+def getStdinPath():
+	sin=U.readStdin();tmp=''
+	if not sin:return
+	if '\n' in sin:
+		for i in sin.split('\n'):
+			i=path.abspath(i)
+			if ':\$RECYCLE' in i:tmp=i;continue
+			if path.exists(i):return i
+		return tmp
+	sin=path.abspath(sin)
+	if path.exists(sin):return sin
+	
+	return ''
+	
+def stdinToa():
+	sp=getStdinPath()
+	if sp and len(a)<3:
+		a.append(sp)
+		return True
+	return False
+# print getStdinPath()
+# U.exit()
+	
+	
 def getShellPath(fileName=''):
 	fileName=fileName.replace('\\','/')
 	if path.isabs(fileName):

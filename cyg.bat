@@ -12,9 +12,8 @@
 @set path=D:\Program Files\Java\jdk1.8.0_45\bin;%path%
 @set path=D:\Program Files\nodejs;%path%
 @set path=E:\SourceCode\shell;%path%
+@set path=E:\SourceCode\shell\exe;%path%
 
 @set HOME=D:\Program Files\Git\
-
-@REM "D:\Program Files\ConEmu\ConEmu\CmdInit.cmd"
 
 @%~dp0clink/clink inject

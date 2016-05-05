@@ -2,24 +2,46 @@ import S
 a= sys.argv
 gim2=2###min short length
 
+def write(name,txt):
+	if old(name):U.pause()
+	U.write(name,txt)
+	print  name,'[',txt[:33],'...]','sucess!'
+
 def _py():
-	if len(a)!=2 or '/' in a[1] or '\\' in a[1] or '.' in a[1]:
+	if len(a)!=2 or '/' in a[1] or '\\' in a[1]:
 		print '-p name illegal(/,\\,.)'
 		help_()
-	ss=S.p+a[1]+'.bat'
-		
-	if old(ss):U.pause()
+	ss=path(a[1])
 	
 	U.write(ss,'''@python %~dp0py/{0}.py %*'''.format(a[1]))
 	
 	sp=S.py+a[1]+'.py'	
-	U.write(sp,'''import S
+	write(sp,'''import S
 if len(S.a)==1:print S.name,''   ;exit()
+
 	''')
-	os.system('npp '+sp)
+	U.cmd('npp',sp)
+	# print sp
 	exit()
 	
-gdParms={('-p','-py'):_py}
+def _start():
+	start='''@start "" "{0}"'''
+	if len(a)==2:
+		sp=S.getStdinPath()
+		if sp:
+			start=start.format(sp)
+			# print start,sp
+			
+	elif S.path.exists(a[2]):
+		start=start.format(S.path.abspath(a[2]))
+	if '{0}' not in start:
+		a[1]=path(a[1])
+		
+		write(a[1],start)
+	exit()	
+		
+	
+gdParms={('-p','-py'):_py,('-s','-S','-start'):_start}
 
 # print gdParms
 # exit()
@@ -49,9 +71,7 @@ def old(a):
 	if not os.path.exists(a):return False
 	s=''
 	try:
-		f=open(a,'r')
-		s=f.read()
-		f.close()
+		U.read(a)
 	except Exception as e:print e;return False
 	if len(s)<gim2:return False
 	print '-'*10,'old','-'*10
@@ -85,12 +105,8 @@ def main():
  		
 	if len(a)<3:
 		help_()
+	write(a[1],a[2])
 
-	# os.chdir('..')
-	f=open(a[1],'w')
-	f.write(a[2])
-	f.close()
 
-	print  a[1],'[', a[2],']','sucess!'
 
 main()

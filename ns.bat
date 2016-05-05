@@ -1,1 +1,1 @@
-nslookup %1% "8.8.8.8"
+@python %~dp0py/netTool.py %* --nslookup   

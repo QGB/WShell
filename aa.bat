@@ -1,0 +1,1 @@
+@start "" "E:\software\ComputerScience\aardio\aardio.exe"

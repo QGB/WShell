@@ -1,7 +1,7 @@
 # try:
 import S
 
-default=['127.0.0.1','192.168.1.1','192.168.191.1','www.ccsu.cn',
+default=['127.0.0.1','8.8.8.8','192.168.1.1','192.168.191.1','10.1.1.254','www.ccsu.cn',
 'qq.com','baidu.com','taobao.com','g.cn','google.com','public-tools.zhihu.com','github.com']
 
 if S.a[-1].startswith('--'):
@@ -22,13 +22,13 @@ for i in range(len(S.a)):
 	
 	if len(S.a[i])<4:
 		for k in default:
-			if S.a[i] in k:
+			if S.a[i].lower() in k:
 				S.a[i]=k
 				break
 	# try:U.cmd('ping.exe '+s)
 	# except:exit()
 	# exit()
-	
+# print S.a	
 
 U.cmd(S.a)
 # except:exit()
