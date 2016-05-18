@@ -1,1 +1,1 @@
-@d:&cd /pm/qgb
+@d:&cd \pm\qgb

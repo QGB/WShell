@@ -483,3 +483,56 @@ es b
 es ba
 es b
 C:\ADFS\Everything\Everything.exe -debug
+es b
+C:\ADFS\Everything\Everything.exe -debug
+exp
+npp
+md pm/qgb
+md pm
+cd pm
+md qgb
+cdqp
+cds
+notepad cdqp.bat 
+md pm/qgb
+md pm
+cd pm
+md qgb
+notepad cdqp.bat 
+cds
+exp>nul
+exp
+exp<nul
+cat exp
+cat exp.bat 
+@explorer .
+echo @explorer .>test.bat 
+cat test.bat 
+test
+start exp
+npp
+cdqp
+ll
+ls
+ginit qpsu
+dir
+git init
+cd ..
+es
+es git.exe\
+es git.exe
+"D:\Program Files\Git\bin\git.exe"
+"D:\Program Files\Git\bin\git.exe" init
+git
+es git.exe
+"D:\Program Files\Git\bin\git.exe"
+"D:\Program Files\Git\bin\git.exe" init
+git
+npp
+notepad++.bat 
+cds
+notepad++.bat cyg.bat 
+python
+qrcode
+CDS
+exit 
