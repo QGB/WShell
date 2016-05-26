@@ -26,3 +26,18 @@ cmd /c pipDouban speech
 cmd /c pipDouban notebook
 cmd /c pipDouban goto
 cmd /c pipDouban 
+cmd /c pipDouban clipboard
+cmd /c pipDouban win32clipboard
+cmd /c pipDouban win32clipboard
+cmd /c pipDouban win32clipboard
+cmd /c pipDouban xlrt
+cmd /c pipDouban q
+cmd /c pipDouban qrcode
+cmd /c pipDouban xlwt
+cmd /c pipDouban win32clipboard
+cmd /c pipDouban ntplib
+cmd /c pipDouban requests
+cmd /c pipDouban ntplib
+cmd /c pipDouban ntplib
+cmd /c pipDouban win32clipboard
+cmd /c pipDouban pywin32

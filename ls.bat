@@ -1,1 +1,0 @@
-@F:\1\D\cygwin\bin\ls.exe %**
