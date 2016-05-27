@@ -1,698 +1,437 @@
-test
-c
-ping qxsq
-ipy
-ping qxsq
-ping 1
-ping 127
-ping.exe /h
-c
-ping 12
-ping q
-ping g
-ping 9
-ping 7
-ping .
-ping m
-ping b
-ping c
-ping 
-ping -h
-ping /h
-ping ?
-ping /?
-cdt
-md java
-cdt java
-exp
-java A_Sample
-javac A_Sample.java 
-alias j -p
-javac -h
-javac /h
-javac /?
-javac -help
-java -help
-j
-j A_Sample
-j A_Sample.java
-j A_.Sam.ple.java
-md qgb
-mv A_Sample.java  qgb
-cd qgb 
-ll\
-ll
-javac qgb/A_Sample.java 
-javac "qgb/A_Sample.java" 
-javac "qgb\A_Sample.java" 
-echo %~dp
-echo "%~dp"
-test
-java
-pwd
-javac \test\java\qgb\A_Sample.java 
-cd ..
-cdspy
-npp test.py
-python test.py
-p test
-p p
-python -c
-ping zhihu.com
-ping www.zhihu.com
-ping http://public-tools.zhihu.com/network-analyzer.html
-ping z
-ping amazonaws.com.cn
-ping amazonaws.com
-ping 
-ipy
-alias tracert
-ping http://tools.zhihu.com/network-analyzer.html
-tracert 443
-tracert -h
-test
-c
-ping qxsq
-ipy
-ping qxsq
-ping 1
-ping 127
-ping.exe /h
-ping 12
-ping q
-ping g
-ping 9
-ping 7
-ping .
-ping m
-ping b
-ping c
-ping 
-ping -h
-ping /h
-ping ?
-ping /?
-cdt
-md java
-cdt java
-exp
-java A_Sample
-javac A_Sample.java 
-alias j -p
-javac -h
-javac /h
-javac /?
-javac -help
-java -help
-j
-j A_Sample
-j A_Sample.java
-j A_.Sam.ple.java
-md qgb
-mv A_Sample.java  qgb
-cd qgb 
-ll\
-javac qgb/A_Sample.java 
-javac "qgb/A_Sample.java" 
-javac "qgb\A_Sample.java" 
-echo %~dp
-echo "%~dp"
-test
-java
-pwd
-javac \test\java\qgb\A_Sample.java 
-cd ..
-npp test.py
-python test.py
-p p
-python -c
-ping zhihu.com
-ping www.zhihu.com
-ping http://public-tools.zhihu.com/network-analyzer.html
-ping z
-ping amazonaws.com.cn
-ping amazonaws.com
-ping 
-alias tracert
-ping http://tools.zhihu.com/network-analyzer.html
-tracert 443
-tracert -h
-es 16*doc
-es 1*doc
-es *doc
-es 6*doc
-es 46*doc
-es 46*doc|npp
-doc
-word
-alias doc -p
-npp d:/pm/qgb/U.py
-npp d:/pm/qgb/T.py
-ipy
-chrome
-ls|aa
-cd E:\software\ComputerScience\aardio\project\key\Publish
-e:
-key
-exp key.exe
-ii
-i]
-key 5555
-key 5555 wvw ds ed scef43fw
-key 5""66er
-key """""
-key "122"""33"
-key "122""||"33"
-key "122""||"33"|
-key 
-key |
-key |||
-key ""
-key "参数直接执行aardio代码
-npp
-key asciiPrint=' !"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~'#
-key "|"
-"|"
-asciiPrint=' !"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQ
-RSTUVW
-XYZ[
-key                      asciiPrint=' !"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~'#
-echo|key
-echo 3232|key
-echo |key
-echo 3|key
-echo 34|key
-echo 345|key
-ls|key
-w|key
-@echo
-@echo3
-@echo 3
-@echo 3|key
-@echo 32|key
-@echo 1|key
-@echo pp|key
-@echo pp.3|key
-@echo pp.|key
-@echo pp..|key
-@echo|key
-@echo |key
-ll |key
-ll|key
-pwd|key
-echo 8|key
-@echo    |key
-echo 8|ll|key
-@echo   0999999 |key
-@echo   0999999|key
-@echo  0999999|key
-@echo 0999999|key
-echo 4|key
-ll|Key
-echo 传递table对象|key
-c
-cdspy
-p test
-ll
-def
-ccc
-exit
-exit
-p test
-ef
-f
-cds
-aa
-exp
-ccc
-exit
-exit
-p test
-ef
-f
-cds
-aa
-exp
-pathping 7
-es nettoo
-es nettool.b
-es nettool
-es nettool|grep q
-es nettool|grep p
-es nettool|grep py
-es nettool|grep py|npp
-es nett*py
-es nett*py|npp
-es -h
-which es
-which es.bat
-which es.exe
-which git
-c
-alias test
-test
-hy
-history.bat 
-history.bat -h
-history.bat /?
-eng
-doskey /history
-qrcode 2123
-gbk
-mouse-mid.exe 
-ipy
-ip
-ping 9
-ping 9 -t
-exit
-mo mouse-mid.ex
- mouse-mid.
- mouse-mid
-xxnet
-xxnet
-ip
-ping 9
-exit
-pin
-ipy
- chrome
-ping 9 -t
-ping http://300report.jumpw.com/
-ping http://jumpw.com/
-ping http://jumpw.com/ -t
-ping 9
-ping 94cb.com
-mouse-mid.exe 
-mouse-mid.exe 
-vbox
-@start "" "D:\Program Files\Oracle\VirtualBox\VirtualBox.exe"
-@start "" "VirtualBox.exe"
-@start "" VirtualBox.exe
-cmd /c VirtualBox.exe 
-VirtualBox.exe 
-exit
-x
-mouse-mid.exe 
-alias test
-cds 
-cdspy
-npp alias.py
-chrome
-xxnet
-chrome
-xxnet
-cdspy
-npp j.py
-es pyth pdf qgb
-es pyth pdf|grep qgb
-es pyth pdf|grep Q
-es pyth pdf|
-es pyth pdf
 
-es pyth pdf|col
-col
-es pyth pdf|exp
-ipy
-es mernis
-es mernis|xargs echo
-es mernis|xargs npp
-es mernis|xargs npp.bat
-python
-es 30735
-XXNET
-es mernis|xargs echo
-es mernis|xargs npp
-es mernis|xargs npp.bat
-python
-es 30735
-XXNET
-cdt
-md git
-cd git
-git clone https://github.com/unbug/codelf.git
-l
-cd codelf\
-ll
-chrome index.html
-pipdb goto
-alias mid @mouse-mid
-mid
-ll
-chrome index.html
-pipdb goto
-alias mid @mouse-mid
-mid
- es xxnet.bat
- es xxnet.bat|npp
+ chrome
+ easy_install.exe pip==8.1.1
  es start.bat
  es start.bat|grep 1.9
  es start.bat|grep 2.9
  es start.bat|grep 2.9|npp
-xxnet.bat 
-es xxnet.ba|npp
-alias xxnet
-xxnet
-cds
-npp cyg.bat
-alias cdd
-cdd
-ll]
-ll
-ls
-dir
-tree
-alias cdd
-cdd
-ll]
-ll
-ls
-dir
-tree
-cds
-ping 9
-tracert jumpw.com
-mid
-exp
-tracert b
-ip
-ping 9 -t
-exp
-tracert b
-ip
-ping 9 -t
-tracert jumpw.com
-ping z -t
-ping 8
-ping 9 -t
-exp
-ping 9 -t
-tracert jumpw.com
-ping z -t
-ping 8
-ip
-ping b
-tracertt b
-tracert b
-ping 9
-tracert 9
-ping 10
-tracert 10
-x
-tracert 10
-x
-tracert /?
-tracert 9 -w 9999
-cdqsu
-cdqpsu
-gpush qpsu http
-ping b
-ipconfig.exe /h
-ipconfig.exe /flushdns
-alias fdns 
-fdns
-fdns
-c
-keymap
-pulld
-pushd
-y
-fdns
-c
-keymap
-pulld
-pushd
-y
-cd..
-md pm
-md qgb
-cd /pm/qgb
-rm qgb
-del qgb
-cd p
-md qgb 
-p
-git clone
-cdt
-ping http://bbs.taiguo.com/car.php?mod=view&post_id=24
-ping c
-shutdown -a
-cd..
-md pm
-md qgb
-cd /pm/qgb
-rm qgb
-del qgb
-cd p
-md qgb 
-p
-git clone
-ping http://bbs.taiguo.com/car.php?mod=view&post_id=24
-ping c
-shutdown -a
-cdt
-ls
-git clone https://github.com/lincanbin/Material-Design-Avatars
-es git.exe
-git clone C:\Program Files\Git\cmd\git.exe
-cls
-es .msi git
-es .exe git
-es .exe git|grep /?
-es .exe git|grep /h
-es .exe git|grep -h
-es .exe git|grep --help
-es .exe git|grep -v $
-es .exe git|grep -v r
-es .exe git|grep -v RECY
-es .exe git|grep -v RECY|grep -v BENQ
-es  git.exe|grep -v RECY|grep -v BENQ
-alias git
-git clone  https://github.com/lincanbin/Material-Design-Avatars
-es  git.exe|grep -v RECY|grep -v BENQ|grep F:
-es  git.exe|grep -v RECY|grep -v BENQ|grep F:|alias git
-git
-cd Material-Design-Avatars\
-ll
-dir
-cd tools\
-exp
-p getcolor.py 
-p getcolor.py 
-es ba
-es b
-es ba
-es b
-C:\ADFS\Everything\Everything.exe -debug
-md pm
-md qgb
-cd /pm/qgb
-rm qgb
-del qgb
-cd p
-md qgb 
-p
-git clone
-ping http://bbs.taiguo.com/car.php?mod=view&post_id=24
-ping c
-shutdown -a
-cdt
-git clone https://github.com/lincanbin/Material-Design-Avatars
-es git.exe
-git clone C:\Program Files\Git\cmd\git.exe
-cls
-es .msi git
-es .exe git
-es .exe git|grep /?
-es .exe git|grep /h
-es .exe git|grep -h
-es .exe git|grep --help
-es .exe git|grep -v $
-es .exe git|grep -v r
-es .exe git|grep -v RECY
-es .exe git|grep -v RECY|grep -v BENQ
-es  git.exe|grep -v RECY|grep -v BENQ
-alias git
-git clone  https://github.com/lincanbin/Material-Design-Avatars
-es  git.exe|grep -v RECY|grep -v BENQ|grep F:
-es  git.exe|grep -v RECY|grep -v BENQ|grep F:|alias git
-cd Material-Design-Avatars\
-ll
-dir
-cd tools\
-p getcolor.py 
-p getcolor.py 
-es ba
-es b
-F:\1\E\sys_sw\PCHunter_free\PCHunter32.exe 
-alias pch F:\1\E\sys_sw\PCHunter_free\PCHunter32.exe 
-pch
-\
-alias pch start "" F:\1\E\sys_sw\PCHunter_free\PCHunter32.exe 
-npp
-run !.cmd
-git
-cat gpush.abt
-gqgb
-git commit -m 40
-cat gpush.bat 
-gssh
-cat git.exe
-cat git.bat 
-SET HOME=F:\1\D\Program Files\Git\
-gpull ws
-alias gssh40
-gssh40
-git push ws master
-cat run.bat 
-start
-g
-cat exp.bat 
+ es xxnet.bat
+ es xxnet.bat|npp
+ mouse-mid
+ mouse-mid.
+"D:\Program Files\Git\bin\git.exe"
+"D:\Program Files\Git\bin\git.exe" init
+"|"
+/usr/bin/ls
+@echo
+@echo    |key
+@echo   0999999 |key
+@echo   0999999|key
+@echo  0999999|key
+@echo 0999999|key
+@echo 1|key
+@echo 3
+@echo 32|key
+@echo 3|key
+@echo pp..|key
+@echo pp.3|key
+@echo pp.|key
+@echo pp|key
+@echo |key
+@echo3
+@echo|key
 @explorer .
-cdqpsu
-cat gpush.bat |npp
-cat gpush.bat
-history.bat 
-gpush ws 40
-dir 146245
-alias ls
-ls 
-ls 146245
-ls 1462
-ll 14*
-notepad
-notepad ls.bat
-rm 14*
-ll 14
-ll 1
-ll a
-gpush ws ls
-notepad gpush.bat 
-alias gpush40 d
-git add -A
-git add -A&echo 222
-notepad gpush40.bat 
-git commit -m ls
-gpush40 ws ls
+@explorer .
+@start "" "D:\Program Files\Oracle\VirtualBox\VirtualBox.exe"
+@start "" "VirtualBox.exe"
+@start "" VirtualBox.exe
+C:\ADFS\Everything\Everything.exe -debug
+C:\ADFS\Everything\Everything.exe -debug
+C:\Documents and Settings\Administrator\Application Data\Notepad++
+CDS
+F:\1\E\sys_sw\PCHunter_free\PCHunter32.exe 
+GIT
+IPY
+RSTUVW
+SET HOME=F:\1\D\Program Files\Git\
+VirtualBox.exe 
+XXNET
+XYZ[
+\
+aa
 alias c40
+alias cdd
+alias cds32
+alias doc -p
+alias fdns 
+alias git
+alias gpush40 d
+alias gssh40
+alias j -p
+alias ls
+alias mid @mouse-mid
+alias pch F:\1\E\sys_sw\PCHunter_free\PCHunter32.exe 
+alias pch start "" F:\1\E\sys_sw\PCHunter_free\PCHunter32.exe 
+alias test
+alias tracert
+alias xxnet
+asciiPrint=' !"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQ
+c
 c40
-cd /windows/system32
+c:
+cat Clipboard.py
+cat exp
+cat exp.bat 
+cat exp.bat 
+cat git.bat 
+cat git.exe
+cat gpush.abt
+cat gpush.bat
+cat gpush.bat 
+cat gpush.bat |npp
+cat https://www.zhihu.com/question/39282391/answer/87736715?group_id=712250240320688128#comment-133876462
+cat pipDouban.txt
+cat run.bat 
+cat test.bat 
+cc
+ccc
+cd ..
+cd ..
+cd /pm
+cd /pm/qgb
 cd /windows/
+cd /windows/system32
+cd C:\Documents and Settings\Administrator\Application Data\Notepad++
+cd E:\software\ComputerScience\aardio\project\key\Publish
+cd Material-Design-Avatars\
 cd c:\WINDOWS\
 cd c:\WINDOWS\system32\
-alias cds32
+cd codelf\
+cd git
+cd p
+cd pm
+cd pm
+cd qgb
+cd qgb 
+cd tools\
+cd..
+cdd
+cddt
+cdqp
+cdqp
+cdqpsu
+cdqsu
 cds
+cds
+cds 
 cds32
+cdspy
+cdt
+cdt java
+chrome
+chrome index.html
+cls
+cmd /c VirtualBox.exe 
+col
+d:&cd /pm/qgb
+def
+del qgb
+dir
+dir
+dir 146245
+doc
+doskey /history
+e
+e:
+echo "%~dp"
+echo %~dp
+echo 3232|key
+echo 345|key
+echo 34|key
+echo 3|key
+echo 4|key
+echo 8|key
+echo 8|ll|key
+echo @explorer .>test.bat 
+echo |key
+echo 传递table对象|key
+echo|key
+ef
+eng
+es
+es  git.exe|grep -v RECY|grep -v BENQ
+es  git.exe|grep -v RECY|grep -v BENQ|grep F:
+es  git.exe|grep -v RECY|grep -v BENQ|grep F:|alias git
+es *doc
+es -h
+es .exe git
+es .exe git|grep --help
+es .exe git|grep -h
+es .exe git|grep -v $
+es .exe git|grep -v RECY
+es .exe git|grep -v RECY|grep -v BENQ
+es .exe git|grep -v r
+es .exe git|grep /?
+es .exe git|grep /h
+es .msi git
+es 1*doc
+es 16*doc
+es 30735
+es 46*doc
+es 46*doc|npp
+es 6*doc
+es b
+es b
+es ba
+es git.exe
+es git.exe
+es git.exe\
+es mernis
+es mernis|xargs echo
+es mernis|xargs npp
+es mernis|xargs npp.bat
+es nett*py
+es nett*py|npp
+es nettoo
+es nettool
+es nettool.b
+es nettool|grep p
+es nettool|grep py
+es nettool|grep py|npp
+es nettool|grep q
+es pyth pdf
+es pyth pdf qgb
+es pyth pdf|
+es pyth pdf|col
+es pyth pdf|exp
+es pyth pdf|grep Q
+es pyth pdf|grep qgb
+es xxnet.ba|npp
+exit
+exit 
 exp
-cdt
-c
-cc
-ipy
-ipy
-cdt
-ls
-ll
-pip install pyopenssl ndg-httpsclient pyasn1
-pipdb ntplib
-pipdb  pywin32
-ll
-pip install pyopenssl ndg-httpsclient pyasn1
-pipdb ntplib
-pipdb  pywin32
-ping s1a.time.edu.cn
-github
-cd C:\Documents and Settings\Administrator\Application Data\Notepad++
-gpull npp
+exp
+exp key.exe
+exp<nul
+exp>nul
+explorer.exe 
+explorer.exe .
+f
+fdns
 g
-git pull https://github.com/QGB/npp.git
-https://github.com/QGB/npp.git
-grepo npp
-ssh
-git remote add npp git@github.com:QGB/npp.git
-ls
-ls -a
-ls 
-/usr/bin/ls
-which git
-got
+gbk
+ginit qpsu
 git
-start "" cmd
+git
+git add -A
+git add -A&echo 222
+git clone
+git clone  https://github.com/lincanbin/Material-Design-Avatars
+git clone C:\Program Files\Git\cmd\git.exe
+git clone https://github.com/lincanbin/Material-Design-Avatars
+git clone https://github.com/unbug/codelf.git
+git commit -m 40
+git commit -m ls
+git init
+git pull https://github.com/QGB/npp.git
+git push ws master
+git remote add npp git@github.com:QGB/npp.git
+github
+got
+gpull npp
+gpull ws
+gpush qpsu http
+gpush ws 40
+gpush ws ls
+gpush40 ws ls
+gqgb
+grepo WShell
+grepo npp
+gssh
+gssh40
+history.bat 
+history.bat -h
+history.bat /?
+https://github.com/QGB/npp.git
+hy
+i]
+ii
+import sys,os;sys.path.append('d:\pm');from qgb import *
+ip
+ipconfig.exe /flushdns
+ipconfig.exe /h
+ipy
+j
+j A_.Sam.ple.java
+j A_Sample
+j A_Sample.java
+java
+java -help
+java A_Sample
+javac "qgb/A_Sample.java" 
+javac "qgb\A_Sample.java" 
+javac -h
+javac -help
+javac /?
+javac /h
+javac A_Sample.java 
+javac \test\java\qgb\A_Sample.java 
+javac qgb/A_Sample.java 
+key
+key 
+key                      asciiPrint=' !"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~'#
+key ""
+key """""
+key "122"""33"
+key "122""||"33"
+key "122""||"33"|
+key "|"
+key "参数直接执行aardio代码
+key 5""66er
+key 5555
+key 5555 wvw ds ed scef43fw
+key asciiPrint=' !"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~'#
+key |
+key |||
+keymap
+l
+ll
+ll
+ll 1
+ll 14
+ll 14*
+ll 4
+ll a
+ll a*
+ll c
+ll n*
+ll |key
+ll\
+ll]
+ll|Key
+ll|key
+ls
+ls
+ls 
+ls -a
+ls 1462
+ls 146245
+ls pi
+ls|aa
+ls|key
+md git
+md java
+md pm
+md pm
+md pm/qgb
+md qgb
+md qgb
+md qgb 
+mid
+mo mouse-mid.ex
+mouse-mid.exe 
+mv A_Sample.java  qgb
+notepad
+notepad cdqp.bat 
+notepad gpush.bat 
+notepad gpush40.bat 
+notepad ls.bat
+notepad++.bat 
+notepad++.bat cyg.bat 
+npp
+npp
+npp alias.py
+npp cyg.bat
+npp d:/pm/qgb/T.py
+npp d:/pm/qgb/U.py
+npp j.py
+npp test.py
+p
+p getcolor.py 
+p p
+p test
+pathping 7
+pch
+pin
+ping 
+ping -h
+ping .
+ping /?
+ping /h
+ping 1
+ping 10
+ping 12
+ping 127
+ping 7
+ping 8
+ping 9
+ping 9 -t
+ping 94cb.com
+ping ?
+ping amazonaws.com
+ping amazonaws.com.cn
+ping b
+ping c
+ping g
+ping http://300report.jumpw.com/
+ping http://bbs.taiguo.com/car.php?mod=view&post_id=24
+ping http://jumpw.com/
+ping http://jumpw.com/ -t
+ping http://public-tools.zhihu.com/network-analyzer.html
+ping http://tools.zhihu.com/network-analyzer.html
+ping m
+ping q
+ping qxsq
+ping s1a.time.edu.cn
+ping www.zhihu.com
+ping z
+ping z -t
+ping zhihu.com
+ping.exe /h
+pip install --upgrade pip
 pip install pyopenssl ndg-httpsclient pyasn1
-pipdb ntplib
 pipdb  pywin32
-GIT
-cd C:\Documents and Settings\Administrator\Application Data\Notepad++
-c
+pipdb  win32clipboard
+pipdb  xlrt
+pipdb goto
+pipdb ntplib
+pipdb q
+pipdb qrcode
+pipdb requests
+pipdb xlwt
+pulld
+pushd
+pwd
+pwd|key
+python
+python
+python -c
+python test.py
+qrcode
+qrcode 2123
 rm *
 rm --help
 rm -r
 rm -r *
-ls
-C:\Documents and Settings\Administrator\Application Data\Notepad++
-exit
-rm -r *
-C:\Documents and Settings\Administrator\Application Data\Notepad++
-cd C:\Documents and Settings\Administrator\Application Data\Notepad++
-ls
-exit
-alias c40
-c40
-cd /windows/system32
-cd /windows/
-cd c:\WINDOWS\
-cd c:\WINDOWS\system32\
-alias cds32
-cds32
-cdt
-c
-cc
-ipy
-ll
-cddt
-cdt
-cd /pm
-cd pm
-cd qgb
-cat Clipboard.py
+rm 14*
+rm qgb
+run !.cmd
+shutdown -a
+ssh
+start
+start "" cmd
+start exp
+test
+test
+tracert -h
+tracert /?
+tracert 10
+tracert 443
+tracert 9
+tracert 9 -w 9999
+tracert b
+tracert jumpw.com
+tracertt b
+tree
+vbox
 w"C:\Documents and Settings\Administrator\桌面\ws.lnk"jj
-c:
-cd..
-ll c
-
-ls
-exp
-pip install --upgrade pip
-e
-pipdb  xlrt
-pipdb q
-cds
-ls pi
-cat https://www.zhihu.com/question/39282391/answer/87736715?group_id=712250240320688128#comment-133876462
-cat pipDouban.txt
-pipdb qrcode
- easy_install.exe pip==8.1.1
-pipdb xlwt
-pipdb requests
-pipdb ntplib
-ipy
-pipdb  win32clipboard
-p
-import sys,os;sys.path.append('d:\pm');from qgb import *
-IPY
-C:\Documents and Settings\Administrator\Application Data\Notepad++
-exit
-C:\Documents and Settings\Administrator\Application Data\Notepad++
-exit
-ll 4
-ll a
-ll a*
-ll n*
-cd C:\Documents and Settings\Administrator\Application Data\Notepad++
-ls
-rm -r *
-ll
-grepo npp
-grepo WShell
-d:&cd /pm/qgb
-cdqp
-explorer.exe 
-explorer.exe .
+which es
+which es.bat
+which es.exe
+which git
+word
+w|key
+x
+xxnet
+xxnet.bat 
+y
