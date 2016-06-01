@@ -29,3 +29,7 @@ cmd /c pipDouban win32clipboard
 cmd /c pipDouban xlrd
 cmd /c pipDouban xlrt
 cmd /c pipDouban xlwt
+cmd /c pipDouban readline
+cmd /c pipDouban readline
+cmd /c pipDouban readline
+cmd /c pipDouban pyreadline

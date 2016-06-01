@@ -1,0 +1,1 @@
+@d:&cd D:\Program Files\Notepad++\%*

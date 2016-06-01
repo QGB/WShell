@@ -12,6 +12,7 @@
 @set path=D:\Program Files\Git\cmd;%path%
 @set path=D:\Program Files\Git\mingw32\bin;%path%
 @set path=D:\Program Files\Git\usr\bin;%path%
+@set path=D:\Program Files\Java\jdk1.7.0_25\bin;%path%
 @set path=D:\Program Files\Java\jdk1.8.0_45\bin;%path%
 @set path=D:\Program Files\nodejs;%path%
 @set path=E:\SourceCode\shell;%path%

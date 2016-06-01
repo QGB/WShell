@@ -1,7 +1,7 @@
 import S
 
 gbcmd=False
-
+gsext=['.py','.pyw']
 def _help():
 	print S.name,'pyFile... [-c : open in current console]'
 	exit()
@@ -18,11 +18,13 @@ if '-c' in S.a:
 	if len(S.a)==1:U.cmd('python')
 	gbcmd=True
 
-for i in range(len(S.a)):
-	if i==0:continue
+# for i in range(len(S.a)):
+	# if i==0:continue
 	# if T
+S.a[1]=U.autof(S.a[1])
+
 	
-if not S.a[1].lower().endswith('.py'):
+if not U.inMuti(S.a[1].lower(),gsext,f=''.endswith):
 	S.a[1]+='.py'
 # if 'py' not in S.a[1].lower():_help()
 if __name__ == '__main__':

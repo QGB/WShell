@@ -1,0 +1,1 @@
+@c:&cd C:\Documents and Settings\Administrator\Application Data\Notepad++\%*
