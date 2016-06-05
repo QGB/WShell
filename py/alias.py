@@ -101,7 +101,7 @@ def main():
 		try:
 			a.append(raw_input())
 			if len(a[2])<gim2:help_()
-		except Exception:print Exception
+		except:U.x()
  		
 	if len(a)<3:
 		help_()
