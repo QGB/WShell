@@ -1,8 +1,27 @@
 import sys,os;sys.path.append('d:\pm');from qgb import *
 a= sys.argv
 path=os.path
+stdin=sys.stdin
 
-if __name__ == '__main__':U.sleep(1);exit()
+
+
+def es(a):
+	if type('')!=type(a) or len(a)<1:return ''
+	
+	
+	# print U.cmd('es',a)
+	import subprocess as sp
+	
+	print sp.Popen(('cmd','/k','es','*qgb\\U.py'))
+	
+	U.x()
+
+# if __name__ == '__main__':
+	# es('*qgb\\U.py')
+
+
+
+# if __name__ == '__main__':U.sleep(1);exit()
 
 frame=sys._getframe().f_back
 def __backImport():
@@ -20,7 +39,6 @@ def __backImport():
 name=__backImport()
 #################################################
 
-stdin=sys.stdin
 
 def autoPath(a):
 	pass

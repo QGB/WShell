@@ -516,3 +516,89 @@ cdqp
 ipy
 npp
 npp
+ping 8
+ping 11
+tracert 8
+npp
+netstat.exe -ANO|grep 16823
+curl http://yun.baidu.com/share/home?uk=19
+curl http://yun.baidu.com/share/home?uk=19 >19.html
+ls
+chrome
+exp
+start exp
+curl http://yun.baidu.com/share/home?uk=19#category/type=0>19.html
+curl "http://yun.baidu.com/share/home?uk=19" -H "Accept-Encoding: gzip, deflate, sdch" -H "Accept-Language: zh-CN,zh;q=0.8" -H "User-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.154 Safari/537.36 LBBROWSER" -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" -H "Cache-Control: max-age=0" -H "Cookie: BIDUPSID=817E0A0579B30F6C8529D2A008A7F4F7; PSTM=1462974731; PANWEB=1; BAIDUID=A5A1B4C36DEB203C2BE138ED88BB6E99:FG=1; BDUSS=NFQ0poMzBYR1FpWFVNR0owMVZmVlVuQ2hEN2lUQlNrMkV4VUtiRS1kcmdGbUZYQVFBQUFBJCQAAAAAAAAAAAEAAACYT6sRUUdCQ1MAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOCJOVfgiTlXTT; STOKEN=b7284d7bc0a14fc01e96d2bd472444d13eabfa6c8e1d1292ee4bb0797ee6dc66; SCRC=7cccde8bb09de5a6195adc78aa866908; Hm_lvt_f4165db5a1ac36eadcfa02a10a6bd243=1465065727; TOPMSG=1465065911-0; bdshare_firstime=1465065932444; recommendTime=guanjia2016-06-02"%"2019"%"3A05; Hm_lvt_1d15eaebea50a900b7ddf4fa8d05c8a0=1463014827,1464810848,1465065927,1465066684; Hm_lpvt_1d15eaebea50a900b7ddf4fa8d05c8a0=1465066809; Hm_lvt_f5f83a6d8b15775a02760dc5f490bc47=1463014827,1464810848,1465065927,1465066685; Hm_lpvt_f5f83a6d8b15775a02760dc5f490bc47=1465066809; BDRCVFR[X7WRLt7HYof]=mk3SLVN4HKm; H_PS_PSSID=1422_18240_20075_15702_11587; PANPSC=13124520668377882627"%"3AJ3EsYsG7OQn4qSyStJZsLBmx"%"2BAmEMpE6sAuhLPf3s9UkGiJzAoFozRurvxk1N5QIkCI"%"2BsV3Uz"%"2BFGQUQ"%"2B8ierxnxp"%"2BHmjOO"%"2Btv2Arrvb"%"2BpkS82CvuzYuWvieKHrlyURG2vIcMCeE"%"2BEzPl0236xFtTr"%"2BHiRzDwUrQ6; Hm_lvt_7a3960b6f067eb0085b7f96ff5e660b0=1465065932,1465066683; Hm_lpvt_7a3960b6f067eb0085b7f96ff5e660b0=1465068044; Hm_lvt_adf736c22cd6bcc36a1d27e5af30949e=1465065935,1465066687; Hm_lpvt_adf736c22cd6bcc36a1d27e5af30949e=1465068044" -H "Connection: keep-alive" --compressed > 19-.html
+curl "http://yun.baidu.com/share/home?uk=19" -H "Accept-Encoding: gzip, deflate, sdch" -H "Accept-Language: zh-CN,zh;q=0.8" -H "User-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.154 Safari/537.36 LBBROWSER" -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" -H "Cache-Control: max-age=0" -H "Cookie: BIDUPSID=817E0A0579B30F6C8529D2A008A7F4F7; PSTM=1462974731; PANWEB=1; BAIDUID=A5A1B4C36DEB203C2BE138ED88BB6E99:FG=1; BDUSS=NFQ0poMzBYR1FpWFVNR0owMVZmVlVuQ2hEN2lUQlNrMkV4VUtiRS1kcmdGbUZYQVFBQUFBJCQAAAAAAAAAAAEAAACYT6sRUUdCQ1MAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOCJOVfgiTlXTT; STOKEN=b7284d7bc0a14fc01e96d2bd472444d13eabfa6c8e1d1292ee4bb0797ee6dc66; SCRC=7cccde8bb09de5a6195adc78aa866908; Hm_lvt_f4165db5a1ac36eadcfa02a10a6bd243=1465065727; TOPMSG=1465065911-0; bdshare_firstime=1465065932444; recommendTime=guanjia2016-06-02"%"2019"%"3A05; Hm_lvt_1d15eaebea50a900b7ddf4fa8d05c8a0=1463014827,1464810848,1465065927,1465066684; Hm_lpvt_1d15eaebea50a900b7ddf4fa8d05c8a0=1465066809; Hm_lvt_f5f83a6d8b15775a02760dc5f490bc47=1463014827,1464810848,1465065927,1465066685; Hm_lpvt_f5f83a6d8b15775a02760dc5f490bc47=1465066809; BDRCVFR[X7WRLt7HYof]=mk3SLVN4HKm; H_PS_PSSID=1422_18240_20075_15702_11587; PANPSC=13124520668377882627"%"3AJ3EsYsG7OQn4qSyStJZsLBmx"%"2BAmEMpE6sAuhLPf3s9UkGiJzAoFozRurvxk1N5QIkCI"%"2BsV3Uz"%"2BFGQUQ"%"2B8ierxnxp"%"2BHmjOO"%"2Btv2Arrvb"%"2BpkS82CvuzYuWvieKHrlyURG2vIcMCeE"%"2BEzPl0236xFtTr"%"2BHiRzDwUrQ6; Hm_lvt_7a3960b6f067eb0085b7f96ff5e660b0=1465065932,1465066683; Hm_lpvt_7a3960b6f067eb0085b7f96ff5e660b0=1465068044; Hm_lvt_adf736c22cd6bcc36a1d27e5af30949e=1465065935,1465066687; Hm_lpvt_adf736c22cd6bcc36a1d27e5af30949e=1465068044" -H "Connection: keep-alive" --compressed
+curl http://yun.baidu.com/share/home?uk=19#category/type=0 > 19.html
+cdt
+curl http://yun.baidu.com/share/home?uk=19#category/type=0 > 19.html
+curl http://yun.baidu.com/share/home?uk=19#category/type=0>19.html
+curl "http://yun.baidu.com/share/home?uk=19" -H "Accept-Encoding: gzip, deflate, sdch" -H "Accept-Language: zh-CN,zh;q=0.8" -H "User-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.154 Safari/537.36 LBBROWSER" -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" -H "Cache-Control: max-age=0" -H "Cookie: BIDUPSID=817E0A0579B30F6C8529D2A008A7F4F7; PSTM=1462974731; PANWEB=1; BAIDUID=A5A1B4C36DEB203C2BE138ED88BB6E99:FG=1; BDUSS=NFQ0poMzBYR1FpWFVNR0owMVZmVlVuQ2hEN2lUQlNrMkV4VUtiRS1kcmdGbUZYQVFBQUFBJCQAAAAAAAAAAAEAAACYT6sRUUdCQ1MAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOCJOVfgiTlXTT; STOKEN=b7284d7bc0a14fc01e96d2bd472444d13eabfa6c8e1d1292ee4bb0797ee6dc66; SCRC=7cccde8bb09de5a6195adc78aa866908; Hm_lvt_f4165db5a1ac36eadcfa02a10a6bd243=1465065727; TOPMSG=1465065911-0; bdshare_firstime=1465065932444; recommendTime=guanjia2016-06-02"%"2019"%"3A05; Hm_lvt_1d15eaebea50a900b7ddf4fa8d05c8a0=1463014827,1464810848,1465065927,1465066684; Hm_lpvt_1d15eaebea50a900b7ddf4fa8d05c8a0=1465066809; Hm_lvt_f5f83a6d8b15775a02760dc5f490bc47=1463014827,1464810848,1465065927,1465066685; Hm_lpvt_f5f83a6d8b15775a02760dc5f490bc47=1465066809; BDRCVFR[X7WRLt7HYof]=mk3SLVN4HKm; H_PS_PSSID=1422_18240_20075_15702_11587; PANPSC=13124520668377882627"%"3AJ3EsYsG7OQn4qSyStJZsLBmx"%"2BAmEMpE6sAuhLPf3s9UkGiJzAoFozRurvxk1N5QIkCI"%"2BsV3Uz"%"2BFGQUQ"%"2B8ierxnxp"%"2BHmjOO"%"2Btv2Arrvb"%"2BpkS82CvuzYuWvieKHrlyURG2vIcMCeE"%"2BEzPl0236xFtTr"%"2BHiRzDwUrQ6; Hm_lvt_7a3960b6f067eb0085b7f96ff5e660b0=1465065932,1465066683; Hm_lpvt_7a3960b6f067eb0085b7f96ff5e660b0=1465068044; Hm_lvt_adf736c22cd6bcc36a1d27e5af30949e=1465065935,1465066687; Hm_lpvt_adf736c22cd6bcc36a1d27e5af30949e=1465068044" -H "Connection: keep-alive" --compressed > 19-.html
+curl "http://yun.baidu.com/share/home?uk=19" -H "Accept-Encoding: gzip, deflate, sdch" -H "Accept-Language: zh-CN,zh;q=0.8" -H "User-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.154 Safari/537.36 LBBROWSER" -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" -H "Cache-Control: max-age=0" -H "Cookie: BIDUPSID=817E0A0579B30F6C8529D2A008A7F4F7; PSTM=1462974731; PANWEB=1; BAIDUID=A5A1B4C36DEB203C2BE138ED88BB6E99:FG=1; BDUSS=NFQ0poMzBYR1FpWFVNR0owMVZmVlVuQ2hEN2lUQlNrMkV4VUtiRS1kcmdGbUZYQVFBQUFBJCQAAAAAAAAAAAEAAACYT6sRUUdCQ1MAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOCJOVfgiTlXTT; STOKEN=b7284d7bc0a14fc01e96d2bd472444d13eabfa6c8e1d1292ee4bb0797ee6dc66; SCRC=7cccde8bb09de5a6195adc78aa866908; Hm_lvt_f4165db5a1ac36eadcfa02a10a6bd243=1465065727; TOPMSG=1465065911-0; bdshare_firstime=1465065932444; recommendTime=guanjia2016-06-02"%"2019"%"3A05; Hm_lvt_1d15eaebea50a900b7ddf4fa8d05c8a0=1463014827,1464810848,1465065927,1465066684; Hm_lpvt_1d15eaebea50a900b7ddf4fa8d05c8a0=1465066809; Hm_lvt_f5f83a6d8b15775a02760dc5f490bc47=1463014827,1464810848,1465065927,1465066685; Hm_lpvt_f5f83a6d8b15775a02760dc5f490bc47=1465066809; BDRCVFR[X7WRLt7HYof]=mk3SLVN4HKm; H_PS_PSSID=1422_18240_20075_15702_11587; PANPSC=13124520668377882627"%"3AJ3EsYsG7OQn4qSyStJZsLBmx"%"2BAmEMpE6sAuhLPf3s9UkGiJzAoFozRurvxk1N5QIkCI"%"2BsV3Uz"%"2BFGQUQ"%"2B8ierxnxp"%"2BHmjOO"%"2Btv2Arrvb"%"2BpkS82CvuzYuWvieKHrlyURG2vIcMCeE"%"2BEzPl0236xFtTr"%"2BHiRzDwUrQ6; Hm_lvt_7a3960b6f067eb0085b7f96ff5e660b0=1465065932,1465066683; Hm_lpvt_7a3960b6f067eb0085b7f96ff5e660b0=1465068044; Hm_lvt_adf736c22cd6bcc36a1d27e5af30949e=1465065935,1465066687; Hm_lpvt_adf736c22cd6bcc36a1d27e5af30949e=1465068044" -H "Connection: keep-alive" --compressed
+curl http://yun.baidu.com/share/home?uk=19#category/type=0 > 19.html
+curl.exe http://yun.baidu.com/share/home?uk=19#category/type=0 > 19.html
+cdqp
+npp
+npp
+NPP
+cdspy
+nppal
+npp al
+cd..
+gpush WShell alias_fix
+c:
+cd \Python27\
+
+alias cdpy
+cd \Python27\Scripts\
+alias cdpys
+cdpy
+cdpys
+ls
+c
+ps
+ps -A
+ps -a
+p g
+ipy
+pipdb pywin32
+ps
+ps -A
+ps -a
+p g
+pipdb pywin32
+npp
+cdqp
+cd..
+cd qgb\
+ipy
+npp
+cdqp
+ipy
+npp
+cdqp
+ipy
+cdqp
+ipy
+ipy
+npp
+cdqp
+ipy
+cdqp
+ipy
+cdspy.bat 
+notepad++.bat npp.py 
+cdt
+ll|npp
+ll|md5
+ld
+ls
+cat 1466078064.42.txt 
+md5 1*
+cat 1466078064.42.txt |md5
+npp
+exp
+md5 1.txt
+md5 1.txt sin.txt
+npp 1.txt sin.txt
