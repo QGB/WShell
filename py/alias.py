@@ -81,6 +81,7 @@ def old(a):
 
 	
 def main():
+	# print a
 	def removeP(asp,ai):
 		if asp in a:
 			a.remove(asp)
@@ -91,8 +92,9 @@ def main():
 			for j in i:removeP(j,i)
 		elif type(i)==type(''):removeP(i,i)
 
-	if len(a)==1:help_()
+	if len(a)<=1:help_()
 	a[1]=path(a[1])
+	
 	ic=25
 	if old(a[1]):ic=0
 
@@ -102,11 +104,14 @@ def main():
 			a.append(raw_input())
 			if len(a[2])<gim2:help_()
 		except:U.x()
- 		
+ 	else:
+		for i in range(len(a)-3):
+			a[2]+=' '+T.string(a[3+i])
 	if len(a)<3:
 		help_()
+		
+	# print a
 	write(a[1],a[2])
 
 
-
-main()
+if __name__=='__main__':main()

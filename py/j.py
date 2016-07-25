@@ -1,7 +1,10 @@
 import S
 if len(S.a)==1:print S.name,'[file,clasName]';exit()
 
+def _only():
+	print 'only compile one'
 
+gdParms={('-o','-only'):_py,}
 # def run(a):
 	# if
 

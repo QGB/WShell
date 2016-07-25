@@ -1,1 +1,1 @@
-START "" "C:\Program Files\IDM Computer Solutions\UltraEdit\Uedit32.exe" %*
+START "" "D:\Program Files\UltraEdit\Uedit32.exe" %*

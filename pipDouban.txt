@@ -35,3 +35,7 @@ cmd /c pipDouban readline
 cmd /c pipDouban pyreadline
 cmd /c pipDouban pywin32
 cmd /c pipDouban you-get
+cmd /c pipDouban py2exe
+cmd /c pipDouban pyHook
+cmd /c pipDouban pythoncom
+cmd /c pipDouban myopencv

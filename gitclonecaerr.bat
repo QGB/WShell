@@ -1,0 +1,1 @@
+git config --system http.sslverify false

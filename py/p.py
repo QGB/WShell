@@ -5,9 +5,11 @@ gsext=['.py','.pyw']
 def _help():
 	print S.name,'pyFile... [-c : open in current console]'
 	exit()
+	
+	
 if S.a.__len__()==1:
 	# sys.stdout =open(os.devnull, 'w')
-	U.main(display=False)
+	U.main(display=False,pressKey=True)
 	# sys.stdout=sys.__stdout__
 	# print 222
 	_help()

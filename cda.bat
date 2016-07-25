@@ -1,0 +1,1 @@
+@d:&cd \android\adt\sdk\platform-tools"
