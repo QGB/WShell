@@ -1,0 +1,1 @@
+@python %~dp0py/fullscreen8886.py %*

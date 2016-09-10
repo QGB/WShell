@@ -1,4 +1,7 @@
 # try:
+'''
+win ping error explanation:https://technet.microsoft.com/en-us/library/cc940095.aspx
+'''
 import S
 
 default=['127.0.0.1','8.8.8.8','192.168.1.1','192.168.191.1','10.1.1.254','www.w3school.com.cn','www.ccsu.cn',

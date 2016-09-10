@@ -1,0 +1,1 @@
+@C:&@cd C:\Documents and Settings\All Users\Documents\%*

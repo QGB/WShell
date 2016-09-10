@@ -1,0 +1,1 @@
+@rundll32.exe shimgvw.dll,ImageView_Fullscreen %*

@@ -1,9 +1,9 @@
 @if "%1"=="" (goto curr)
 
-@explorer %1
+@start "" explorer %1
 @goto end
 
 :curr
-@explorer .
+@start "" explorer .
 
 :end

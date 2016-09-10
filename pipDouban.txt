@@ -39,3 +39,8 @@ cmd /c pipDouban py2exe
 cmd /c pipDouban pyHook
 cmd /c pipDouban pythoncom
 cmd /c pipDouban myopencv
+cmd /c pipDouban matplotlib
+cmd /c pipDouban cython
+cmd /c pipDouban q
+cmd /c pipDouban chardet
+cmd /c pipDouban you-get

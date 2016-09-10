@@ -1,0 +1,1 @@
+@start "" "https://www.google.com.my/search?q=%*"

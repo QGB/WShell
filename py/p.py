@@ -23,7 +23,7 @@ if '-c' in S.a:
 # for i in range(len(S.a)):
 	# if i==0:continue
 	# if T
-S.a[1]=U.autof(S.a[1])
+S.a[1]=U.autof(S.a[1],ext='py')
 
 	
 if not U.inMuti(S.a[1].lower(),gsext,f=''.endswith):

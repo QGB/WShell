@@ -1,1 +1,1 @@
-@d:&cd \android\adt\sdk\platform-tools"
+@D:&@cd D:\android\adt\sdk\platform-tools\%*

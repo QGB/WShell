@@ -13,14 +13,14 @@ def _py():
 		help_()
 	ss=path(a[1])
 	
-	U.write(ss,'''@python %~dp0py/{0}.py %*'''.format(a[1]))
+	write(ss,'''@python %~dp0py/{0}.py %*'''.format(a[1]))
 	
 	sp=S.py+a[1]+'.py'	
 	write(sp,'''import S
 if len(S.a)==1:print S.name,''   ;exit()
 
 	''')
-	U.cmd('npp',sp)
+	U.cmd('notepad++.bat',sp)
 	# print sp
 	exit()
 	
@@ -40,13 +40,31 @@ def _start():
 		write(a[1],start)
 	exit()	
 		
+def _cd():
+	# print 233333,U.pwd(),S.a
+	cd='''@{0}&@cd {1}%*'''
+	if len(a)==2:
+		if not a[1].startswith('cd'):
+			a[1]='cd'+a[1]
+			print 'cd cmd is [',a[1],']'
+		if len(a[1])>7:print a[1],'Too long ![:7]';exit()
+			
+		p=U.pwd()
+		sp='\\'
+		p=p.replace('/',sp)
+		if not p.endswith(sp):p+=sp
+		drive=os.path.splitdrive(p)[0]
+		cd=cd.format(drive,p)
+		
+		write(path(a[1]),cd)
+	exit()
 	
-gdParms={('-p','-py'):_py,('-s','-S','-start'):_start}
+gdParms={('-p','-py'):_py,('-s','-S','-start'):_start,('-c','-cd','-C'):_cd}
 
 # print gdParms
 # exit()
 def help_():
-	print 'alias short [longCmd] ',gdParms.keys()
+	print 'Help:  alias short [longCmd] ',gdParms.keys()
 	print a
 	exit()
 
@@ -68,14 +86,17 @@ def path(a):
 
 	
 def old(a):
-	if not os.path.exists(a):return False
+	if not F.exists(a):return False
 	s=''
 	try:
-		U.read(a)
+		s=U.read(a)
 	except Exception as e:print e;return False
 	if len(s)<gim2:return False
 	print '-'*10,'old','-'*10
-	print s
+	print s[:100]
+	if len(s)>200:
+		print '.............'
+		print s[-100:]
 	print '-'*25
 	return True
 
@@ -95,18 +116,21 @@ def main():
 	if len(a)<=1:help_()
 	a[1]=path(a[1])
 	
-	ic=25
-	if old(a[1]):ic=0
+	# ic=25
+	# if old(a[1]):ic=0      '='*ic,
 
-	if len(a)==2:
-		print '='*ic,'Input one line cmd:'
+	if len(a)==2 and U.stdin.isatty():
+		print 'Input one line cmd:'
 		try:
 			a.append(raw_input())
-			if len(a[2])<gim2:help_()
-		except:U.x()
- 	else:
-		for i in range(len(a)-3):
-			a[2]+=' '+T.string(a[3+i])
+			if len(a[2])<gim2:raise Exception('input too short!')
+		except:help_()
+		# print raw_input()
+ 	if not U.stdin.isatty():
+		a.append(U.readStdin())
+		
+	for i in range(len(a)-3):
+		a[2]+=' '+T.string(a[3+i])
 	if len(a)<3:
 		help_()
 		

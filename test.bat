@@ -1,1 +1,1 @@
-@explorer . 
+@echo test%*

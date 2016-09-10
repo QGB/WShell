@@ -1,1 +1,1 @@
-ipconfig|grep IP
+@ipconfig.exe

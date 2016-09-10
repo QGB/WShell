@@ -18,6 +18,13 @@
 @set path=E:\SourceCode\shell;%path%
 @set path=E:\SourceCode\shell\exe;%path%
 
+@set path=D:\Program Files\ExcelsiorJET\bin;%path%
+
 @set HOME=D:\Program Files\Git\
+
+@set JAVA_HOME=D:\Program Files\Java\jdk1.8.0_45\
+
+@set wshell=%~dp0
+@pos
 
 @%~dp0clink/clink inject
