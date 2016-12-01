@@ -20,7 +20,7 @@
 
 @set path=D:\Program Files\ExcelsiorJET\bin;%path%
 
-@set HOME=D:\Program Files\Git\
+: @set HOME=D:\Program Files\Git\
 
 @set JAVA_HOME=D:\Program Files\Java\jdk1.8.0_45\
 

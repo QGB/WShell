@@ -2381,3 +2381,5 @@ d
 e
 c
 shutdown -s -t 3699
+e
+md5 *.dll
