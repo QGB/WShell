@@ -2383,3 +2383,215 @@ c
 shutdown -s -t 3699
 e
 md5 *.dll
+d
+shutdown -s -t 3699
+e
+curl http://www.python.org/ftp/python/2.7.12/Python-2.7.12.tgz
+npp
+npp py
+c
+c:
+!~
+%f%
+!~
+%f%
+%f% -c 'print 233'
+%f% -c print 233
+%f% -c "print 233"
+%f% -c 
+cd lib
+cd site-packages\
+nslookup
+cdpg
+nslookup
+cd /
+cd..
+cd PortableApps\
+ll
+htt[
+http
+shutdown -s -t 3699
+python
+md TEST
+cdt
+md5 E:\SourceCode\c\PyQGB\bin\Debug\PyQGB.exe
+adb
+cdsadb
+alias -cd
+e
+cde
+cd \
+md5 *.dll
+curl https://www.python.org/ftp/python/2.7.12/Python-2.7.12.tgz >py.tgz
+curl http://www.python.org/ftp/python/2.7.12/Python-2.7.12.tgz >py.tgz
+npp py.tgz 
+gpull qpsu
+exp
+ginit QPSU
+cd "\Program Files\
+cd Git\
+ks
+mv 0.ssh .ssh
+ls
+ls -A
+cdqp
+echo %home%
+echo %home
+ssh -T git@github,com
+set home
+set home=
+ssh -T git@github.com
+cds
+gpush wshell
+gqgb
+gpush wshell del_home
+gpush WShell del_home
+gpush origin del_home
+d
+ginit qpsu
+c
+c:
+cdpy lib
+cd lib
+cd site-packages\
+git clone https://github.com/qgb/qpsu qgb
+git clone git@github.com:qgb/qpsu qgb
+%f% -c "print 233"
+%f% -c 
+cd lib
+cd site-packages\
+pyth -c "import qgb;qgb.U.msgbox()"
+pythonw -c "import qgb;qgb.U.msgbox()"
+%f% -c "import qgb;qgb.U.msgbox()"
+;;;''''11
+python -h
+python -h > py.txt
+chrome
+npp p
+%f% -c "print 233"
+%f% -c 
+cd lib
+cd site-packages\
+exp
+echo %home%
+gssh
+gssh
+alias sshT
+ssht
+
+gpush npp npp_exe
+gpush Npp npp_exe
+gpush origin npp_exe
+python
+SETRES 
+%f% -c "print 233"
+%f% -c 
+cd lib
+cd site-packages\
+exp
+echo %home%
+gssh
+gssh
+alias sshT
+ssht
+gpush npp npp_exe
+gpush Npp npp_exe
+gpush origin npp_exe
+python
+SETRES 
+rundll32 user,setcursorpos
+rundll32 user32,setcursorpos
+rundll32.exe shell32.dll, Control_RunDLL Appwiz.cpl, 3
+rundll32.exe "shell32.dll, Control_RunDLL desk.cpl,2"
+rundll32.exe shell32.dll, Control_RunDLL desk.cpl,2
+rundll32.exe shell32.dll, Control_RunDLL desk.cpl, 3
+rundll32.exe shell32.dll, Control_RunDLL desk.cpl
+"rundll32.exe shell32.dll, Control_RunDLL desk.cpl, 3"
+rundll32.exe "shell32.dll, Control_RunDLL desk.cpl, 3"
+rundll32.exe "shell32.dll, Control_RunDLL desk.cpl, 3
+rundll32.exe shell32.dll,Control_RunDLL desk.cpl, 3
+rundll32.exe shell32.dll,Control_RunDLL desk.cpl, 7
+control main.cpl
+control main.cpl,2
+control main.cpl 2
+control main.cpl 
+control ?
+control /?
+control -h
+control 
+control SnippingTool
+control desktop
+control desk.cpl 
+control desk.cpl 
+control desk.cpl,1
+control desk.cpl ,1
+control desk.cpl ,2
+control desk.cpl ,3
+control desk.cpl ,4
+rundll32.exe shell32.dll,Control_RunDLL desk.cpl .4
+rundll32.exe shell32.dll,Control_RunDLL desk.cpl.4
+rundll32.exe shell32.dll,Control_RunDLL desk.cpl ,.4
+rundll32.exe shell32.dll,Control_RunDLL desk.cpl ,4
+alias screen
+
+screen
+rundll32.exe shell32.dll,Control_RunDLL desk.cpl ,.4
+rundll32.exe shell32.dll,Control_RunDLL desk.cpl ,4
+alias screen
+screen
+cdpy 
+pythonw
+pythonw -c ""
+pythonw -c "print 233"
+!!!Py!!!.exe 
+!!!Py!!!
+!!!Py!!! -c import U;print U
+!!!Py!!! -c "import U;print U"
+!!!Py!!! -c "print 233"
+!!!Py!!! -c "import U;U.msgbox()"
+python -c "import U;U.msgbox()"
+python -c "from qgb import U;U.msgbox()"
+python -c "from qgb import U;U.msgbox()" -c "from qgb import U;U.msgbox()"
+!
+python -c "from qgb import U;U.msgbox()"
+python -c "from qgb import U;U.msgbox()" -c "from qgb import U;U.msgbox()"
+!
+cdpy
+!!!Py!!!.exe -c import qgb.U as U;U.msgbox()
+python -c import qgb.U as U;U.msgbox()
+python -c "import qgb.U as U;U.msgbox()"
+!!!Py!!!.exe -c "import qgb.U as U;U.msgbox()"
+ipy
+pipdb 
+pipdb  pyzmq
+cdspy
+python get-pip.py 
+python -m pip install -U pip
+python
+python -c "import U;U.msgbox()"
+python -c "from qgb import U;U.msgbox()"
+python -c "from qgb import U;U.msgbox()" -c "from qgb import U;U.msgbox()"
+!
+c
+cd ..
+exp
+pip
+cd pip-9.0.1\
+python setup.py install
+regsvr32 msi.dll 
+cdpy
+pythonw
+pythonw 2
+pythonw 2 21r1rf1
+pythonw 2 21r1rf1 effff************
+pythonw "|"
+pythonw |
+pythonw |echo
+pythonw 
+pythonw |pythonw
+pythonw |pythonw 233
+cdnppexe
+exp
+sshutdown -ss
+shutdown -s
+shutdown -s -t 0
