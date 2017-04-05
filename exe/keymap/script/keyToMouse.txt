@@ -13,4 +13,4 @@ SUBTRACT$M:0,0,20;0,0,0$12
 ADD$M:0,0,-20;0,0,0$20
 CAPITAL$M:0,0,-35;0,0,0$14
 $$
-PRIOR$K:วรป๗,L_Shift,0$นุ
+#PRIOR$K:วรป๗,L_Shift,0$นุ

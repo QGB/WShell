@@ -2595,3 +2595,13 @@ exp
 sshutdown -ss
 shutdown -s
 shutdown -s -t 0
+x
+ls
+dir
+shutdown -s
+shutdown -s -t 0
+x
+ls
+dir
+python debug.py 
+python
