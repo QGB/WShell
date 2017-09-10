@@ -44,3 +44,5 @@ cmd /c pipDouban cython
 cmd /c pipDouban q
 cmd /c pipDouban chardet
 cmd /c pipDouban you-get
+cmd /c pipDouban 
+cmd /c pipDouban pyzmq

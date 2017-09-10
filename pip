@@ -1,0 +1,38 @@
+Collecting ipython
+  Downloading http://pypi.doubanio.com/packages/17/81/edc7c7c2acf4009db35a183e5a898679fdc18c2b078d847d3e745b11faa4/ipython-5.1.0-py2-none-any.whl (747kB)
+Collecting pathlib2; python_version == "2.7" or python_version == "3.3" (from ipython)
+  Downloading http://pypi.doubanio.com/packages/b8/1b/02efe53150500722d1b5bbe3d9dd5a417fe07df05566595cf9114ced3c39/pathlib2-2.1.0-py2.py3-none-any.whl
+Collecting backports.shutil-get-terminal-size; python_version == "2.7" (from ipython)
+  Downloading http://pypi.doubanio.com/packages/7d/cd/1750d6c35fe86d35f8562091737907f234b78fdffab42b29c72b1dd861f4/backports.shutil_get_terminal_size-1.0.0-py2.py3-none-any.whl
+Collecting prompt-toolkit<2.0.0,>=1.0.3 (from ipython)
+  Downloading http://pypi.doubanio.com/packages/fc/80/6a3cb891118635fd79be261c1f5a5d1fe479f15841526808c5aaa246f1ef/prompt_toolkit-1.0.9-py2-none-any.whl (241kB)
+Collecting traitlets>=4.2 (from ipython)
+  Downloading http://pypi.doubanio.com/packages/b6/72/f62f13fb8cdb85af5239788d4c57c281b3a92efc9d2ad9cc44cb14c8c26d/traitlets-4.3.1-py2.py3-none-any.whl (74kB)
+Collecting pygments (from ipython)
+  Downloading http://pypi.doubanio.com/packages/9e/d0/d692085518c6a2dc875fe421c866fb6a08e0d9796ca507803c1e545fa116/Pygments-2.1.3-py2.py3-none-any.whl (755kB)
+Collecting pexpect; sys_platform != "win32" (from ipython)
+  Downloading http://pypi.doubanio.com/packages/5b/16/4859a0376be8b87bf3920b1f6e63b8a3c0ee42488babee07c87ca9316e03/pexpect-4.2.1-py2.py3-none-any.whl (55kB)
+Collecting decorator (from ipython)
+  Downloading http://pypi.doubanio.com/packages/53/24/cc53f9f216dd5ef269e0af7c7651cbda162554a5b088621a205961c07a6f/decorator-4.0.10-py2.py3-none-any.whl
+Collecting pickleshare (from ipython)
+  Downloading http://pypi.doubanio.com/packages/9f/17/daa142fc9be6b76f26f24eeeb9a138940671490b91cb5587393f297c8317/pickleshare-0.7.4-py2.py3-none-any.whl
+Collecting simplegeneric>0.8 (from ipython)
+  Downloading http://pypi.doubanio.com/packages/3d/57/4d9c9e3ae9a255cd4e1106bb57e24056d3d0709fc01b2e3e345898e49d5b/simplegeneric-0.8.1.zip
+Requirement already satisfied: setuptools>=18.5 in /usr/lib/python2.7/site-packages (from ipython)
+Collecting six (from pathlib2; python_version == "2.7" or python_version == "3.3"->ipython)
+  Downloading http://pypi.doubanio.com/packages/c8/0a/b6723e1bc4c516cb687841499455a8505b44607ab535be01091c0f24f079/six-1.10.0-py2.py3-none-any.whl
+Collecting wcwidth (from prompt-toolkit<2.0.0,>=1.0.3->ipython)
+  Downloading http://pypi.doubanio.com/packages/7e/9f/526a6947247599b084ee5232e4f9190a38f398d7300d866af3ab571a5bfe/wcwidth-0.1.7-py2.py3-none-any.whl
+Collecting enum34; python_version == "2.7" (from traitlets>=4.2->ipython)
+  Downloading http://pypi.doubanio.com/packages/c5/db/e56e6b4bbac7c4a06de1c50de6fe1ef3810018ae11732a50f15f62c7d050/enum34-1.1.6-py2-none-any.whl
+Collecting ipython-genutils (from traitlets>=4.2->ipython)
+  Downloading http://pypi.doubanio.com/packages/6a/b3/4ce580020d6be73770d55515a65aec9ed5f3ea95f09e00300e53fc264218/ipython_genutils-0.1.0-py2.py3-none-any.whl
+Collecting ptyprocess>=0.5 (from pexpect; sys_platform != "win32"->ipython)
+  Downloading http://pypi.doubanio.com/packages/40/a5/184b46a3c986000196abd077166b2536acb2500009bec95feb9b8fc19828/ptyprocess-0.5.1-py2.py3-none-any.whl
+Building wheels for collected packages: simplegeneric
+  Running setup.py bdist_wheel for simplegeneric: started
+  Running setup.py bdist_wheel for simplegeneric: finished with status 'done'
+  Stored in directory: /home/SYSTEM/.cache/pip/wheels/ab/be/4a/5501823e69979fde47e4d1cba66a3de6eed5a0a584765ac0a4
+Successfully built simplegeneric
+Installing collected packages: six, pathlib2, backports.shutil-get-terminal-size, wcwidth, prompt-toolkit, enum34, ipython-genutils, decorator, traitlets, pygments, ptyprocess, pexpect, pickleshare, simplegeneric, ipython
+Successfully installed backports.shutil-get-terminal-size-1.0.0 decorator-4.0.10 enum34-1.1.6 ipython-5.1.0 ipython-genutils-0.1.0 pathlib2-2.1.0 pexpect-4.2.1 pickleshare-0.7.4 prompt-toolkit-1.0.9 ptyprocess-0.5.1 pygments-2.1.3 simplegeneric-0.8.1 six-1.10.0 traitlets-4.3.1 wcwidth-0.1.7
