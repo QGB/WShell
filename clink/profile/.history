@@ -2622,3 +2622,23 @@ python %F%
 explorer .
 ping 192.168.1.1
 explorer .
+x
+ls
+dir
+shutdown -s
+shutdown -s -t 0
+x
+ls
+dir
+python debug.py 
+python
+python debug.py 
+python
+ipconfig /flushdns
+ipconfig /?
+ipconfig /renew
+ipconfig /renew
+dex2jar
+dex2jar C:\Documents and Settings\qgb.QGB-6D7551F8AA8\My Documents\Downloads\terminator.apk
+dex2jar "C:\Documents and Settings\qgb.QGB-6D7551F8AA8\My Documents\Downloads\terminator.apk"
+ipconfig

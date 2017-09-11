@@ -1,0 +1,1 @@
+.\exe\nir\nircmd.exe monitor off
