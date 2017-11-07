@@ -1,10 +1,10 @@
 @set path=%path%
 @set path=C:\Cygwin\bin;%path%
-@set path=C:\Program Files\Git\bin;%path%
-@set path=C:\Program Files\Git\cmd;%path%
-@set path=C:\Program Files\Git\mingw32\bin;%path%
-@set path=C:\Python27;%path%
-@set path=C:\Python27\Scripts;%path%
+: @set path=C:\Program Files\Git\bin;%path%
+: @set path=C:\Program Files\Git\cmd;%path%
+: @set path=C:\Program Files\Git\mingw32\bin;%path%
+: @set path=C:\Python27;%path%
+: @set path=C:\Python27\Scripts;%path%
 @set path=D:\Cygwin\bin;%path%
 @set path=D:\Program Files\CodeBlocks\MinGW\bin;%path%
 @set path=D:\Program Files\FreeTime\FormatFactory\FFModules;%path%
@@ -15,8 +15,10 @@
 @set path=D:\Program Files\Java\jdk1.7.0_25\bin;%path%
 @set path=D:\Program Files\Java\jdk1.8.0_45\bin;%path%
 @set path=D:\Program Files\nodejs;%path%
-@set path=E:\SourceCode\shell;%path%
-@set path=E:\SourceCode\shell\exe;%path%
+
+@set path=G:\QGB\Anaconda2\Scripts;%path%
+@set path=%~dp0;%path%
+@set path=%~dp0exe;%path%
 
 @set path=D:\Program Files\ExcelsiorJET\bin;%path%
 
@@ -28,3 +30,6 @@
 @pos
 
 @%~dp0clink/clink inject
+
+
+echo @"E:\SourceCode\shell\cyg.bat" > C:\Windows\ws.cmd
