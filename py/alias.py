@@ -4,7 +4,8 @@ gim2=2###min short length
 
 def write(name,txt):
 	if old(name):U.pause()
-	U.write(name,txt)
+	print (name,txt)
+	F.write(name,txt)
 	print  name,'[',txt[:33],'...]','sucess!'
 
 def _py():

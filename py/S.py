@@ -1,4 +1,7 @@
-import sys,os;sys.path.append('d:\pm');from qgb import *
+import sys,os
+qpsu=os.getenv('QPSU') or 'd:\pm'
+# print [qpsu]
+sys.path.append(qpsu[:-4]);from qgb import *
 a= sys.argv
 path=os.path
 stdin=sys.stdin

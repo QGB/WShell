@@ -1,4 +1,4 @@
-echo %~dp0
+echo %~dpnx0
 
 
 @echo test%*

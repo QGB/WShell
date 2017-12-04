@@ -1,2 +1,2 @@
-@e:
-@cd \SourceCode\shell\%*
+@cd %wsPath%%*
+@%wsDriver%

@@ -16,7 +16,7 @@
 @set path=D:\Program Files\Java\jdk1.8.0_45\bin;%path%
 @set path=D:\Program Files\nodejs;%path%
 
-@set path=G:\QGB\Anaconda2\Scripts;%path%
+
 @set path=%~dp0;%path%
 @set path=%~dp0exe;%path%
 
@@ -26,10 +26,18 @@
 
 @set JAVA_HOME=D:\Program Files\Java\jdk1.8.0_45\
 
-@set wshell=%~dp0
-@pos
+@set wsPath=%~dp0
+@for %%i in (%~dp0) do @set wsDriver=%%~di
+@set QGB=%wsDriver%\QGB\
 
+@set conda=%QGB%Anaconda2\
+@set path=%conda%;%conda%Scripts;%path%
+
+@set QPSU=%QGB%babun\cygwin\lib\python2.7\qgb\
+
+
+@echo @"%~dpnx0" > %windir%\ws.cmd
+: pause
+@%~dp0exe/pos 77 -12
 @%~dp0clink/clink inject
 
-
-echo @"E:\SourceCode\shell\cyg.bat" > C:\Windows\ws.cmd

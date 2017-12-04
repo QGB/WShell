@@ -1,11 +1,10 @@
 #Wshell
 More commands for Windows shell (base clink cygwin git mingw python and more)
 ##Install:
-copy cyg.cmd to %windir%
-and move others to "E:\SourceCode\shell\" (TODO: Set up)
+Run [!nstall.bat] as Administrator
 ##Usage:
 ```
->cyg
+>ws
 
 >ip
 Windows IP Configuration

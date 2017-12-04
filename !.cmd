@@ -1,1 +1,0 @@
-title cyg shell&cyg&cmd

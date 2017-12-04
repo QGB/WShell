@@ -1,2 +1,2 @@
 : @echo qpsu-----------%*
-@python d:/pm/qgb/U.py clipboard=t %*
+@python %QPSU%U.py clipboard=t %*

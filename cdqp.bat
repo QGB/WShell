@@ -1,1 +1,1 @@
-@d:&cd \pm\qgb
+@cdqpsu %*
