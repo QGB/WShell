@@ -1,3 +1,5 @@
+chmod -R 777 ./*
+
 for %%a in ("%cd%") do set repo=%%~nxa
 
 git config --global user.email qgbcs1@gmail.com
