@@ -1,0 +1,1 @@
+mklink "user data" "C:\Users\lenovo\AppData\Local\Yandex\YandexBrowser\User Data\"

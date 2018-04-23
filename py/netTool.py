@@ -4,7 +4,7 @@ win ping error explanation:https://technet.microsoft.com/en-us/library/cc940095.
 '''
 import S
 
-default=['127.0.0.1','8.8.8.8','192.168.1.1','192.168.191.1','10.1.1.254','www.w3school.com.cn','www.ccsu.cn',
+default=['127.0.0.1','192.168.2.3','192.168.2.123','192.168.2.141','8.8.8.8','192.168.1.1','192.168.191.1','10.1.1.254','www.w3school.com.cn','www.ccsu.cn',
 'qq.com','baidu.com','taobao.com','g.cn','google.com','public-tools.zhihu.com','github.com']
 
 if S.a[-1].startswith('--'):

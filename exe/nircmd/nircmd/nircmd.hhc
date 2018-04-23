@@ -1,0 +1,471 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+	<param name="WindowName" value="main">
+<param name="Window Styles" value="0x800225">	
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="About NirCmd">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Description">
+			<param name="Local" value="nircmd.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Examples">
+			<param name="Local" value="NirCmd.html#examples">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="System Requirements">
+			<param name="Local" value="nircmd.html#sysreq">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Versions History">
+			<param name="Local" value="nircmd.html#verhistory">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Using NirCmd">
+			<param name="Local" value="nircmd.html#using">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Special String Sequences">
+			<param name="Local" value="nircmd.html#spstrseq">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="System Variables">
+			<param name="Local" value="nircmd.html#sysvar">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="All Commands">
+			<param name="Local" value="nircmd.html#commands">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Commands Reference">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="abortshutdown">
+			<param name="Local" value="nircmd.html#abortshutdown">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="beep">
+			<param name="Local" value="nircmd.html#beep">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="cdrom">
+			<param name="Local" value="nircmd.html#cdrom">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="changeappvolume">
+			<param name="Local" value="nircmd.html#changeappvolume">
+			</OBJECT>		
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="changebrightness">
+			<param name="Local" value="nircmd.html#changebrightness">
+			</OBJECT>				
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="changesysvolume">
+			<param name="Local" value="nircmd.html#changesysvolume">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="changesysvolume2">
+			<param name="Local" value="nircmd.html#changesysvolume2">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="clipboard">
+			<param name="Local" value="nircmd.html#clipboard">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="clonefiletime">
+			<param name="Local" value="nircmd.html#clonefiletime">
+			</OBJECT>			
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="closeprocess">
+			<param name="Local" value="nircmd.html#closeprocess">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="cmdshortcut">
+			<param name="Local" value="nircmd.html#cmdshortcut">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="cmdshortcutkey">
+			<param name="Local" value="nircmd.html#cmdshortcutkey">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="cmdwait">
+			<param name="Local" value="nircmd.html#cmdwait">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="consolewrite">
+			<param name="Local" value="nircmd.html#consolewrite">
+			</OBJECT>			
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="convertimage">
+			<param name="Local" value="nircmd.html#convertimage">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="convertimages">
+			<param name="Local" value="nircmd.html#convertimages">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="dlg">
+			<param name="Local" value="nircmd.html#dlg">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="debugwrite">
+			<param name="Local" value="nircmd.html#debugwrite">
+			</OBJECT>			
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="dlgany">
+			<param name="Local" value="nircmd.html#dlgany">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="elevate">
+			<param name="Local" value="nircmd.html#elevate">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="elevatecmd">
+			<param name="Local" value="nircmd.html#elevatecmd">
+			</OBJECT>			
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="emptybin">
+			<param name="Local" value="nircmd.html#emptybin">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="exec">
+			<param name="Local" value="nircmd.html#exec">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="exec2">
+			<param name="Local" value="nircmd.html#exec2">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="execmd">
+			<param name="Local" value="nircmd.html#execmd">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="exitwin">
+			<param name="Local" value="nircmd.html#exitwin">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="filldelete">
+			<param name="Local" value="nircmd.html#filldelete">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="gac">
+			<param name="Local" value="nircmd.html#gac">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="hibernate">
+			<param name="Local" value="nircmd.html#hibernate">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="inetdial">
+			<param name="Local" value="nircmd.html#inetdial">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="infobox">
+			<param name="Local" value="nircmd.html#infobox">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="inidelsec">
+			<param name="Local" value="nircmd.html#inidelsec">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="inidelval">
+			<param name="Local" value="nircmd.html#inidelval">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="inisetval">
+			<param name="Local" value="nircmd.html#inisetval">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="initshutdown">
+			<param name="Local" value="nircmd.html#initshutdown">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="killprocess">
+			<param name="Local" value="nircmd.html#killprocess">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="lockws">
+			<param name="Local" value="nircmd.html#lockws">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="loop">
+			<param name="Local" value="nircmd.html#loop">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="mediaplay">
+			<param name="Local" value="nircmd.html#mediaplay">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="memdump">
+			<param name="Local" value="nircmd.html#memdump">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="monitor">
+			<param name="Local" value="nircmd.html#monitor">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="movecursor">
+			<param name="Local" value="nircmd.html#movecursor">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="multiremote">
+			<param name="Local" value="nircmd.html#multiremote">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="muteappvolume">
+			<param name="Local" value="nircmd.html#muteappvolume">
+			</OBJECT>	
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="mutesubunitvolume">
+			<param name="Local" value="nircmd.html#mutesubunitvolume">
+			</OBJECT>			
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="mutesysvolume">
+			<param name="Local" value="nircmd.html#mutesysvolume">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="paramsfile">
+			<param name="Local" value="nircmd.html#paramsfile">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="qbox">
+			<param name="Local" value="nircmd.html#qbox">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="qboxcom">
+			<param name="Local" value="nircmd.html#qboxcom">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="qboxcomtop">
+			<param name="Local" value="nircmd.html#qboxcomtop">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="qboxtop">
+			<param name="Local" value="nircmd.html#qboxtop">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="rasdial">
+			<param name="Local" value="nircmd.html#rasdial">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="rasdialdlg">
+			<param name="Local" value="nircmd.html#rasdialdlg">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="rashangup">
+			<param name="Local" value="nircmd.html#rashangup">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="regdelkey">
+			<param name="Local" value="nircmd.html#regdelkey">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="regdelval">
+			<param name="Local" value="nircmd.html#regdelval">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="regedit">
+			<param name="Local" value="nircmd.html#regedit">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="regsetval">
+			<param name="Local" value="nircmd.html#regsetval">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="regsvr">
+			<param name="Local" value="nircmd.html#regsvr">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="remote">
+			<param name="Local" value="nircmd.html#remote">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="restartexplorer">
+			<param name="Local" value="nircmd.html#restartexplorer">
+			</OBJECT>			
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="returnval">
+			<param name="Local" value="nircmd.html#returnval">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="savescreenshot">
+			<param name="Local" value="nircmd.html#savescreenshot">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="savescreenshotfull">
+			<param name="Local" value="nircmd.html#savescreenshotfull">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="savescreenshotwin">
+			<param name="Local" value="nircmd.html#savescreenshotwin">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="screensaver">
+			<param name="Local" value="nircmd.html#screensaver">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="screensavertimeout">
+			<param name="Local" value="nircmd.html#screensavertimeout">
+			</OBJECT>			
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="script">
+			<param name="Local" value="nircmd.html#script">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="sendkey">
+			<param name="Local" value="nircmd.html#sendkey">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="sendkeypress">
+			<param name="Local" value="nircmd.html#sendkeypress">
+			</OBJECT>			
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="sendmouse">
+			<param name="Local" value="nircmd.html#sendmouse">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="service">
+			<param name="Local" value="nircmd.html#service">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="setappvolume">
+			<param name="Local" value="nircmd.html#setappvolume">
+			</OBJECT>		
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="setbrightness">
+			<param name="Local" value="nircmd.html#setbrightness">
+			</OBJECT>				
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="setconsolecolor">
+			<param name="Local" value="nircmd.html#setconsolecolor">
+			</OBJECT>			
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="setconsolemode">
+			<param name="Local" value="nircmd.html#setconsolemode">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="setcursor">
+			<param name="Local" value="nircmd.html#setcursor">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="setcursorwin">
+			<param name="Local" value="nircmd.html#setcursorwin">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="setdefaultsounddevice">
+			<param name="Local" value="nircmd.html#setdefaultsounddevice ">
+			</OBJECT>			
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="setdialuplogon">
+			<param name="Local" value="nircmd.html#setdialuplogon">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="setdisplay">
+			<param name="Local" value="nircmd.html#setdisplay">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="setfilefoldertime">
+			<param name="Local" value="nircmd.html#setfilefoldertime">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="setfiletime">
+			<param name="Local" value="nircmd.html#setfiletime">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="setprimarydisplay">
+			<param name="Local" value="nircmd.html#setprimarydisplay">
+			</OBJECT>			
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="setprocessaffinity">
+			<param name="Local" value="nircmd.html#setprocessaffinity">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="setprocesspriority">
+			<param name="Local" value="nircmd.html#setprocesspriority">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="setsubunitvolumedb">
+			<param name="Local" value="nircmd.html#setsubunitvolumedb">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="setsysvolume">
+			<param name="Local" value="nircmd.html#setsysvolume">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="setsysvolume2">
+			<param name="Local" value="nircmd.html#setsysvolume2">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="setvolume">
+			<param name="Local" value="nircmd.html#setvolume">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="shellcopy">
+			<param name="Local" value="nircmd.html#shellcopy">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="shellrefresh">
+			<param name="Local" value="nircmd.html#shellrefresh">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="shexec">
+			<param name="Local" value="nircmd.html#shexec">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="shortcut">
+			<param name="Local" value="nircmd.html#shortcut">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="showsounddevices">
+			<param name="Local" value="nircmd.html#showsounddevices">
+			</OBJECT>			
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="speak">
+			<param name="Local" value="nircmd.html#speak">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="standby">
+			<param name="Local" value="nircmd.html#standby">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="stdbeep">
+			<param name="Local" value="nircmd.html#stdbeep">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="sysrefresh">
+			<param name="Local" value="nircmd.html#sysrefresh">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="trayballoon">
+			<param name="Local" value="nircmd.html#trayballoon ">
+			</OBJECT>			
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="urlshortcut">
+			<param name="Local" value="nircmd.html#urlshortcut">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="wait">
+			<param name="Local" value="nircmd.html#wait">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="waitprocess">
+			<param name="Local" value="nircmd.html#waitprocess">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="win">
+			<param name="Local" value="nircmd.html#win">
+			</OBJECT>
+	</UL>
+</UL>
+</BODY></HTML>

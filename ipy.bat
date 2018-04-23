@@ -13,9 +13,11 @@
 
 : @echo %qp%
 : if not x%py:conda=%==x%py% echo It contains conda
-::if not contains conda  
+::if not contains conda
 if x%py:conda=%==x%py% set py=python %py%
 
-%py%Scripts\ipython.exe --no-banner  --autocall=2  "--InteractiveShellApp.exec_lines=['%qp%']" %*
+:if "%debug%"=="" echo %qp%
+
+%py%Scripts\ipython.exe --no-banner  --autocall=2  "--InteractiveShellApp.exec_lines=['%qp%','NPP=npp=U.npp']" %*
 
 : --no-confirm-exit 

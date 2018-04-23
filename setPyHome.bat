@@ -1,0 +1,1 @@
+setx PYTHONHOME G:\QGB\Anaconda2\

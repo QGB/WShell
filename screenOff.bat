@@ -1,1 +1,1 @@
-.\exe\nir\nircmd.exe monitor off
+@%~dp0monitorOff.bat

@@ -1,0 +1,3908 @@
+<HTML>
+<HEAD>
+<TITLE>NirCmd</TITLE>
+<link rel="stylesheet" href="main.css">
+
+</HEAD>
+<BODY>
+
+<table border="0" class="utilcaption">
+<tr>
+<td>NirCmd v2.81
+<br>
+Copyright (c) 2003 - 2016 Nir Sofer
+</table>
+
+<p>
+<a name="description"></a><h4 class="utilsubject">Description</h4>
+NirCmd is a small command-line utility that allows you to do some useful tasks without
+displaying any user interface. By running NirCmd with simple command-line option, you can
+write and delete values and keys in the Registry, write values into INI file, dial to your
+internet account or connect to a VPN network, restart windows or shut down the computer, 
+create shortcut to a file, change the created/modified date of a file, change your display
+settings, turn off your monitor, open the door of your CD-ROM drive, and more...
+
+
+<p>
+<a name="examples"></a><h4 class="utilsubject">Examples of what you can do with NirCmd</h4>
+<table border="1" cellpadding="5">
+<tr>
+<td width="50%">Open the door of J: CD-ROM drive
+<td nowrap>
+<span class="commandline">
+nircmd.exe cdrom open j: 
+</span>
+
+<tr>
+<td>Close the door of Y: CD-ROM drive
+<td class="commandline" nowrap>
+nircmd.exe cdrom close y: 
+
+<tr>
+<td>Speaks the text currently in the clipboard (For Windows XP/Vista/7/8).
+<td class="commandline" nowrap>
+speak text ~$clipboard$ 
+
+<tr>
+<td>Speaks the text stored inside speak.txt into speak.wav filename (For Windows XP/Vista/7/8).
+<td class="commandline" nowrap>
+speak file &quot;c:\temp\speak.txt&quot; 0 100 &quot;c:\temp\speak.wav&quot; 48kHz16BitStereo
+
+
+
+<tr>
+<td>Increase the system volume by 2000 units (out of 65535)
+<td class="commandline" nowrap>
+nircmd.exe changesysvolume 2000
+
+<tr>
+<td>Decrease the system volume by 5000 units (out of 65535)
+<td class="commandline" nowrap>
+nircmd.exe changesysvolume -5000
+
+
+<tr>
+<td>Set the volume to the highest value
+<td class="commandline" nowrap>
+nircmd.exe setsysvolume 65535
+
+<tr>
+<td>Mute the system volume
+<td class="commandline" nowrap>
+nircmd.exe mutesysvolume 1
+
+<tr>
+<td>Unmute the system volume
+<td class="commandline" nowrap>
+nircmd.exe mutesysvolume 0
+
+<tr>
+<td>Switch the system volume between the mute and normal state.
+<td class="commandline" nowrap>
+nircmd.exe mutesysvolume 2
+
+<tr>
+<td>Create a shortcut on your desktop that switch the system volume between the mute and normal state.
+<td class="commandline">
+nircmd.exe cmdshortcut  &quot;~$folder.desktop$&quot; &quot;Switch Volume&quot; mutesysvolume 2
+
+<tr>
+<td>Turn off the monitor
+<td class="commandline" nowrap>
+nircmd.exe monitor off
+
+<tr>
+<td>Start the default screen saver
+<td class="commandline" nowrap>
+nircmd.exe screensaver  
+
+<tr>
+<td>Put your computer in 'standby' mode
+<td class="commandline" nowrap>
+nircmd.exe standby
+
+<tr>
+<td>
+log off the current user
+<td class="commandline" nowrap>
+nircmd.exe exitwin logoff
+
+<tr>
+<td>
+Ask if you want to reboot, and if you answer 'Yes', reboot the computer.
+<td class="commandline" nowrap>
+nircmd.exe qboxcom "Do you want to reboot ?" "question" exitwin reboot
+
+<tr>
+<td>
+Turn off your computer
+<td class="commandline" nowrap>
+nircmd.exe exitwin poweroff 
+
+
+<tr>
+<td>
+Turn off all computers specified in computers.txt !
+<td class="commandline" nowrap>
+multiremote copy &quot;c:\temp\computers.txt&quot; exitwin poweroff force 
+
+<tr>
+<td>Dial to &quot;My Internet&quot; connection 
+<td class="commandline" nowrap>
+nircmd.exe rasdial &quot;My Internet&quot;
+
+<tr>
+<td>Disconnect the &quot;My Internet&quot; connection 
+<td class="commandline" nowrap>
+nircmd.exe rashangup &quot;My Internet&quot;
+
+<tr>
+<td>Make your Internet Explorer windows 75% transparent ! (192 / 256)
+<td class="commandline" nowrap>
+nircmd.exe win trans ititle &quot;internet explorer&quot; 192
+
+<tr>
+<td>Minimize all your Internet Explorer windows 
+<td class="commandline" nowrap>
+nircmd.exe win min class &quot;IEFrame&quot; 
+
+<tr>
+<td>Close all your Internet Explorer windows 
+<td class="commandline" nowrap>
+nircmd.exe win close class &quot;IEFrame&quot; 
+
+<tr>
+<td>Close all your Explorer windows (My Computer, folders, and so on)
+<td class="commandline" nowrap>
+nircmd.exe win close class &quot;CabinetWClass&quot;
+
+<tr>
+<td>Hide all your Internet Explorer windows 
+<td class="commandline" nowrap>
+nircmd.exe win hide class &quot;IEFrame&quot; 
+
+<tr>
+<td>Show all your Internet Explorer windows (after you made them hidden with previous example)
+<td class="commandline" nowrap>
+nircmd.exe win show class &quot;IEFrame&quot; 
+
+<tr>
+<td>Center all top-level windows
+<td class="commandline" nowrap>
+nircmd.exe win center alltop
+
+<tr>
+<td>Remove the title bar of My Computer window.
+<td class="commandline" nowrap>
+nircmd.exe win -style title &quot;my computer&quot; 0x00C00000
+
+<tr>
+<td>Return the title bar of My Computer window that we removed in the previous example.
+<td class="commandline" nowrap>
+nircmd.exe win +style title &quot;my computer&quot; 0x00C00000
+
+
+<tr>
+<td>Set the My Computer window to right-to-left order (For hebrew and arabic languages)
+<td class="commandline" nowrap>
+nircmd win +exstyle title &quot;my computer&quot; 0x00400000
+
+
+<tr>
+<td>Set all child windows of  My Computer window to right-to-left order (For hebrew and arabic languages)
+<td class="commandline" nowrap>
+nircmd win child title &quot;my computer&quot; +exstyle all 0x00400000
+
+<tr>
+<td>Create a shortcut on your desktop that closes all your Internet Explorer windows 
+<td class="commandline">
+nircmd.exe cmdshortcut &quot; &quot;~$folder.desktop$ &quot;Close All IE&quot; win close class &quot;IEFrame&quot; 
+
+<tr>
+<td>Create a shortcut on your desktop that hides all your Internet Explorer windows 
+<td class="commandline">
+nircmd.exe cmdshortcut &quot; &quot;~$folder.desktop$ &quot;Hide All IE&quot; win hide class &quot;IEFrame&quot; 
+
+<tr>
+<td>Create a shortcut on your desktop that shows back all your Internet Explorer windows 
+<td class="commandline">
+nircmd.exe cmdshortcut &quot; &quot;~$folder.desktop$ &quot;Show All IE&quot; win show class &quot;IEFrame&quot; 
+
+<tr>
+<td>Set the Windows Calculator as top-most window (above all other windows)
+<td class="commandline" nowrap>
+nircmd.exe win settopmost title &quot;Calculator&quot; 1
+
+<tr>
+<td>Set the Windows Calculator back to regular window (non top-most window)
+<td class="commandline" nowrap>
+nircmd.exe win settopmost title &quot;Calculator&quot; 0
+
+<tr>
+<td>Create a shortcut to Windows calculator under Start Menu->Programs->Calculators 
+<td class="commandline">
+nircmd.exe shortcut &quot;f:\winnt\system32\calc.exe&quot; &quot;~$folder.programs$\Calculators&quot; &quot;Windows Calculator&quot; 
+
+<tr>
+<td>Hide the desktop window
+<td class="commandline" nowrap>
+nircmd.exe win hide class progman
+
+<tr>
+<td>Show the desktop window (After hiding it in previous example)
+<td class="commandline" nowrap>
+nircmd.exe win show class progman
+
+<tr>
+<td>Hide the start button on the system tray
+<td class="commandline" nowrap>
+nircmd.exe win child class &quot;Shell_TrayWnd&quot; hide class &quot;button&quot;
+
+
+<tr>
+<td>Show the start button on the system tray
+<td class="commandline" nowrap>
+nircmd.exe win child class &quot;Shell_TrayWnd&quot; show class &quot;button&quot;
+
+
+<tr>
+<td>Hide the clock on the system tray
+<td class="commandline" nowrap>
+nircmd.exe win child class "Shell_TrayWnd" hide class &quot;TrayClockWClass&quot;
+
+<tr>
+<td>Show the clock on the system tray
+<td class="commandline" nowrap>
+nircmd.exe win child class "Shell_TrayWnd" show class &quot;TrayClockWClass&quot; 
+
+<tr>
+<td>Kill (terminate) all instance of Internet Explorer processes
+<td class="commandline" nowrap>
+nircmd.exe killprocess iexplore.exe
+
+
+<tr>
+<td>Create a shortcut on your desktop that opens the door of K: CDROM drive when you run it.
+<td class="commandline">
+nircmd.exe cmdshortcut &quot;~$folder.desktop$&quot; &quot;Open CDROM&quot; cdrom open k:
+
+<tr>
+<td>Create a shortcut to NirSoft Web site on your desktop
+<td class="commandline" nowrap>
+nircmd.exe urlshortcut &quot;http://www.nirsoft.net&quot; &quot;~$folder.desktop$&quot; &quot;NirSoft&quot;
+
+<tr>
+<td>Add NirSoft Web site to your Favorities under Links folder.
+<td class="commandline">
+nircmd.exe urlshortcut &quot;http://www.nirsoft.net&quot; &quot;~$folder.favorites$\Links&quot; &quot;NirSoft&quot;
+
+<tr>
+<td>Create a shortcut to NirSoft Web site on the desktop of all computers listed in computers.txt
+<td class="commandline">
+nircmd.exe multiremote copy &quot;c:\temp\computers.txt&quot; urlshortcut &quot;http://www.nirsoft.net&quot; &quot;~$folder.common_desktop$&quot; &quot;NirSoft&quot;
+
+<tr>
+<td>Set the display mode to 800x600x24bit colors
+<td class="commandline" nowrap>
+nircmd.exe setdisplay 800 600 24
+
+<tr>
+<td>Create a shortcut on the desktop that set the display mode to 800x600x24bit colors
+<td class="commandline">
+nircmd.exe cmdshortcut &quot;~$folder.desktop$&quot; &quot;800x600x24&quot; setdisplay 800 600 24
+
+<tr>
+<td>Copy all shortcuts on your desktop to another folder (f:\temp\desktop).
+<td class="commandline">
+nircmd.exe execmd copy &quot;~$folder.desktop$\*.lnk&quot; f:\temp\desktop 
+
+<tr>
+<td>Restart your Apache server (under Windows NT/2000/XP/2003)
+<td class="commandline" nowrap>
+nircmd.exe service restart apache
+
+<tr>
+<td>Create a shortcut on your desktop that restarts the Apache server
+<td class="commandline">
+nircmd.exe cmdshortcut &quot;~$folder.desktop$&quot; &quot;Restart Apache&quot; service restart apache
+
+<tr>
+<td>Restart your IIS
+<td class="commandline" nowrap>
+nircmd.exe service restart w3svc 
+
+<tr>
+<td>Restart MySql
+<td class="commandline" nowrap>
+nircmd.exe service restart MySql 
+
+<tr>
+<td>Open the desired Registry key/value in RegEdit
+<td class="commandline">
+nircmd.exe regedit &quot;HKLM\Software\Microsoft\Windows\CurrentVersion&quot; &quot;CommonFilesDir&quot;
+
+
+<tr>
+<td>Open the Registry key that you copied to the clipboard in RegEdit.
+<td class="commandline">
+nircmd regedit &quot;~$clipboard$&quot;
+
+<tr>
+<td>Disable the screen saver
+<td class="commandline" nowrap>
+nircmd.exe regsetval sz &quot;HKCU\control panel\desktop&quot; &quot;ScreenSaveActive&quot; 0
+
+
+<tr>
+<td>Enable the screen saver
+<td class="commandline" nowrap>
+nircmd.exe regsetval sz &quot;HKCU\control panel\desktop&quot; &quot;ScreenSaveActive&quot; 1
+
+
+<tr>
+<td>Change the date/time of the specified filename (creation time and modified time)
+<td class="commandline">
+nircmd.exe setfiletime &quot;c:\temp\myfile.txt&quot; &quot;24-06-2003 17:57:11&quot; &quot;22-11-2005 10:21:56&quot; 
+
+
+<tr>
+<td>Copy your desktop folder path to the clipboard
+<td class="commandline">
+nircmd.exe clipboard set ~$folder.desktop$
+
+
+<tr>
+<td>Copy your start menu folder path to the clipboard
+<td class="commandline">
+nircmd.exe clipboard set ~$folder.start_menu$
+
+<tr>
+<td>Copy the content of info1.txt (simple text file) to the clipboard
+<td class="commandline">
+nircmd.exe clipboard readfile &quot;c:\My Files\info1.txt&quot;
+
+<tr>
+<td>Add the text content of clipboard to info1.txt
+<td class="commandline">
+nircmd.exe clipboard addfile &quot;c:\My Files\info1.txt&quot;
+
+<tr>
+<td>Clear the clipboard
+<td class="commandline">
+nircmd.exe clipboard clear
+
+<tr>
+<td>Create all folders specified in &quot;c:\temp\folders.txt&quot;. The folder path names are
+separated by CRLF characters.
+<td class="commandline">
+nircmd.exe paramsfile &quot;c:\temp\folders.txt&quot; &quot;&quot; &quot;&quot; execmd md ~$fparam.1$
+
+
+<tr>
+<td>Install the specified .NET assembly in the global assembly cache (like gacutil)
+<td class="commandline">
+nircmd.exe gac install &quot;C:\temp\MyAssembly\bin\MyAssembly.dll&quot;
+
+
+<tr>
+<td>Empty the recycle bin in all drives.
+<td class="commandline" nowrap>
+nircmd.exe emptybin 
+
+
+
+<tr>
+<td>Answer 'Yes' to a standard Windows message-box.
+<td class="commandline" nowrap>
+nircmd.exe dlg &quot;&quot; &quot;&quot; click yes
+
+<tr>
+<td>Wait 2 seconds, and then save the current screen to shot.png
+<td class="commandline" nowrap>
+nircmd.exe cmdwait 2000 savescreenshot &quot;f:\temp\shot.png&quot;
+
+<tr>
+<td>Save 10 screenshots in a loop, and wait 60 seconds between the screenshot save calls.
+The filenames of the screenshot will contain the time and date of the saved screenshot.
+
+<td class="commandline" nowrap>
+nircmd.exe loop 10 60000 savescreenshot c:\temp\scr~$currdate.MM_dd_yyyy$-~$currtime.HH_mm_ss$.png
+
+<tr>
+<td>
+Wait until Firefox is closed, and then say &quot;Firefox was closed&quot;
+<td class="commandline" nowrap>
+nircmd.exe waitprocess firefox.exe speak text &quot;Firefox was closed&quot;
+
+
+<tr>
+<td>
+Run RegEdit with SYSTEM user (On Windows 7/8/Vista/2008), which allows you to view all hidden system Registry keys
+<td class="commandline" nowrap>
+nircmd.exe elevatecmd runassystem c:\windows\regedit.exe
+
+
+</table>
+
+<p>
+<a name="sysreq"></a><h4 class="utilsubject">System Requirements</h4>
+This utility can work in all versions of Windows operating system: Windows 9x/ME, 
+Windows NT, Windows 2000, Windows XP, Windows Server 2003, Windows Vista, Windows Server 2008, Windows 7, Windows 8, and Windows 10.
+
+
+<a name="verhistory"></a><h4 class="utilsubject">Versions History</h4>
+<table border="1" cellpadding="5">
+
+<tr class="utiltableheader"><th>Date <th> Version <th> Description
+
+<tr><td>23/05/2016<td>2.81<td>
+<ul>
+<li>Fixed bug: NirCmd failed to execute the cmdwait, loop and a few other commands after qboxcom and qboxcomtop commands.
+</ul>
+
+
+<tr><td>30/01/2016<td>2.80<td>
+<ul>
+<li>Fixed bug: clipboard readfile failed to read the last character of Ascii file.
+<li>Added writeufile and addufile to clipboard command, for writing files in Unicode.
+<li>Fixed the restartexplorer command to work properly on Windows 10.
+
+</ul>
+
+
+<tr><td>10/08/2013<td>2.75<td>
+<ul>
+<li>Added new commands: moverecyclebin, suspendprocess , resumeprocess.
+<li>Added etitle option to the find parameter of win command.
+<li>'clipboard readfile' command now reads Unicode files (UTF-8 and UTF-16).
+</ul>
+
+<tr><td>29/10/2012<td>2.71<td>
+<ul>
+<li>Added runassystem command, which allows you to run a process with SYSTEM user (Works on Windows 7/8/Vista/2008)
+</ul>
+
+<tr><td>12/09/2012<td>2.70<td>
+<ul>
+<li>Added new option to speak command: You can now save the entire speach into a .wav file that can be played with any
+media player (Instead of playing it directly to your sound card).
+<li>Added restartexplorer command, which simply restarts Windows Explorer gracefully.
+<li>Added screensavertimeout command, which allows you to set the screensaver timeout, in seconds.
+<li>Added togglemax, togglemin, togglehide, toggledisable actions to win command.
+<li>Added SystemSounds support for setappvolume, changeappvolume, and muteappvolume commands.
+<li>Fixed issue on Windows 7: 'win close alltopnodesktop' command caused a shutdown dialog-box to appear.
+<li>Fixed the setprimarydisplay to work properly.
+</ul>
+
+
+<tr><td>28/06/2011<td>2.65<td>
+<ul>
+<li>Added setdefaultsounddevice command (for Windows 7/Vista/2008 only), which
+allows you to set the default sound device.
+<li>Added setsubunitvolumedb command (for Windows 7/Vista/2008 only), which
+allows you to set the volume of sound device subunits (Line In, Microphone, and so on)
+<li>Added mutesubunitvolume command (for Windows 7/Vista/2008 only), which
+allows you to mute/unmute the volume of sound device subunits (Line In, Microphone, and so on)
+</ul>
+
+<tr><td>21/06/2011<td>2.60<td>
+<ul>
+<li>Added mediaplay command for playing audio file (.mp3, .wav, and so on) for the
+specified number of milliseconds.
+<li>Added changebrightness and setbrightness commands for setting the
+screen brightness on laptops and netbook computers.
+</ul>
+
+<tr><td>08/06/2011<td>2.55<td>
+<ul>
+<li>On savescreenshot, savescreenshotfull, and savescreenshotwin commands,
+you can now specify *clipboard* as a filename, in order to save the screenshow into the clipboard
+<li>On savescreenshot command, you can now specify a rectangle to capture as x, y, width, and height instead of 
+capturing the entire screen.
+<li>Fixed savescreenshotfull command to work properly on multiple screen system with negative coordinates. 
+</ul>
+
+<tr><td>27/03/2011<td>2.52<td>
+<ul>
+<li>Added 'runas' command, which allows you to run a new process with the specified user name/password.
+<li>Added 'Flash' action to the win command, with allows you to flash the specified window.
+</ul>
+
+<tr><td>13/03/2011<td>2.51<td>
+<ul>
+<li>Added 'focused' option for setappvolume, changeappvolume, and muteappvolume commands, which allow you to easily
+change the volume of the application that is currently in focus, on Windows 7/Vista/2008.
+<li>Added 'default_record' option for 
+setsysvolume, changesysvolume, setsysvolume2, changesysvolume2, and mutesysvolume commands, which allows you set easily
+change the volume of default recording device, on Windows 7/Vista/2008.
+</ul>
+
+
+<tr><td>24/02/2011<td>2.50<td>
+<ul>
+<li>Added 3 new sound volume commands to change or mute application volume on Windows 7/Vista/2008:
+setappvolume, changeappvolume, muteappvolume
+<li>Added new information command that shows you a message box with all sound devices on your Windows 7/Vista/2008 system:
+showsounddevices. 
+</ul>
+
+
+<tr><td>22/02/2011<td>2.48<td>
+<ul>
+<li>Fixed the problems with the timeout of the tray balloon in trayballoon command. 
+
+</ul>
+
+<tr><td>20/01/2011<td>2.47<td>
+<ul>
+<li>Fixed bug: The sendkeypress command didn't work properly with Fxx keys (F1, F2, and so on). 
+</ul>
+
+
+<tr><td>28/11/2010<td>2.46<td>
+<ul>
+<li>Added option to locate window by process in win command.
+<li>Added max and min options (Minimized and maximized windows) into exec and exec2 commands.
+<li>Added x64 builds of nircmd.exe and nircmdc.exe
+</ul>
+
+
+<tr><td>18/10/2010<td>2.45<td>
+<ul>
+<li>Added trayballoon command - displays a tray balloon with your desired text and icon.
+<li>Added sendkeypress command - Alternative to the sendkey command. Allows you to send key press
+combination in much easier way, for example: sendkeypress ctrl+shift+esc
+<li>Added clonefiletime command to clone the date/time of existing file into one or more files.
+<li>Added setconsolemode command to set the console display mode - window or full screen.
+<li>Added setconsolecolor command to set the foreground and background colors of the console text.
+<li>Added consolewrite command to write text into the console window. 
+<li>Added debugwrite for writing text into the debug output.
+<li>Added ~$folder.mydocuments$ variable.
+</ul>
+
+
+<tr><td>21/02/2010<td>2.41<td>
+<ul>
+<li>Fixed a bug in elevate command: when running a program without parameters, NirCmd sent the elevate command string as a parameter of the program.
+</ul>
+
+<tr><td>16/02/2010<td>2.40<td>
+<ul>
+<li>Added elevate and elevatecmd commands to run and execute commands with administrator rights under Windows 7/Vista/2008.
+<li>Added monitor parameter to setdisplay command, for using it with multiple monitors.
+<li>Added setprimarydisplay command.
+<li>Added folder.programfiles and folder.common_programfiles variables.
+<li>Added async_off, async_on, async_low for monitor command. You can try them if NirCmd.exe remains in memory 
+when you use monitor on/off command.
+</ul>
+
+
+<tr><td>26/05/2009<td>2.37<td>
+<ul>
+<li>Improved the help .chm file - Now it contains a link to every command.
+<li>Added help command - Automatically opens the reference of the desired command in <a href="http://nircmd.nirsoft.net" target="nircmd">http://nircmd.nirsoft.net</a>.
+For example, if you type 'nircmd.exe help speak', the reference page of speak command - <a href="http://nircmd.nirsoft.net/speak.html" target="speak">http://nircmd.nirsoft.net/speak.html</a> will be opened in your default browser.
+</ul>
+
+<tr><td>19/05/2009<td>2.36<td>
+<ul>
+<li>Fixed bug in script: Sometimes the last line in the script was not executed properly.
+</ul>
+
+<tr><td>20/04/2009<td>2.35<td>
+<ul>
+<li>Added loop command - execute a command multiple times.
+<li>Added currtime and currdate variables.
+<li>waitprocess - Added option to execute a NirCmd command after the process was closed. 
+<li>Added rem (or ;) command, just for adding remarks in a script.
+</ul>
+
+
+<tr><td>01/04/2009<td>2.30<td>
+<ul>
+<li>Added speak command - Speaks the contents of the text or file that you specify, by using the Speech library (SAPI) that comes with Windows XP and Windows Vista.
+<li>Added savescreenshotfull command.
+</ul>
+
+<tr><td>02/02/2009<td>2.25<td>
+<ul>
+<li>New actions for clipboard command -  loadclp and saveclp (load/save in Windows .clp format)
+<li>New command: setprocessaffinity 
+</ul>
+
+<tr><td>01/01/2009<td>2.20<td>
+<ul>
+<li>New commands: waitprocess, setprocesspriority, qboxtop, qboxcomtop.
+<li>New action in clipboard command: copyimage (Copy image file to the clipboard)
+</ul>
+
+<tr><td>25/06/2008<td>2.15<td>
+<ul>
+<li>New commands: setcursorwin, savescreenshotwin, filldelete
+</ul>
+
+<tr><td>12/04/2008<td>2.10<td>
+<ul>
+<li>New commands: shellcopy, savescreenshot
+</ul>
+
+<tr><td>09/02/2008<td>2.05<td>
+<ul>
+<li>New commands: shellrefresh, convertimage, convertimages
+<li>New option in clipboard command - saveimage
+</ul>
+
+
+<tr><td>16/06/2007<td>2.00<td>
+<ul>
+<li>All sound volume commands and monitor command now works under Vista.
+<li>New commands: dlg, dlgany, sendkey, sendmouse, returnval
+<li>New actions in win command - dlgclick, dlgsettext, dlgsetfocus
+</ul>
+
+
+<tr><td>24/07/2006<td>1.85<td>
+<ul>
+<li>New command: cmdshortcutkey
+</ul>
+
+
+<tr><td>15/07/2006<td>1.84<td>
+<ul>
+<li>Starting from this version, if you don't specify a sound device index in setsysvolume, changesysvolume, setsysvolume2, changesysvolume2 and mutesysvolume commands, 
+the default sound device in control panel (&quot;preferred device&quot;) is used.
+<li>New find options in win command: active, foreground, desktop
+</ul>
+
+<tr><td>20/05/2006<td>1.83<td>
+<ul>
+<li>Fixed bug with parameter variables: parameter dialog-box appear more than once.
+<li>New find option in Win command: alltopnodesktop
+</ul>
+
+<tr><td>18/02/2006<td>1.82<td>
+<ul>
+<li>New win actions: postmsg and sendmsg.
+<li>New command: closeprocess
+<li>NirCmd now returns a non-zero value on error.
+</ul>
+
+<tr><td>19/11/2005<td>1.81<td>
+<ul>
+<li>New command: emptybin - Empty the Recycle Bin.
+<li>New optional parameter in setdisplay command: refresh rate.
+<li>rashangup command without parameter - disconnect all active connections.
+</ul>
+
+<tr><td>24/09/2005<td>1.80<td>
+<ul>
+<li>New commands: exec2, cmdwait.
+<li>New options in clipboard command.
+<li>Volume commands (setsysvolume, changesysvolume, setsysvolume2, changesysvolume2, mutesysvolume) now allows you to change the volume of non-default sound card.
+</ul>
+
+<tr><td>07/07/2005<td>1.70<td>
+<ul>
+<li>New win actions: activate, hideshow, +style, -style, +exstyle, -exstyle
+<li>New commands: movecursor, setcursor.
+<li>New command: setfilefoldertime - allows you to change the date/time of folders, under Windows 2000/XP only.
+</ul>
+
+<tr><td>10/06/2005<td>1.62<td>
+<ul>
+<li>New actions in win command: focus, enable, disable
+</ul>
+
+<tr><td>26/05/2005<td>1.61<td>
+<ul>
+<li>new command: sysrefresh - make a general system refresh after modifying your system settings in the Registry.
+</ul>
+
+
+<tr><td>07/05/2005<td>1.60<td>
+<ul>
+<li>New paramsfile command: Allows you to execute a command multiple times by loading the parameters from a text file.
+<li>New actions in win command: move, center, settext.
+<li>New 'child' action in win command: Allows you to move/hide child windows (For example: the start button in the system tray)
+<li>New clipboard command: Allows you to put a string in the clipboard, and clear the clipboard.
+<li>New gac command: Allows you to install assemblies in Global Assembly Cache.
+
+</ul>
+
+<tr><td>28/12/2004<td>1.56<td>
+<ul>
+<li>New variable: ~$clipboard$ - paste the text that you copied to the clipboard into the command-line.
+<li>Parameter variables: ~$param.ParamName$ - Display an input window for typing the text that you want insert into the command-line.
+</ul>
+
+<tr><td>07/12/2004<td>1.55<td>
+Added RegEdit command.
+
+<tr><td>18/11/2004<td>1.54<td>
+<ul>
+<li>On reg commands (regsetval, regdelval, regdelkey), you can now also use the following 
+abbreviated key name: HKCU for HKEY_CURRENT_USER, HKLM for HKEY_LOCAL_MACHINE, HKCR for HKEY_CLASSES_ROOT, HKU for HKEY_USERS,
+HKCC for HKEY_CURRENT_CONFIG.
+<li>redraw action for win command.
+</ul>
+
+<tr><td>03/11/2004<td>1.53<td>
+Fixed 'monitor off' problem in XP SP2.
+
+<tr><td>09/10/2004<td>1.52<td>
+rasapi32.dll is now loaded only when using the dial commands (rasdial, rasdialdlg, rashangup).
+In previous versions, NirCmd was statically linked to rasapi32.dll, and that caused problems in old NT systems.
+
+<tr><td>29/09/2004<td>1.51<td>
+Variable names are now enclosed with '$' char instead of '%' char.
+<br>
+I made this change because the '%' char causes problems when running NirCmd from cmd/bat file.
+using the '%' char for variable names is still supported for backward compatibility.
+
+
+
+<tr><td>22/09/2004<td>1.50<td>
+<ul>
+<li>New commands: cmdshortcut, regsvr, mutesysvolume, changesysvolume, changesysvolume2, setsysvolume2.
+<li>New actions in win command: trans, setsize, settopmost, ititle.
+<li>New variables: folder.nircmd, nir.exefile
+<li>nircmdc.exe - console version of NirCmd.
+<li>Changed name - from NirComLime to NirCmd.
+</ul>
+
+<tr><td>05/05/2004<td>1.40<td>
+<ul>
+<li>New commands: wait, setvolume, setsysvolume, execmd, exec.
+<li>New commands for executing NirCmd on remote machines: remote and multiremote.
+<li>Folder and system variables.
+<li>New option in setfiletime command - set the file time to the current time (now parameter)
+<li>New parameter in shortcut command - hot key.
+
+</ul>
+
+<tr><td>01/03/2004<td>1.30<td>
+<ul>
+<li>New commands: qboxcom, beep, stdbeep, cdrom, urlshortcut, monitor, screensaver, standby, and hibernate.
+<li>Fixed the bug with ~x string sequences.
+</ul>
+
+<tr><td>08/01/2004<td>1.20<td>
+<ul>
+<li>New commands: setdialuplogon, script
+<li>Special string sequences (~q, ~t, ~n and so on) to allow you to embed quotes and new line characters into the parameters of any command.
+</ul>
+<tr><td>19/11/2003<td>1.11<td>
+New options in shortcut command
+
+<tr><td>10/10/2003<td>1.10<td>
+New commands: killprocess, service, memdump, win, lockws.
+<tr><td>09/09/2003<td>1.00<td>
+First release.
+</table>
+
+<p>
+<h4 class="utilsubject">License</h4>
+This utility is released as freeware. 
+You are allowed to freely distribute this utility via floppy disk, CD-ROM, 
+Internet, or in any other way, as long as you don't charge anything for this.  
+If you distribute this utility, you must include all files in
+the distribution package, without any modification !
+
+
+<p>
+<a name="using"></a><h4 class="utilsubject">Using NirCmd utility</h4>
+This utility is a standalone executable, and it doesn't require any installation process
+or additional DLLs. just copy the executable to any folder you want, and run it
+with the desired command-line option, according to your needs.
+<br>
+It's recommended to copy the executable of NirCmd (nircmd.exe) to your windows directory,
+or to any other folder listed in your PATH environment variable, so you won't need to type the full path of nircmd in each time that you want to use it.
+<br>
+Starting from version 1.50, console version of NirCmd (nircmdc.exe) is also available.
+In the console version, all error messages goes to the console window, instead of using a message box.
+<p>
+<h4 class="utilsubject">General Syntax Of NirCmd</h4>
+<span class="commandline">nircmd.exe {showerror} [command] [command parameters]</span>
+<br>
+The <span class="commandline">showerror</span> parameter is optional.
+If you specify this parameter, an error message will be displayed on the screen
+if an error is occurred during the execution of the command. Otherwise, any error will be ignored.
+For example:
+<br>
+nircmd.exe showerror rasdial "dial1"
+<br>
+nircmd.exe rasdial "dial1"
+<br>
+In above 2 examples, NirCmd will try to dial with the "dial1" entry.
+If the dialing process is failed on the first example, an error message describing the problem
+will be displayed. If the dialing process is failed on the second example, error message
+won't be displayed.
+
+<p>
+<a name="spstrseq"></a><h4 class="utilsubject">Special String Sequences</h4>
+Starting from version 1.20, NirCmd allows you to insert special characters into any parameter in NirCmd commands.
+<br>
+The following table describes the special string Sequences that you can use:
+<table border="1" cellpadding="6" bordercolor="#000000" width="100%">
+<tr class="utiltableheader"><th width="80" nowrap> 
+Sequence
+<th>
+Description
+
+
+<tr>
+<td>
+~n
+<td>
+New line characters (CR-LF)
+
+<tr>
+<td>
+~q
+<td>
+Double-quote character: &quot;
+
+<tr>
+<td>
+~t
+<td>
+Tab character
+
+
+<tr>
+<td>
+~xnn
+<td>
+Allows you to represent any character by providing its ascii code in 2-digit Hexadecimal number.
+<br>
+For Example: ~x41 ('A' character), ~x27 (single-quote character)
+
+<tr>
+<td>
+~$variable$
+<td>
+Represents a system variable. 
+For more information about this option, <a href="#sysvar">read below</a>
+
+<tr>
+<td>
+~~
+<td>
+Represents a single '~' character.
+</table>
+<p>
+Example:
+<br>
+<span class="commandline">
+infobox "This is the first line~n~qThis is a second line, in quotes~q" "Example"
+</span>
+<br>
+The above example displays a message-box containing 2 lines.
+
+<p>
+<a name="sysvar"></a><h4 class="utilsubject">System Variables</h4>
+Starting from version 1.40, NirCmd provides special variables that represents folders and
+other variables on your system. Each variable starts with '~' character, followed by
+the variable name enclosed with '$' characters. For example: ~$folder.desktop$ represents
+your desktop folder.
+<p>
+The following table specifies the variables that you can use:
+
+<table border="1" cellpadding="6" bordercolor="#000000" width="100%">
+<tr class="utiltableheader">
+<th nowrap>Variable Name 
+<th nowrap>Description 
+
+<tr>
+<td>
+clipboard
+<td>
+Represents the text that you copied into the clipboard.
+
+<tr>
+<td>
+param.paramname
+<td>
+When you specify a param variable, an input window will appear on the screen,
+and will ask you to type the text for this variable.
+The text that you type will be inserted into the command line.
+<br>
+For example: in the following command, you will be asked to type 2 parameters (1 and 2),
+and the text that you type will appear in the message box.
+<br>
+nircmd infobox ~$param.1$ ~$param.2$
+<p>
+
+
+<tr>
+<td>
+fparam.number
+<td>
+Sepcifies a parameter loaded from a text file.
+For more information, see <a href="#paramsfile">paramsfile command</a>
+<tr>
+<td>
+sys.varname
+<td>
+You can use this option to represent any environment variable on your system.
+<br>
+For example:<br> ~$sys.username$, ~$sys.windir$, ~$sys.computername$, ~$sys.logonserver$, ~$sys.temp$, and so on...
+
+
+<tr>
+<td>
+nir.exefile
+<td>
+Represents the full-path exe file of the current running NirCmd (For example: c:\winnt\nircmd.exe)
+
+
+<tr>
+<td>
+loopcount
+<td>
+Sepcifies the loop count number when using the loop command.
+
+<tr>
+<td>
+currtime.TimeFormat
+<td>
+Specifies the current time, according to the format specified in 'TimeFormat' section.
+<br>
+For example: ~$currtime.HH_mm_ss$
+<br>
+For more infromation about the format string, see currtime format section.
+
+<tr>
+<td>
+currdate.DateFormat
+<td>
+Specifies the current date, according to the format specified in 'DateFormat' section.
+<br>
+For example: ~$currdate.MM_dd_yyyy$
+<br>
+For more infromation about the format string, see currdate format section.
+
+
+<tr>
+<td>
+folder.nircmd
+<td>
+Represents the folder the NirCmd is running from. 
+
+
+<tr>
+<td>
+folder.desktop
+<td>
+Represents the user's desktop folder. 
+
+<tr>
+<td>
+folder.start_menu
+<td>
+Represents the user's start-menu folder. 
+
+<tr>
+<td>
+folder.programs
+<td>
+Represents the user's programs folder (under the start-menu folder). 
+
+<tr>
+<td>
+folder.startup
+<td>
+Represents the user's startup folder. 
+
+<tr>
+<td>
+folder.recent
+<td>
+Represents the user's recent folder. 
+
+<tr>
+<td>
+folder.favorites
+<td>
+Represents the user's favorites folder. 
+
+<tr>
+<td>
+folder.cookies
+<td>
+Represents the user's cookies folder. 
+
+<tr>
+<td>
+folder.appdata
+<td>
+Represents the user's Application Data folder. (For example: C:\Documents and Settings\Administrator\Application Data)
+
+<tr>
+<td>
+folder.common_desktop
+<td>
+Represents the common desktop folder. 
+
+<tr>
+<td>
+folder.common_start_menu
+<td>
+Represents the common start menu folder. 
+
+<tr>
+<td>
+folder.common_programs
+<td>
+Represents the common programs folder. 
+
+<tr>
+<td>
+folder.common_startup
+<td>
+Represents the common startup folder. 
+
+<tr>
+<td>
+folder.common_favorites
+<td>
+Represents the common favorites folder. 
+
+<tr>
+<td>
+folder.windows
+<td>
+Represents the windows folder. (e.g.: C:\Windows)
+
+<tr>
+<td>
+folder.system
+<td>
+Represents the system folder. (e.g.: C:\Windows\System32)
+
+
+<tr>
+<td>
+folder.programfiles
+<td>
+Represents the Program Files folder. (e.g.: C:\Program Files)
+
+<tr>
+<td>
+folder.common_programfiles
+<td>
+Represents the common Program Files folder. (e.g.: C:\Program Files\Common)
+
+<tr>
+<td>
+folder.mydocuments
+<td>
+Represents the 'My Documents' folder.
+
+
+</table>
+<p>
+Examples:
+<ul>
+<li>Create a shortcut under the start menu-programs folder:
+<br>
+<span class="commandline">
+shortcut &quot;c:\winnt\system32\calc.exe&quot; &quot;~$folder.programs$\My Programs&quot; &quot;Calculator&quot;
+</span>
+
+<li>Delete a shortcut in the user's desktop:
+<br>
+<span class="commandline">
+execmd del &quot;~$folder.desktop$\calc.lnk&quot;
+</span>
+
+<li>Display the current logged-on user:
+<br>
+<span class="commandline">
+infobox &quot;The current logged-on user is ~$sys.username$&quot; &quot;logged-on user&quot;
+</span>
+
+<li>Save a screenshot in filename containing the current time and date
+<br>
+<span class="commandline">
+savescreenshot c:\temp\scr~$currdate.MMddyyyy$-~$currtime.HHmmss$.png
+</span>
+
+</ul>
+
+
+<p>
+<h4 class="utilsubject">currtime Format String</h4>
+The time format string may contain the following elements: (The format string is case sensitive !)
+<table border="1" cellpadding="5" bordercolor="#000000">
+<tr><td>h<td>Hours with no leading zero for single-digit hours; 12-hour clock. 
+<tr><td>hh<td>Hours with leading zero for single-digit hours; 12-hour clock. 
+<tr><td>H<td> Hours with no leading zero for single-digit hours; 24-hour clock. 
+<tr><td>HH<td> Hours with leading zero for single-digit hours; 24-hour clock. 
+<tr><td>m<td> Minutes with no leading zero for single-digit minutes. 
+<tr><td>mm<td> Minutes with leading zero for single-digit minutes. 
+<tr><td>s<td> Seconds with no leading zero for single-digit seconds. 
+<tr><td>ss<td> Seconds with leading zero for single-digit seconds. 
+<tr><td>t<td> One character time-marker string, such as A or P. 
+<tr><td>tt<td> Multicharacter time-marker string, such as AM or PM. 
+</table>
+
+
+<p>
+<h4 class="utilsubject">currdate Format String</h4>
+The date format string may contain the following elements: (The format string is case sensitive !)
+<table border="1" cellpadding="5" bordercolor="#000000">
+<tr><td>d<td> Day of month as digits with no leading zero for single-digit days. 
+<tr><td>dd<td> Day of month as digits with leading zero for single-digit days. 
+<tr><td>ddd<td> Day of week as a three-letter abbreviation. 
+<tr><td>dddd<td> Day of week as its full name. 
+<tr><td>M<td> Month as digits with no leading zero for single-digit months. 
+<tr><td>MM<td> Month as digits with leading zero for single-digit months. 
+<tr><td>MMM<td> Month as a three-letter abbreviation. 
+<tr><td>MMMM<td> Month as its full name. 
+<tr><td>y<td> Year as last two digits, but with no leading zero for years less than 10. 
+<tr><td>yy<td> Year as last two digits, but with leading zero for years less than 10. 
+<tr><td>yyyy<td> Year represented by full four digits. 
+
+</table>
+
+
+<p>
+<h4 class="utilsubject">Executing NirCmd commands on remote computers</h4>
+Starting from version 1.40, you can execute all NirCmd commands in remote computers.
+However, you should be aware of the following restrictions and problems:
+<ul>
+<li>This option is only available for Windows NT, Windows 2000 and Windows XP.
+You cannot use it on Windows 9x machines.
+<li>You must log on to the remote machine as administrator.
+<li>The Schedule service in the remote machine must be started. 
+(By default, the Schedule service is automatically started in all NT/2000/XP machines, so
+you don't have to worry too much about this)
+<li>Due to some limitations of the Schedule service, you have to wait up to 60 seconds
+until the command is actually executed in the remote machine. 
+<li>The command in the remote machine is executed under 'SYSTEM' account, and thus some
+commands may not work in the same way as you execute them locally. 
+</ul>
+<p>
+There are 2 commands for executing NirCmd in remote machines:
+<ul>
+<li><a href="#command_remote">remote</a> - for executing command on a single remote computer.
+<li><a href="#command_multiremote">multiremote</a> - for executing command on multiple remote computers.
+</ul>
+
+<p>
+<h4 class="utilsubject">Help Command</h4>
+If you don't remember the exact syntax of a command, you can always look in the help file of NirCmd
+(NirCmd.chm) or you can use the help command to get the command reference in <a href="http://nircmd.nirsoft.net" target="nircmd">http://nircmd.nirsoft.net</a>,
+For example:
+<br>
+nircmd.exe help multiremote
+
+
+<p>
+<a name="commands"></a><h4 class="utilsubject">NirCmd Commands</h4>
+<table border="1" cellpadding="6" bordercolor="#000000" width="100%">
+
+
+<tr>
+<td>
+<a name="remote"></a>
+
+<h6 class="commandsyntax">
+remote {copy} [\\computer] [NirCmd command]
+</h6>
+Executes NirCmd command in a remote computer.
+if <span class="commandsyntax">{copy}</span> parameter is specified, NirCmd will copy
+itself to the Windows directory of the remote machine. You must specify this parameter if 
+NirCmd doesn't exist in the Windows directory of the remote machine. 
+<br>
+Examples:
+<br>
+<span class="commandline">
+<br>remote copy \\comp1 exitwin poweroff
+<br>remote \\comp2 infobox &quot;This is a message from NirCmd&quot; &quot;Hello !&quot;
+<br>remote \\comp3 lockws
+</span>
+
+<tr>
+<td>
+<a name="multiremote"></a>
+
+<h6 class="commandsyntax">
+multiremote {copy} [computers file] [NirCmd command]
+</h6>
+Executes NirCmd command in multiple remote machines.
+if <span class="commandsyntax">{copy}</span> parameter is specified, NirCmd will copy
+itself to the Windows directory of the remote machines. You must specify this parameter if 
+NirCmd doesn't exist in the Windows directory of the remote machines. 
+<br>
+The <span class="commandsyntax">[computers file]</span> parameter is a file that contains
+the computers list separated by Enter characters (CRLF).
+<br>Example for computers list file:
+<pre>
+\\comp1
+\\comp2
+\\winxp1
+\\winxp2
+\\nirsoft
+</pre>
+<br>
+The command specified in <span class="commandsyntax">[NirCmd command]</span>
+will be executed in all computers specified in the computers file.
+<br>Examples:
+<ul>
+<li>Turn off all computers specified in computers.txt
+<br>
+<span class="commandline">
+multiremote &quot;c:\temp\computers.txt&quot; exitwin poweroff force
+</span>
+
+<li>Lock all computers specified in computers.txt
+<br>
+<span class="commandline">
+multiremote &quot;c:\temp\computers.txt&quot; lockws
+</span>
+
+<li>Copy NirCmd to all computers specified in computers.txt, and then turn off their monitors.
+<br>
+<span class="commandline">
+multiremote copy &quot;c:\temp\computers.txt&quot; monitor off
+</span>
+<li>Copy NirCmd to all computers specified in computers.txt, and run WinUpdatesList utility in order to save Windsows Updates info in all computers.
+<br>
+<span class="commandline">
+multiremote copy &quot;c:\temp\computers.txt&quot; exec hide c:\temp\wul.exe /shtml &quotc:\temp\wul_~$sys.computername$.html&quot
+</span>
+</ul>
+
+<tr>
+<td>
+<a name="cmdwait"></a>
+
+<h6 class="commandsyntax">
+cmdwait [Number of Milliseconds] [NirCmd Command]
+</h6>
+Wait the specified number of Milliseconds, and then execute the specified NirCmd command.
+
+<p>
+Example:
+<br>
+<span class="commandline">
+cmdwait 1000 monitor off
+</span>
+
+
+<tr>
+<td>
+<a name="loop"></a>
+
+<h6 class="commandsyntax">
+loop [Number of Times] [Number of Milliseconds] [NirCmd Command]
+</h6>
+Execute a NirCmd mutiple times, in a loop.
+Between the command executions, NirCmd will wait the number of Milliseconds specified in the second parameter.
+You can use the ~$loopcount$ variable to specify the call number in the loop (from 1 to n).
+<p>
+Examples:
+<br>
+<span class="commandline">
+loop 3 2000 speak text &quot;Call Number ~$loopcount$&quot;<br>
+loop 10 60000 savescreenshot c:\temp\scr~$loopcount$.png
+</span>
+
+
+
+<tr>
+<a name="paramsfile"></a>
+<td>
+<a name="paramsfile"></a>
+
+<h6 class="commandsyntax">
+paramsfile [Parameters File] [Delimiters] [Quote Character] [NirCmd Command]
+</h6>
+This powerfull command allows you to execute NirCmd Command multiple times, by loading
+one or more parameters from a text file. The text file can be comma-delimited, tab-delimited,
+semicolon-delimited, or delimited by any char that you specify in [Delimiters] parameter.
+<p>
+Here's an example... Let's say that you have the following text file, containing 
+user names and passwords, delimited by comma:
+<pre class="srcbg">
+user01, 123456
+user02, abcfg
+user03, 5fr23
+user04, 33333
+</pre>
+<p>
+The following NirCmd commands sequence will create 4 users with the specified user-names and passwords (by using 'net user' command provided by Windows 2000/XP operating system)
+<br>
+nircmd.exe paramsfile "c:\temp\users.txt" "," "" execmd net user ~$fparam.1$ ~$fparam.2$ /add
+<p>
+The ~$fparam.1$ specifies the first entry in each line - the user name.
+The ~$fparam.2$ specifies the second entry in each line - the password.
+
+<p>
+Examples:
+<br>
+<span class="commandline">
+<br>paramsfile &quot;c:\temp\folders.txt&quot; &quot;&quot; &quot;&quot; execmd md ~$fparam.1$
+<br>paramsfile &quot;c:\temp\shortcuts.txt&quot; &quot;,&quot; &quot;~q&quot; shortcut ~$fparam.1$ &quot~$folder.desktop$&quot ~$fparam.2$
+</span>
+
+
+<tr>
+<td>
+<a name="infobox"></a>
+
+<h6 class="commandsyntax">
+infobox [message text] [title]
+</h6>
+Displays a simple message box on the screen.
+<br>
+Example:
+<br>
+<span class="commandline">
+infobox "This is a message box !" "message"
+</span>
+
+
+
+<tr>
+<td>
+<a name="qbox"></a>
+
+<h6 class="commandsyntax">
+qbox [message text] [title] [program to run]
+</h6>
+Displays a question dialog-box on the screen. If the user answers "Yes", run a program
+<br>
+Example:
+<br>
+<span class="commandline">
+qbox "Do you want to run the calculator ?" "question" "calc.exe"
+</span>
+
+<tr>
+<td>
+<a name="qboxtop"></a>
+
+<h6 class="commandsyntax">
+qboxtop [message text] [title] [program to run]
+</h6>
+Similar to qbox, but displays the message-box as top-most window.
+
+
+<tr>
+<td>
+<a name="qboxcom"></a>
+
+<h6 class="commandsyntax">
+qboxcom [message text] [title] [NirCmd Command]
+</h6>
+Displays a question dialog-box on the screen. If the user answers "Yes", execute the
+NirCmd command in the third parameter.
+<br>
+Examples:
+<br>
+<span class="commandline">
+qboxcom "Do you want to lock your workstation ?" "question" lockws
+<br>
+qboxcom "Do you want to turn off the monitor ?" "monitor"  monitor off
+</span>
+
+<tr>
+<td>
+<a name="qboxcomtop"></a>
+
+<h6 class="commandsyntax">
+qboxcomtop [message text] [title] [NirCmd Command]
+</h6>
+Similar to qboxcom, but displays the message-box as top-most window.
+
+
+<tr>
+<td>
+<a name="script"></a>
+
+<h6 class="commandsyntax">
+script [Script File]
+</h6>
+This command allows you to execute a sequence of commands stored inside the file specified
+in <span class="commandsyntax">[Script File]</span> parameter.
+<br>
+Example:<br>
+<span class="commandline">
+script "c:\temp\msg.ncl"
+</span>
+<br>
+Example for a script:
+<pre class="commandline">
+infobox "Hello !" "This is the first message"
+infobox "Hello !" "This is the second message"
+infobox "Hello !" "This is the third message"
+</pre>
+
+
+<tr>
+<td>
+<a name="regedit"></a>
+
+<h6 class="commandsyntax">
+regedit [key] [value name]
+</h6>
+Opens RegEdit with the specified key/value.
+<br>
+Examples:
+<span class="commandline">
+<br>regedit &quot;HKLM\Software\Microsoft\Windows\CurrentVersion&quot; &quot;CommonFilesDir&quot; 
+<br>regedit &quot;HKEY_CURRENT_USER\Control Panel\Desktop&quot; &quot;Wallpaper&quot;
+</span>
+
+
+<tr>
+<td>
+<a name="regsetval"></a>
+
+<h6 class="commandsyntax">
+regsetval [type] [key] [value name] [value]
+</h6>
+Writes a value to the Registry. the <span class="commandsyntax">[type]</span> parameter can
+be "sz" or "expand_sz" for strings, "dword" for 32-bit number, or "binary" for
+binary data. If the key you specify in <span class="commandsyntax">[key]</span> parameter
+doesn't exist, it'll automatically be created.
+<br>
+Examples:
+<span class="commandline">
+<br>regsetval dword "HKEY_CURRENT_USER\Software\Test" "Value1" "0xaabbccdd"
+<br>regsetval dword "HKCU\Software\Test" "Value2" "10561"
+<br>regsetval sz "HKCU\Software\Test" "Value3" "string value"
+<br>regsetval binary "HKLM\Software\Test" "Value4" "6a cb ab dd 80 86 95"
+</span>
+
+
+
+<tr>
+<td>
+<a name="regdelval"></a>
+
+<h6 class="commandsyntax">
+regdelval [key] [value]
+</h6>
+Deletes a value from the Registry. 
+<br>
+Example:
+<br>
+<span class="commandline">
+regdelval "HKEY_CURRENT_USER\Software\Test" "Value1"
+</span>
+
+
+<tr>
+<td>
+<a name="regdelkey"></a>
+
+<h6 class="commandsyntax">
+regdelkey [key]
+</h6>
+Deletes entire key from the Registry. 
+This command will failed if the specified key has one or more subkeys.
+<br>
+Example:
+<br>
+<span class="commandline">
+regdelkey "HKEY_CURRENT_USER\Software\Test"
+</span>
+
+
+<tr>
+<td>
+<a name="inisetval"></a>
+
+<h6 class="commandsyntax">
+inisetval [INI filename] [section] [key] [value]
+</h6>
+Writes a value into INI file. If the file doesn't exist, it'll automatically be created.
+<br>
+Example:
+<br>
+<span class="commandline">
+inisetval "c:\windows\test.ini" "section1" "TestValue" "1"
+</span>
+
+
+<tr>
+<td>
+<a name="inidelval"></a>
+
+<h6 class="commandsyntax">
+inidelval [INI filename] [section] [key]
+</h6>
+Deletes a key-value pair inside INI file. 
+<br>
+Example:
+<br>
+<span class="commandline">
+inidelval "c:\windows\test.ini" "section1" "TestValue"
+</span>
+
+
+
+<tr>
+<td>
+<a name="inidelsec"></a>
+
+<h6 class="commandsyntax">
+inidelsec [INI filename] [section]
+</h6>
+Deletes entire section in INI file, including all values in it. 
+<br>
+Example:
+<br>
+<span class="commandline">
+inidelsec "c:\windows\test.ini" "section1" 
+</span>
+
+<tr>
+<td>
+<a name="regsvr"></a>
+
+<h6 class="commandsyntax">
+regsvr [reg or unreg] [filename or wildcard] {log file}
+</h6>
+Register or unregister DLL/OCX files.
+<br>In the first parameter, specify &quot;reg&quot; for registering files, or &quot;unreg&quot; for unregistering files.
+<br>In the second parameter, you can specify a single file that you want to register or unregister, or multiple files, by using wildcard.
+<br>The third parameter is optional, and specifies a log filename for saving the results of the registering operation.
+<br>
+Examples:
+<span class="commandline">
+<br>regsvr reg &quot;f:\winnt\system32\fv*.ocx&quot; &quot;c:\temp\log1.txt&quot; 
+<br>regsvr unreg &quot;f:\winnt\system32\ab*.dll&quot;  
+</span>
+
+
+<tr>
+<td>
+<a name="rasdial"></a>
+
+<h6 class="commandsyntax">
+rasdial [Entry Name] {Phonebook File} {User Name} {Password} {Domain}
+</h6>
+Dials to RAS entry (VPN or phone line), without displaying any user interface.
+Except the [Entry Name] parameter, all other parameters are optional.
+If you don't specify the optional parameters or you specify empty string (""),
+the default values are used.
+<br>
+Examples:
+<span class="commandline"><br>
+rasdial "My Internet"<br>
+rasdial "VPN1" "" "user1" "abc1234" "domain1"
+</span>
+
+
+<tr>
+<td>
+<a name="inetdial"></a>
+
+<h6 class="commandsyntax">
+inetdial [Entry Name] 
+</h6>
+Dials to RAS entry (VPN or phone line), and display informational dialog-box during the dialing process.
+<br>
+This command is only supported If Internet Explorer version 4.0 or greater is installed.
+Be aware that this command might not work on old versions of Windows 98.
+
+ 
+<br>
+Examples:
+<span class="commandline"><br>
+inetdial "VPN1"
+</span>
+
+
+
+
+<tr>
+<td>
+<a name="rasdialdlg"></a>
+
+<h6 class="commandsyntax">
+rasdialdlg [Entry Name] {Phonebook File} {Phone Number or IP Address}
+</h6>
+Displays a RAS entry for dialing. The <span class="commandsyntax">{Phonebook File}</span> and <span class="commandsyntax">{Phone Number}</span> parameters are
+optional. If you don't specify the <span class="commandsyntax">{Phonebook File}</span> parameter or you specify an empty string
+,the default phonebook is used.
+<br>
+This command is only supported on Windows NT, Windows 2000, and Windows XP.
+It's not supported on Windows 98/ME. 
+<br>
+Examples:
+<span class="commandline"><br>
+rasdialdlg "Internet1" "" "9876543"<br>
+rasdialdlg "VPN1"
+</span>
+
+
+
+<tr>
+<td>
+<a name="rashangup"></a>
+
+<h6 class="commandsyntax">
+rashangup {Entry Name}
+</h6>
+Hangs up a RAS connection. 
+You can use this command to disconnect a connection that you previously created
+with inetdial or rasdial commands.
+
+If you don't specify the {Entry Name} parameter, all active connections will be disconnected.
+
+<br>
+Examples:
+<span class="commandline">
+<br>rashangup "VPN1"
+<br>rashangup
+</span>
+
+
+<tr>
+<td>
+<a name="setdialuplogon"></a>
+
+<h6 class="commandsyntax">
+setdialuplogon [Entry Name] [User Name] {Password} {Domain} {Phonebook File}
+</h6>
+Modifies the user name, password and domain of a dial-up item.
+<br>
+The parameters:
+<ul>
+<li><span class="commandsyntax">[Entry Name]</span>: The name of the dial-up entry
+<li><span class="commandsyntax">[User Name]</span>: The user-name to set into the specified dial-up entry. 
+<li><span class="commandsyntax">{Password}</span>: The password to set into the specified dial-up entry.
+<li><span class="commandsyntax">{Domain}</span>: The domain name to set into the specified dial-up entry.
+<li><span class="commandsyntax">{Phonebook File}</span>: The phonebook file containing the entry you want to change.
+If you don't specify this parameter, the default phonebook is used.
+</ul>
+Examples:
+<span class="commandline">
+<br>setdialuplogon "VPN1" "user1" "asder443" "domain1"
+<br>setdialuplogon "Internet1" "nirs3" "q5r4df7yh5"
+</span>
+
+
+<tr>
+<td>
+<a name="exitwin"></a>
+
+<h6 class="commandsyntax">
+exitwin [shutdown type] {additional option}
+</h6>
+This command terminates the current session of Windows.
+The <span class="commandsyntax">[shutdown type]</span> parameter can be one of the following values:
+<ul>
+<li><span class="special2">logoff</span>: Shut down all running processes, log off the current user, and display
+the log on dialog to allow another user to log into the system.
+<li><span class="special2">reboot</span>: Shut down the entire system, and then reboot.
+<li><span class="special2">poweroff</span>: Shut down the entire system, and then turn off the power. (Only for systems that support this feature !)
+<li><span class="special2">shutdown</span>: Simply shut down the entire system, without reboot and without turning the power off. 
+</ul>
+You can also use one of the following additional options:
+<ul>
+<li><span class="special2">force</span>: Forces all applications to terminate immediately. 
+Using this option can caused the current running application to lose data.
+Use it only in extreme cases !
+
+<li><span class="special2">forceifhung</span>: Forces applications to terminate if they are not responding.
+This option is only available in Windows 2000/XP. 
+</ul>
+ 
+<br>
+Examples:
+<span class="commandline"><br>
+exitwin reboot<br>
+exitwin poweroff force<br>
+exitwin logoff forceifhung
+</span>
+
+
+<tr>
+<td>
+<a name="initshutdown"></a>
+
+<h6 class="commandsyntax">
+initshutdown {message} {timeout value in seconds} {force} {reboot}
+</h6>
+Initiate a system shutdown. This command is somewhat similar to exitwin command, but
+it has some other features that exitwin doesn't support. This command is not supported
+on Windows 95/98/ME.
+All parameters of this command are optional. If you don't specify any parameter,
+the system shutdown is initiated without displaying message and without waiting. 
+<br>
+The parameters:
+<ul>
+<li><span class="commandsyntax">{message}</span>: The message to display before starting the system shut down.
+<li><span class="commandsyntax">{timeout value in seconds}</span>: The number of seconds to wait before starting the system shut down.
+<li><span class="commandsyntax">{force}</span>: Forces all applications to terminate, even without saving your work. 
+<li><span class="commandsyntax">{reboot}</span>: Reboot after the system shutdown.
+</ul>
+<br>
+Examples:
+<span class="commandline"><br>
+initshutdown "shutting down the system within 60 seconds" 60 reboot<br>
+initshutdown "" 0 force
+</span>
+
+
+<tr>
+<td>
+<a name="abortshutdown"></a>
+
+<h6 class="commandsyntax">
+abortshutdown 
+</h6>
+Abort the system shutdown that initiated with initshutdown command.
+This command doesn't accept any additional parameters. 
+<br>
+Example:
+<span class="commandline"><br>
+abortshutdown
+</span>
+
+<tr>
+<td>
+<a name="lockws"></a>
+
+<h6 class="commandsyntax">
+lockws
+</h6>
+Lock the workstation. After locking your workstation, you must type your password in order
+to continue your work. This command is only available on Windows 2000 and Windows XP.
+
+
+<tr>
+<td>
+<a name="monitor"></a>
+
+<h6 class="commandsyntax">
+monitor [action]
+</h6>
+Changes the state of the display monitor. The <span class="commandsyntax">[action]</span>
+parameter may contain the following values:
+<ul>
+<li><span class="special2">off</span>: Turn off the monitor
+<li><span class="special2">on</span>: Turn on the monitor
+<li><span class="special2">low</span>: Set the monitor to low power state.
+</ul>
+<br>
+This command only works in systems that support this feature.
+If you have a problem that NirCmd remains in memory when using this command, you may try to use async_off, async_on and async_low actions instead of on/off/low actions.
+
+<br>
+Examples:
+<span class="commandline"><br>
+monitor off<br>
+monitor on<br>
+monitor async_off<br>
+</span>
+
+
+<tr>
+<td>
+<a name="screensaver"></a>
+
+<h6 class="commandsyntax">
+screensaver
+</h6>
+Starts the default screen saver.
+
+
+
+
+<tr>
+<td>
+<a name="screensavertimeout"></a>
+
+<h6 class="commandsyntax">
+screensavertimeout [Timeout]
+</h6>
+Specifies the number of seconds that the system will wait before starting the screensaver.
+
+<br>
+Examples:
+<span class="commandline"><br>
+screensavertimeout 30<br>
+screensavertimeout 90<br>
+</span>
+
+
+<tr>
+<td>
+<a name="standby"></a>
+
+<h6 class="commandsyntax">
+standby {force}
+</h6>
+Shuts down the computer and puts it in 'standby' mode.
+If the <span class="commandsyntax">{force}</span> parameter is specified, the system is 
+forced to go into standby mode without asking for permission from all applications.
+Generally, it's not recommended to use this parameter.
+<br>
+This command works only in systems that supports standby mode.
+<br>
+Example:
+<span class="commandline"><br>
+<br>standby force
+<br>standby
+</span>
+
+
+
+<tr>
+<td>
+<a name="hibernate"></a>
+
+<h6 class="commandsyntax">
+hibernate {force}
+</h6>
+Shuts down the computer and puts it in 'hibernate' mode.
+If the <span class="commandsyntax">{force}</span> parameter is specified, the system is 
+forced to go into hibernate mode without asking for permission from all applications.
+Generally, it's not recommended to use this parameter.
+<br>
+This command works only in systems that supports hibernate mode.
+<br>
+Example:
+<span class="commandline"><br>
+<br>hibernate force
+<br>hibernate
+</span>
+
+
+<tr>
+<td>
+<a name="shortcut"></a>
+
+<h6 class="commandsyntax">
+shortcut [filename] [folder] [shortcut title] {arguments} {icon file} {icon resource number} {ShowCmd} {Start In Folder} {Hot Key}
+</h6>
+Creates a shortcut to a file. 
+<br>
+The parameters:
+<ul>
+<li><span class="commandsyntax">[filename]</span>: Create a shortcut to this filename.
+<li><span class="commandsyntax">[folder]</span>: Specify the destination folder that inside it the shortcut will be created.
+You can specify any valid folder, including the special variables that represent system folders, like ~$folder.desktop$ (Desktop folder), ~$folder.programs$ (Start-Menu-Programs folder), and so on...
+
+
+<li><span class="commandsyntax">[shortcut title]</span>: The text displayed in the shortcut.
+<li><span class="commandsyntax">{arguments}</span>: Optional parameter - Additional arguments to execute the filename.
+<li><span class="commandsyntax">{icon file}</span>: Optional parameter - Use this parameter if your want that the shortcut will be displayed
+with icon other than the default one.
+<li><span class="commandsyntax">{icon resource number}</span>: Optional parameter - The resource number inside the icon file.
+<li><span class="commandsyntax">{ShowCmd}</span>: Optional parameter - Use this parameter if you want to maximize or minimize the window of the program.
+Specify "max" to maximize the window or "min" to minimize it.
+
+<li><span class="commandsyntax">{Start In Folder}</span>: Optional parameter - Specifies the "Start In" folder. 
+If you don't specify this parameter, the "Start In" folder is automatically filled with the folder of the program you specify in <span class="commandsyntax">[filename]</span> parameter.
+<li><span class="commandsyntax">{Hot Key}</span>: Optional parameter - Specifies an hot-key that will activate the shortcut.
+For example: Alt+Ctrl+A, Alt+Shift+F8, Alt+Ctrl+Shift+Y
+
+</ul>
+
+<br>
+Examples:
+<span class="commandline"><br>
+shortcut "f:\winnt\system32\calc.exe" "~$folder.desktop$"  "Windows Calculator"
+<br>shortcut "f:\winnt\system32\calc.exe" "~$folder.programs$\Calculators"  "Windows Calculator"
+<br>shortcut "f:\Program Files\KaZaA\Kazaa.exe" "c:\temp\MyShortcuts" "Kazaa"
+<br>shortcut "f:\Program Files" "c:\temp\MyShortcuts" "Program Files Folder" "" "f:\winnt\system32\shell32.dll" 45
+<br>shortcut "f:\Program Files" "c:\temp\MyShortcuts" "Program Files Folder" "" "" "" "max"
+</span>
+
+
+<tr>
+<td>
+<a name="cmdshortcut"></a>
+
+<h6 class="commandsyntax">
+cmdshortcut [folder] [shortcut title] [command]
+</h6>
+Creates a shortcut to NirCmd command. When you activate the shortcut (by doubleclicking it),
+The command that you specify in <span class="commandsyntax">[command]</span> parameter will be executed.
+<br>
+Examples:
+<span class="commandline">
+<br>cmdshortcut &quot;~$folder.desktop$&quot; &quot;Open CDROM&quot; cdrom open k:
+<br>cmdshortcut &quot;c:\temp&quot; &quot;Turn Monitor Off&quot; monitor off
+</span>
+
+
+<tr>
+<td>
+<a name="cmdshortcutkey"></a>
+
+<h6 class="commandsyntax">
+cmdshortcutkey [folder] [shortcut title] [hot key] [command]
+</h6>
+Similar to cmdshortcut command, but also allows you to specify an hot key to activate the command.
+<br>
+Examples:
+<span class="commandline">
+<br>cmdshortcutkey &quot;~$folder.desktop$&quot; &quot;Open CDROM&quot; &quot;Ctrl+Shift+K&quot; cdrom open k:
+<br>cmdshortcutkey &quot;c:\temp&quot; &quot;Turn Monitor Off&quot; &quot;Ctrl+Shift+M&quot; monitor off
+</span>
+
+
+
+<tr>
+<td>
+<a name="urlshortcut"></a>
+
+<h6 class="commandsyntax">
+urlshortcut [URL] [Folder] [Shortcut Title]
+</h6>
+Creates a shortcut to URL address. (Like the shortcuts in Favorities of Internet Explorer)
+The <span class="commandsyntax">[Folder]</span> parameter specifies the destination folder that inside it the shortcut will be created. 
+If you want to create the shortcut inside your default Favorities folder, use ~$folder.favorites$ variable.
+
+<br>
+Examples:
+<span class="commandline">
+<br>urlshortcut "http://www.nirsoft.net" "~$folder.favorites$" "NirSoft Web Site"
+<br>urlshortcut "http://www.google.com" "~$folder.favorites$\Search Engines" "Google"
+<br>urlshortcut "http://www.yahoo.com" "c:\temp" "Yahoo"
+</span>
+
+
+<tr>
+<td>
+<a name="exec"></a>
+
+<h6 class="commandsyntax">
+exec [show/hide/min/max] [application + command-line]
+</h6>
+Runs an application, and optionally specify one or more command-line parameters for the 
+executed application.
+The <span class="commandsyntax">[show/hide/min/max]</span> parameter specifies whether the
+running application will be visible or not.
+If 'hide' is specified, the running application won't be visible to the user.
+If 'max' is specified, the running application window will be maximized.
+If 'min' is specified, the running application window will be minimized.
+
+<br>
+Example:
+<span class="commandline">
+<br>exec show &quot;f:\winnt\system32\calc.exe&quot;
+<br>exec hide &quot;c:\temp\wul.exe&quot; /savelangfile
+<br>exec max  &quot;c:\temp\test.exe&quot; 
+</span>
+
+
+
+
+<tr>
+<td>
+<a name="exec2"></a>
+
+<h6 class="commandsyntax">
+exec2 [show/hide/min/max] [working folder] [application + command-line]
+</h6>
+Similar to exec command, but also provide another parameter, [working folder], that
+specifies the default working folder for the application that you run.
+<br>
+Example:
+<span class="commandline">
+<br>exec2 show "f:\winnt\system32" &quot;f:\winnt\system32\calc.exe&quot;
+<br>exec2 hide c:\temp &quot;c:\temp\wul.exe&quot; /savelangfile
+</span>
+
+
+
+
+
+<tr>
+<td>
+<a name="execmd"></a>
+
+<h6 class="commandsyntax">
+execmd [command]
+</h6>
+Executes a command of Command-Prompt (Console Window) without displaying anything
+on the screen.
+<br>
+Examples:
+<span class="commandline">
+<br>execmd del "~$folder.desktop$\calc.lnk"
+<br>execmd mkdir f:\temp\desktop1
+<br>execmd copy "~$folder.desktop$\*.lnk" f:\temp\desktop
+</span>
+
+<tr>
+<td>
+<a name="shexec"></a>
+
+<h6 class="commandsyntax">
+shexec [operation] [filename]
+</h6>
+Opens or Prints a filename according to the definition of the file extension in the Registry.
+For example: a filename with .doc extension will be opened with MS-Word, a filename with
+.html extension will be opened with your default browser.
+If you specify a valid web site address, the Web site will be opened in your default browser.
+the <span class="commandsyntax">[operation]</span> parameter can be "open" or "print".
+<br>
+Examples:
+<span class="commandline">
+<br>shexec "open" "c:\my documents\abc.doc"
+<br>shexec "print" "d:\files\1.pdf"
+<br>shexec "open" "http://www.nirsoft.net"
+</span>
+
+
+
+<tr>
+<td>
+<a name="setfiletime"></a>
+
+<h6 class="commandsyntax">
+setfiletime [filename or wildcard] [Created Date] {Modified Date} {Accessed Date} 
+</h6>
+Changes the  Created/Modified/Accessed date of one or more files.
+The first parameter can be a single filename or wildcard string.
+The dates parameters must be specified in the following format: "dd-mm-yyyy hh:nn:ss"
+if a date parameter is not specified or you specify an empty string (""), the date won't be changed. 
+If you specify "now" as date parameter, the current date and time will be used
+<br>
+Examples:
+<span class="commandline">
+<br>setfiletime "c:\temp\*.exe" "15-05-2004 11:22:12"  "22-01-2005 21:22:55"
+<br>setfiletime "c:\temp\myfile.txt" "24-06-2003 17:57:11"  "" "22-11-2005 10:21:56"
+<br>setfiletime "c:\temp\myfile.txt" now now
+</span>
+
+
+
+<tr>
+<td>
+<a name="setfilefoldertime"></a>
+
+<h6 class="commandsyntax">
+setfilefoldertime [filename, folder or wildcard] [Created Date] {Modified Date} {Accessed Date} 
+</h6>
+Changes the Created/Modified/Accessed date of one or more files/folders.
+This command is very similar to setfiletime command.
+The only difference is that setfilefoldertime command can also change the date of a folder - only under Windows 2000/XP.
+<br>
+Examples:
+<span class="commandline">
+<br>setfilefoldertime &quot;c:\temp\myfolder&quot; &quot;10-01-2003 11:22:12&quot;  &quot;12-11-2002 02:34:11&quot;
+<br>setfilefoldertime &quot;c:\temp\myfolder&quot; now now
+</span>
+
+
+<tr>
+<td>
+<a name="clonefiletime"></a>
+
+<h6 class="commandsyntax">
+clonefiletime [source filename] [Wildcard]  
+</h6>
+Clone the Created/Modified/Accessed time of one file into one or more files.
+The Created/Modified/Accessed time is taken from the file specified in [source filename] parameter
+and set into the file or wildcard specified in [Wildcard] parameter.
+
+<br>
+Examples:
+<span class="commandline">
+<br>clonefiletime &quot;c:\temp\file1.txt&quot; &quot;c:\files\*.txt&quot; 
+<br>clonefiletime &quot;c:\temp\file1.txt&quot;  &quot;c:\temp\file2.txt&quot; 
+</span>
+
+
+
+<tr>
+<td>
+<a name="moverecyclebin"></a>
+<h6 class="commandsyntax">
+moverecyclebin [Wildcard]
+</h6>
+Moves one or more files to the Recycle Bin of Windows.
+You can specify a single file, or multiple files using wildcard.
+
+<p>
+<span style="color:#ff0000;font-size:15pt">
+Warning !!
+</span>
+<br>
+When using wildcards, this command also moves subfolders into the Recycle Bin, so use it very carefully !
+
+<p>
+Example:
+<span class="commandline">
+<br>moverecyclebin f:\temp\myfile.txt
+<br>moverecyclebin f:\temp\1\*.txt
+</span>
+ 
+ 
+
+
+<tr>
+<td>
+<a name="emptybin"></a>
+
+<h6 class="commandsyntax">
+emptybin {drive}
+</h6>
+Empty the Recycle Bin.
+the {drive} parameter specifies the drive of the Recycle Bin that you want to empty.
+If the {drive} parameter is not specified, all Recycle Bin on all drives will be emptied.
+
+<br>
+Example:
+<span class="commandline">
+<br>emptybin f:
+<br>emptybin
+</span>
+ 
+
+<tr>
+<td>
+<a name="setdisplay"></a>
+
+<h6 class="commandsyntax">
+setdisplay {monitor:index/name} [width] [height] [color bits] {refresh rate} {-updatereg} {-allusers}
+</h6>
+Changes your display settings. The <span class="commandsyntax">[width]</span> and <span class="commandsyntax">[height]</span> parameters represents
+the number of pixels on your screen. The <span class="commandsyntax">[color bits]</span> parameter represents the
+number of colors shown on your screen (8 - 256 color, 16 - 16bit color, 24 - 24bit color, and so on).
+<span class="commandsyntax">{refresh rate}</span> is an optional parameter that specifies the monitor refresh rate.
+
+If you specify the <span class="commandsyntax">{-updatereg}</span> parameter, the new settings will be saved in the Registry.
+If you specify both <span class="commandsyntax">{-updatereg}</span> and <span class="commandsyntax">{-allusers}</span> parameters, the new settings will be saved in the Registry for all users.
+<br>
+If you have multiple monitors, you can use the optional monitor parameter, which specifies for which monitor you want to change the display settings.
+You can specify the monitor by index (0 for the first monitor, 1 for the second one, and so on) or by specifying a string in the system monitor name.
+The monitor name can be found in the Device manager of Windows: Right click on the monitor item, and then choose 'Properties'. The string displayed in the 'location' field is the monitor name.
+<br>
+Example:
+<span class="commandline">
+<br>setdisplay 800 600 24 -updatereg
+<br>setdisplay 1024 768 24 90
+<br>setdisplay 1024 768 8
+<br>setdisplay monitor:1 1024 768 24 90
+<br>setdisplay monitor:name1 1024 768 24 90
+</span>
+
+<tr>
+<td>
+<a name="setprimarydisplay"></a>
+
+<h6 class="commandsyntax">
+setprimarydisplay [Monitor index/name]
+</h6>
+Set the primary monitor, for systems with multiple monitors only.
+
+<br>
+Example:
+<span class="commandline">
+<br>setprimarydisplay 1
+<br>setprimarydisplay 2
+<br>setprimarydisplay \\.\DISPLAY3
+</span>
+
+
+<tr>
+<td>
+<a name="setbrightness"></a>
+
+<h6 class="commandsyntax">
+setbrightness [level] {mode}
+</h6>
+This command only works on laptop/netbook computers.
+It allows you to set the brightness of the laptop screen.
+The <span class="commandsyntax">[level]</span> parameter is brightness value
+between 0 and 100. 0 = very dark, 100 = very bright.
+<br>
+<span class="commandsyntax">{mode}</span> is optional parameter that
+may conatin the following values:
+<br>1 = Change the brightness under AC power.
+<br>2 = Change the brightness under DC power.
+<br>3 = Change the brightness for both  AC power amd DC power (The default).
+
+<br>
+Examples:
+<span class="commandline">
+<br>setbrightness 50
+<br>setbrightness 40 1
+<br>setbrightness 60 2
+</span>
+
+
+
+<tr>
+<td>
+<a name="changebrightness"></a>
+
+<h6 class="commandsyntax">
+changebrightness [level] {mode}
+</h6>
+This command only works on laptop/netbook computers.
+It allows you to change the brightness of the laptop screen.
+The <span class="commandsyntax">[level]</span> parameter is brightness value to change.
+positive value increases the brightness, and negative value decreases the brightness.
+
+<br>
+<span class="commandsyntax">{mode}</span> is optional parameter that
+may conatin the following values:
+<br>1 = Change the brightness under AC power.
+<br>2 = Change the brightness under DC power.
+<br>3 = Change the brightness for both  AC power amd DC power (The default).
+
+<br>
+Examples:
+<span class="commandline">
+<br>changebrightness 7
+<br>changebrightness -10 
+<br>changebrightness 5 2
+</span>
+
+
+
+<tr>
+<td>
+<a name="killprocess"></a>
+
+<h6 class="commandsyntax">
+killprocess [process]
+</h6>
+Terminates the specified process.
+In the <span class="commandsyntax">[process]</span> parameter, you can specify the full path
+of the process filename (e.g: 'C:\Program Files\Internet Explorer\iexplore.exe') 
+or the name of the process only, without the path (e.g.: iexplore.exe).
+You can also specify the Process ID, by adding the '/' character as a prefix 
+(e.g. /1120). 
+
+<br>
+Examples:
+<span class="commandline">
+<br>killprocess iexplore.exe
+<br>killprocess "c:\winnt\system32\calc.exe"
+<br>killprocess /1830
+</span>
+
+
+
+<tr>
+<td>
+<a name="closeprocess"></a>
+
+<h6 class="commandsyntax">
+closeprocess [process]
+</h6>
+Terminates the specified process, by closing its top level windows.
+As opposed to killprocess command, closeprocess doesn't force the process to be closed 
+immediately. Instead, it send WM_CLOSE message to all top level windows of the specified process.
+However, be aware that this command will not work on process with no user interface.
+
+<p>
+In the <span class="commandsyntax">[process]</span> parameter, you can specify the full path
+of the process filename (e.g: 'C:\Program Files\Internet Explorer\iexplore.exe') 
+or the name of the process only, without the path (e.g.: iexplore.exe).
+You can also specify the Process ID, by adding the '/' character as a prefix 
+(e.g. /1120). 
+
+<br>
+Examples:
+<span class="commandline">
+<br>closeprocess iexplore.exe
+<br>closeprocess "c:\winnt\system32\calc.exe"
+<br>closeprocess /1830
+</span>
+
+
+<tr>
+<td>
+<a name="restartexplorer"></a>
+
+<h6 class="commandsyntax">
+restartexplorer
+</h6>
+Restarts Windows Explorer gracefully.
+
+
+
+
+<tr>
+<td>
+<a name="waitprocess"></a>
+
+<h6 class="commandsyntax">
+waitprocess [process] {Command}
+</h6>
+Wait until the specified process is closed.
+<p>
+In the <span class="commandsyntax">[process]</span> parameter, you can specify the full path
+of the process filename (e.g: 'C:\Program Files\Internet Explorer\iexplore.exe') 
+or the name of the process only, without the path (e.g.: iexplore.exe).
+You can also specify the Process ID, by adding the '/' character as a prefix 
+(e.g. /1120). 
+<br>
+Optionally, you can also specify a command to execute after the process was closed.
+<br>
+Examples:
+<span class="commandline">
+<br>waitprocess iexplore.exe
+<br>waitprocess firefox.exe speak text &quot;Firefox was closed&quot;
+<br>waitprocess &quot;c:\winnt\system32\calc.exe&quot;
+<br>waitprocess /1830
+</span>
+
+
+<tr>
+<td>
+<a name="suspendprocess"></a>
+<h6 class="commandsyntax">
+suspendprocess [process]
+</h6>
+Suspends the specified process. 
+<p>
+In the <span class="commandsyntax">[process]</span> parameter, you can specify the full path
+of the process filename (e.g: 'C:\Program Files\Internet Explorer\iexplore.exe') 
+or the name of the process only, without the path (e.g.: iexplore.exe).
+You can also specify the Process ID, by adding the '/' character as a prefix 
+(e.g. /1120).
+
+<br>
+Examples:
+<span class="commandline">
+<br>suspendprocess myprocess.exe 
+<br>suspendprocess &quot;c:\winnt\system32\calc.exe&quot; 
+<br>suspendprocess /1130
+</span>
+
+
+
+<tr>
+<td>
+<a name="suspendprocess"></a>
+<h6 class="commandsyntax">
+resumeprocess [process]
+</h6>
+Resumes the specified process. 
+<p>
+In the <span class="commandsyntax">[process]</span> parameter, you can specify the full path
+of the process filename (e.g: 'C:\Program Files\Internet Explorer\iexplore.exe') 
+or the name of the process only, without the path (e.g.: iexplore.exe).
+You can also specify the Process ID, by adding the '/' character as a prefix 
+(e.g. /1120).
+
+<br>
+Examples:
+<span class="commandline">
+<br>resumeprocess myprocess.exe 
+<br>resumeprocess &quot;c:\winnt\system32\calc.exe&quot; 
+<br>resumeprocess /1250
+</span>
+
+
+
+<tr>
+<td>
+<a name="setprocesspriority"></a>
+
+<h6 class="commandsyntax">
+setprocesspriority [process] [priority]
+</h6>
+Set a new priority for the specified process.
+
+<p>
+In the <span class="commandsyntax">[priority]</span> parameter, you can specify one of the following values:
+normal, low, belownormal, abovenormal, high, realtime.
+<br>
+In the <span class="commandsyntax">[process]</span> parameter, you can specify the full path
+of the process filename (e.g: 'C:\Program Files\Internet Explorer\iexplore.exe') 
+or the name of the process only, without the path (e.g.: iexplore.exe).
+You can also specify the Process ID, by adding the '/' character as a prefix 
+(e.g. /1120).
+
+
+
+<br>
+Examples:
+<span class="commandline">
+<br>setprocesspriority iexplore.exe high
+<br>setprocesspriority &quot;c:\winnt\system32\calc.exe&quot; low
+<br>setprocesspriority /1830 abovenormal
+</span>
+
+
+<tr>
+<td>
+<a name="setprocessaffinity"></a>
+
+<h6 class="commandsyntax">
+setprocessaffinity [process] [list of processor numbers]
+</h6>
+Set the process affinity, which means - specifying the processors that the process is allowed to use 
+(Only relevant for computers with more than one processor)
+
+<p>
+In the <span class="commandsyntax">[process]</span> parameter, you can specify the full path
+of the process filename (e.g: 'C:\Program Files\Internet Explorer\iexplore.exe') 
+or the name of the process only, without the path (e.g.: iexplore.exe).
+You can also specify the Process ID, by adding the '/' character as a prefix 
+(e.g. /1120).
+
+<br>
+In the <span class="commandsyntax">[list of processor numbers]</span> parameter, you can specify the processor numbers
+that you want to use. 0 is the first processor, 1 is the second one, and so on.
+
+
+<br>
+Examples:
+<span class="commandline">
+<br>setprocessaffinity iexplore.exe 0 1
+<br>setprocessaffinity &quot;c:\winnt\system32\calc.exe&quot; 0 1 2 3
+<br>setprocessaffinity /1830 0
+</span>
+
+
+
+
+
+<tr>
+<td>
+<a name="memdump"></a>
+
+<h6 class="commandsyntax">
+memdump [process] [dump file] [bytes per line] {bytes to read} {start address} {nohex} {noascii}
+</h6>
+Reads the memory of process according to the parameters you specify, and writes it
+into a text file.
+<br>
+The parameters:
+<ul>
+<li><span class="commandsyntax">[process]</span>: The process that you want to dump its
+memory. You can specify the full path of the process filename, the process name only,
+or the Process ID - by adding the '/' chararcter as prefix (e.g.: /520)
+<li><span class="commandsyntax">[dump file]</span>: The filename to save the memory content
+of the specified process.
+<li><span class="commandsyntax">[bytes per line]</span>: Number of memory bytes per line
+in the saved dump file. 
+<li><span class="commandsyntax">{bytes to read}</span>: Number of bytes to read.
+<li><span class="commandsyntax">{start address}</span>: Start the dumping process from this memory address. 
+<li><span class="commandsyntax">{nohex}</span>: Optional. If you specify this parameter, the memory data won't be saved in Hexadecimal format.
+<li><span class="commandsyntax">{noascii}</span>: Optional. If you specify this parameter, the memory data won't be saved in Ascii format.
+</ul>
+<br>
+Examples:
+<span class="commandline">
+<br>memdump iexplore.exe "c:\temp\dump.txt" "16" "0x10000" "0x400000"
+<br>memdump calc.exe "c:\temp\calc.txt" "32" "0x30000" "0x400000" nohex
+<br>memdump /525 "c:\temp\dump.txt" "16" "0x100000" "0x120000" noascii
+</span>
+
+
+<tr>
+<td>
+<a name="service"></a>
+
+<h6 class="commandsyntax">
+service {\\Computer} [action] [service name]
+</h6>
+Changes the status and the startup type of services and drivers.
+<br>
+The parameters:
+<ul>
+<li><span class="commandsyntax">{\\Computer}</span>: Optional. Specifies the name of the
+remote computer. If you omit this parameter, the local computer is used.
+
+<li><span class="commandsyntax">[action]</span>: The action you want to do.
+This parameter may contain one of the following values:
+<ul>
+<li><span class="special2">start</span>: Starts the specified service or driver.
+<li><span class="special2">stop</span>: Stops the specified service or driver.
+<li><span class="special2">pause</span>: Pauses the specified service or driver.
+<li><span class="special2">continue</span>: Continues the specified service or driver.
+<li><span class="special2">restart</span>: Stops and then starts again the specified service or driver.
+<li><span class="special2">auto</span>: Changes the startup type of the specified service or driver to Automatic.
+<li><span class="special2">manual</span>: Changes the startup type of the specified service or driver to Manual.
+<li><span class="special2">disabled</span>: Changes the startup type of the specified service or driver to Disabled.
+<li><span class="special2">boot</span>: (Only for drivers) Changes the startup type of the specified driver to 'Boot'. 
+<li><span class="special2">system</span>: (Only for drivers) Changes the startup type of the specified driver to 'System'.
+</ul>
+<li><span class="commandsyntax">[service name]</span>:
+The name of the service or driver.
+</ul>  
+
+<br>
+Examples:
+<span class="commandline">
+<br>service start schedule
+<br>service \\remote stop schedule
+<br>service restart w3svc
+</span>
+
+
+<tr>
+<td>
+<a name="win"></a>
+
+<h6 class="commandsyntax">
+win [action] [find] [window to find] [Additional Parameters]
+</h6>
+For child windows:
+<h6 class="commandsyntax">
+win child [find] [top window to find] [action] [find] [child window to find] [Additional Parameters]
+</h6>
+
+This command allows you to close, hide, show, maximize, and minimize the specified window.
+<br>
+The parameters:
+<ul>
+<li><span class="commandsyntax">[action]</span>: The action you want to do on the specified window:
+<ul>
+<li><span class="special2">child</span>: Allows you to make an action on child window of the specified top-level window.
+<li><span class="special2">close</span>: Closes the specified windows.
+<li><span class="special2">hide</span>: Hides the specified windows.
+<li><span class="special2">show</span>: Shows again the specified windows. (after hiding it with 'hide' command)
+<li><span class="special2">hideshow</span>: Hides the specified windows and then shows it again. You can use this action to repaint the content of a window.
+<li><span class="special2">togglehide</span>: Toggles the specified windows  between visible and hidden state.
+<li><span class="special2">activate</span>: Bring the specified window to the front.
+<li><span class="special2">flash</span>: Flashes the specified window.
+the values in <span class="commandsyntax">[Additional Parameters]</span>
+specifies the number of flashes (the default is 5) and the number of milliseconds of every flash.
+
+<li><span class="special2">max</span>: Maximizes the specified windows.
+<li><span class="special2">min</span>: Minimizes the specified windows.
+<li><span class="special2">normal</span>: Restores the specified windows to normal state, after minimizing or maximizing them.
+<li><span class="special2">togglemin</span>: Toggles the specified windows between minimized and normal state.
+<li><span class="special2">togglemax</span>: Toggles the specified windows between maximized and normal state.
+
+<li><span class="special2">trans</span>: Make the specified windows transparent.
+the value in <span class="commandsyntax">[Additional Parameters]</span> is a number between 0 and 255 that specifies the 
+transparency level. 0 = completely transparent. 255 = completely opaque.
+<li><span class="special2">setsize</span>: Set the size of the specified windows.
+the values in <span class="commandsyntax">[Additional Parameters]</span>
+specifies the desired window size - x, y, width, height.
+<li><span class="special2">move</span>: move/resize the window.
+the values in <span class="commandsyntax">[Additional Parameters]</span>
+specifies the number of pixels to move/change: x, y, width, height.
+<li><span class="special2">center</span>: Center the specified windows.
+
+<li><span class="special2">settopmost</span>:Set the top-most state of the specified windows.
+If the value in <span class="commandsyntax">[Additional Parameters]</span> is 1, 
+the specified windows will become top-most windows, if the value is 0, the top-most state
+will be canceled.
+<li><span class="special2">redraw</span>: Redraw the specified windows.
+
+<li><span class="special2">settext</span>: Modify the caption/title of the specified windows.
+<li><span class="special2">focus</span>: Set the focus to the specified window.
+<li><span class="special2">disable</span>: Disable the specified window.
+<li><span class="special2">enable</span>: Enable the specified window.
+<li><span class="special2">toggledisable</span>: Toggles the specified windows between disabled and enabled state.
+<li><span class="special2">+style</span>: Add style bits to the specified window. The value of <span class="commandsyntax">[Additional Parameters]</span> specifies the style bits to add.
+<li><span class="special2">-style</span>: Remove style bits from the specified window. The value of <span class="commandsyntax">[Additional Parameters]</span> specifies the style bits to remove.
+<li><span class="special2">+exstyle</span>: Add extended style bits to the specified window. The value of <span class="commandsyntax">[Additional Parameters]</span> specifies the extended style bits to add.
+<li><span class="special2">-exstyle</span>: Remove extended style bits from the specified window. The value of <span class="commandsyntax">[Additional Parameters]</span> specifies the extended style bits to remove.
+<li><span class="special2">postmsg</span>: Post a message to the specified window. The 3 values in <span class="commandsyntax">[Additional Parameters]</span> specifies the message parameters: Msg, wParam, lParam. 
+<li><span class="special2">sendmsg</span>: Send a message to the specified window. The 3 values in <span class="commandsyntax">[Additional Parameters]</span> specifies the message parameters: Msg, wParam, lParam. 
+<li><span class="special2">dlgclick</span>: Send a click command to the button inside a dialog-box. The value in <span class="commandsyntax">[Additional Parameters]</span> should specify the control ID of the button, 
+or one of the following predefined buttons: yes, no, ok, cancel, retry, ignore, close, help.
+<li><span class="special2">dlgsettext</span>: Set the text to the specified control inside a dialog-box. The value in <span class="commandsyntax">[Additional Parameters]</span> should specify the control ID.
+<li><span class="special2">dlgsetfocus</span>: Set the focus to the specified control inside a dialog-box. The value in <span class="commandsyntax">[Additional Parameters]</span> should specify the control ID
+
+</ul>
+<li><span class="commandsyntax">[find]</span>: The method to find the window
+<ul>
+<li><span class="special2">handle</span>: Finds the desired window by specifying the handle
+of the window in <span class="commandsyntax">[window to find]</span> parameter.
+<li><span class="special2">id</span>: Finds the desired child window by specifying the id of the child window.
+Useful only for child windows.
+
+<li><span class="special2">class</span>: Finds the desired window by specifying the class
+name of the window in <span class="commandsyntax">[window to find]</span> parameter.
+<li><span class="special2">title</span>: Finds the desired window by specifying the
+exact title of the window in <span class="commandsyntax">[window to find]</span> parameter.
+
+<li><span class="special2">stitle</span>: Finds the desired window by specifying the
+first few characters of the window in <span class="commandsyntax">[window to find]</span> parameter.
+<li><span class="special2">ititle</span>: Finds the desired window by specifying 
+a sequence of characters that exists in the window title.
+<li><span class="special2">etitle</span>: Finds the desired window by specifying the
+last few characters of the window in <span class="commandsyntax">[window to find]</span> parameter.
+<li><span class="special2">alltop</span>: All top windows.
+<li><span class="special2">alltopnodesktop</span>: All top windows, except of desktop and tray windows.
+
+<li><span class="special2">active</span>: The current active window.
+<li><span class="special2">foreground</span>: The window in foreground.
+<li><span class="special2">desktop</span>: The desktop window
+<li><span class="special2">process</span>:Finds the desired window by specifying process ID (for example: /3412) or process name
+(for example: firefox.exe).
+
+</ul>
+
+<li><span class="commandsyntax">[window to find]</span>:
+Specifies the window by handle, class name, or title, according to the value of the
+previous parameter.
+
+</ul>
+
+<br>
+Examples:
+<span class="commandline">
+<br>win close title "calculator"
+<br>win hide stitle "calculat"
+<br>win hide ititle "culat"
+<br>win show class "SciCalc"
+<br>win activate title "my computer"
+<br>win flash title "calculator" 10 500
+<br>win max handle 0x00009c01
+<br>win redraw alltop
+<br>win trans ititle &quot;internet explorer&quot; 192 
+<br>win setsize class &quot;IEFrame&quot; 50 50 400 300
+<br>win settopmost class "SciCalc" 1
+<br>win child class "Shell_TrayWnd" hide class "button"
+<br>win child class "Shell_TrayWnd" show class "button"
+<br>win child title "calculator" hide id 128  
+<br>win -style title "my computer"  0x00C00000
+<br>win child title "my computer" +exstyle all 0x00400000
+<br>win sendmsg title "calculator" 0x10 0 0
+<br>win dlgclick class &quot;#32770&quot; cancel
+<br>win max process firefox.exe
+<br>win max process /1275
+<br>win togglehide class MozillaWindowClass
+</span>
+
+
+
+<tr>
+<td>
+<a name="cdrom"></a>
+
+<h6 class="commandsyntax">
+cdrom [action] {drive:}
+</h6>
+This command allows you to open and close the door of your CD-ROM drive.
+The <span class="commandsyntax">[action]</span> parameter can be 'open' or 'close'.
+If you don't specify the <span class="commandsyntax">{drive:}</span> parameter, the default CD-ROM will be used.
+<br>
+Examples:
+<span class="commandline">
+<br>cdrom open
+<br>cdrom close
+<br>cdrom open J:
+<br>cdrom close R:
+</span>
+
+
+<tr>
+<td>
+<a name="clipboard"></a>
+
+<h6 class="commandsyntax">
+clipboard [Action] [Parameter]
+</h6>
+Allows you to set a value into the clipboard and clear the clipboard.
+<p>
+[Action] may contain one of the following values:
+<ul>
+<li><span class="special2">set</span> - set the specified text into the clipboard.
+<li><span class="special2">readfile</span> - set the content of the specified text file into the clipboard.
+<li><span class="special2">clear</span> - clear the clipboard.
+<li><span class="special2">writefile</span> - write the content of the clipboard to a file. (text only)
+<li><span class="special2">writeufile</span> - write the content of the clipboard to a Unicode file. (text only)
+<li><span class="special2">addfile</span> - add the content of the clipboard to a file. (text only)
+<li><span class="special2">addufile</span> - add the content of the clipboard to a Unicode file. (text only)
+<li><span class="special2">saveimage</span> - Save the current image in the clipboard into a file.
+<li><span class="special2">copyimage</span> - Copy the content of the specified image file to the clipboard.
+
+<li><span class="special2">saveclp</span> - Save the current clipboard data into Windows .clp file.
+<li><span class="special2">loadclp</span> - Load Windows .clp file into the clipboard.
+
+
+
+
+
+</ul>
+For copyimage and saveimage actions, the following file formats are supported: .bmp, .gif, .jpg, .png, .tiff
+ - Only works on computers with GDI+ installed (On XP/2003/Vista,  GDI+ is installed as a part of the operating system).
+
+
+<br>
+Examples:
+<span class="commandline">
+<br>clipboard set &quot;123456&quot;
+<br>clipboard set ~$folder.desktop$ 
+<br>clipboard set ~$folder.start_menu$ 
+<br>clipboard readfile &quot;c:\temp\info1.txt&quot;
+<br>clipboard addfile &quot;c:\temp\clip1.txt&quot;
+<br>clipboard clear
+<br>clipboard saveimage &quot;c:\temp\clip01.png&quot;
+<br>clipboard saveimage &quot;c:\temp\clip01.gif&quot;
+<br>clipboard copyimage &quot;c:\temp\img01.gif&quot;
+<br>clipboard saveclp &quot;c:\temp\1.clp&quot;
+<br>clipboard loadclp &quot;c:\temp\1.clp&quot;
+</span>
+
+
+<tr>
+<td>
+<a name="gac"></a>
+
+<h6 class="commandsyntax">
+gac [Action] [Parameter]
+</h6>
+Allows you to install an assembly in the Global Assembly Cache.
+<br>
+Examples:
+<span class="commandline">
+<br>gac install &quot;C:\temp\MyAssembly\bin\Release\6\MyAssembly.dll&quot;
+</span>
+
+
+<tr>
+<td>
+<a name="beep"></a>
+
+<h6 class="commandsyntax">
+beep [Frequency] [Duration]
+</h6>
+Plays a beep. The <span class="commandsyntax">[Frequency]</span> parameter specifies the frequency, in hertz.
+The <span class="commandsyntax">[Duration]</span> parameter specifies the duration of the sound in milliseconds.
+Under Windows 95/98/ME, the above parameters are ignored, and only a standard Windows beep is played.
+<br>
+Example:
+<span class="commandline">
+<br>beep 500 2000
+</span>
+
+
+<tr>
+<td>
+<a name="stdbeep"></a>
+
+<h6 class="commandsyntax">
+stdbeep
+</h6>
+Plays the standard beep of Windows. 
+<br>
+Example:
+<span class="commandline">
+<br>stdbeep
+</span>
+
+
+<tr>
+<td>
+<a name="setvolume"></a>
+
+<h6 class="commandsyntax">
+setvolume [device] [left-volume] [right-volume]
+</h6>
+Set the volume level of your sound device.
+The <span class="commandsyntax">[device]</span> parameter represents the device identifier.
+In most cases, you should use '0' value for this parameter.
+Under Windows Vista, you should specify 0 for default playback device or 1 for default recording device.
+<br>
+The <span class="commandsyntax">[left-volume]</span> and <span class="commandsyntax">[right-volume]</span>
+parameters should contain a value between 0 (silence) and 65535 (full volume) that represents the volume level for left and right channels.
+<br>
+Examples:
+<span class="commandline">
+<br>setvolume 0 0 0
+<br>setvolume 0 32768 32768
+<br>setvolume 0 0xffff 0
+</span>
+
+<tr>
+<td>
+<a name="setsysvolume"></a>
+
+<h6 class="commandsyntax">
+setsysvolume [volume] {Component} {Device Index}
+</h6>
+Set the sound volume for your system.
+Changing this value also affects the sound volume settings under 'Control Panel'.
+The <span class="commandsyntax">[volume]</span> parameter should contain a value
+between 0 (silence) and 65535 (full volume).
+<br>
+<span class="commandsyntax">{Component}</span> is an optional parameter that specifies
+one of the following sound components: 
+master, waveout, synth, cd, microphone, phone, aux, line, headphones, wavein.
+The default value is 'master' (for master volume).
+Under Windows Vista, the component name must be identical to the one of the device names appear in the
+sound window of Vista (Control Panel -> Sound). If the device name contains spaces, it must be in quotes.
+For Windows Vista, you can also specify 'default_record' if you want to use the default recording device.
+
+<br>
+<span class="commandsyntax">{Device Index}</span> is an optional parameter that specifies
+the sound device index. This parameter is useful if you have more than one sound card.
+If you don't specify this parameter, the default sound card in Control Panel is used.
+
+
+<br>
+Examples:
+<span class="commandline">
+<br>setsysvolume 0x8000
+<br>setsysvolume 0
+<br>setsysvolume 25000 waveout
+<br>setsysvolume 25000 master 1
+</span>
+
+<p>
+Vista Examples:
+<span class="commandline">
+<br>setsysvolume 0x8000
+<br>setsysvolume 0 &quot;front mic&quot;
+<br>setsysvolume 25000 speakers
+<br>setsysvolume 25000 &quot;line in&quot;
+<br>setsysvolume 25000 default_record
+</span>
+
+
+<tr>
+<td>
+<a name="setsysvolume2"></a>
+
+<h6 class="commandsyntax">
+setsysvolume2 [left volume] [right volume] {Component} {Device Index}
+</h6>
+Similar to setsysvolume, but instead of setting the whole sound volume, 
+setsysvolume2 set the right channel and left channel separately.
+
+<br>
+Examples:
+<span class="commandline">
+<br>setsysvolume2 10000 20000
+<br>setsysvolume2 30000 0
+<br>setsysvolume2 25000 15000 waveout
+<br>setsysvolume2 30000 0 master 1
+</span>
+
+
+<tr>
+<td>
+<a name="changesysvolume"></a>
+
+<h6 class="commandsyntax">
+changesysvolume [volume change] {Component} {Device Index}
+</h6>
+Increases or decreases the system volume.
+the <span class="commandsyntax">[volume change]</span> parameter specifies the number of volume units to
+increase or decrease (negative value to decrease, positive value to increase).
+<br>
+<span class="commandsyntax">{Component}</span> is an optional parameter that specifies
+one of the following sound components: 
+master, waveout, synth, cd, microphone, phone, aux, line, headphones, wavein.
+The default value is 'master' (for master volume).
+Under Windows Vista, the component name must be identical to the one of the device names appear in the
+sound window of Vista (Control Panel -> Sound). If the device name contains spaces, it must be in quotes.
+
+
+<br>
+<span class="commandsyntax">{Device Index}</span> is an optional parameter that specifies
+the sound device index. This parameter is useful if you have more than one sound card.
+If you don't specify this parameter, the default sound card in Control Panel is used.
+
+
+<br>
+Examples:
+<span class="commandline">
+<br>changesysvolume 5000
+<br>changesysvolume -3000
+<br>changesysvolume 0x1000 waveout
+<br>changesysvolume 0x1000 master 1
+</span>
+
+
+<p>
+Vista Examples:
+<span class="commandline">
+<br>changesysvolume 5000
+<br>changesysvolume -3000
+<br>changesysvolume 0x1000 &quot;line in&quot;
+<br>changesysvolume 0x1000 &quot;speakers&quot; 1
+<br>changesysvolume 0x1000 default_record
+</span>
+
+<tr>
+<td>
+<a name="changesysvolume2"></a>
+
+<h6 class="commandsyntax">
+changesysvolume2 [left volume change] [right volume change] {Component} {Device Index}
+</h6>
+Similar to changesysvolume, but instead of changing the whole sound volume, 
+changesysvolume2 changes the left channel and the right channel separately.
+
+<br>
+Examples:
+<span class="commandline">
+<br>changesysvolume2 1000 -1000
+<br>changesysvolume2 -3000 0
+<br>changesysvolume2 0 -5000 waveout
+<br>changesysvolume2 -3000 0 master 1
+</span>
+
+
+
+<tr>
+<td>
+<a name="mutesysvolume"></a>
+
+<h6 class="commandsyntax">
+mutesysvolume [action] {Component} {Device Index}
+</h6>
+Mute/unmute the system volume. <br>
+In the <span class="commandsyntax">[action]</span> parameter, specify 1 for mute, 0 for unmute, 
+or 2 for switching between mute and normal state.
+<br>
+The second parameter is optional, and you can specify one of the following sound components:
+master, waveout, synth, cd, microphone, phone, aux, line, headphones, wavein.
+The default value is 'master' (for master volume).
+Under Windows Vista, the component name must be identical to the one of the device names appear in the
+sound window of Vista (Control Panel -> Sound). If the device name contains spaces, it must be in quotes.
+
+
+<br>
+<span class="commandsyntax">{Device Index}</span> is an optional parameter that specifies
+the sound device index. This parameter is useful if you have more than one sound card.
+If you don't specify this parameter, the default sound card in Control Panel is used.
+
+
+<br>
+Examples:
+<span class="commandline">
+<br>mutesysvolume 1
+<br>mutesysvolume 0
+<br>mutesysvolume 2 waveout
+<br>mutesysvolume 1 master 1
+</span>
+
+
+<p>
+Vista Examples:
+<span class="commandline">
+<br>mutesysvolume 1
+<br>mutesysvolume 0
+<br>mutesysvolume 2 &quot;rear mic&quot; 
+<br>mutesysvolume 1 speakers 1
+<br>mutesysvolume 1 default_record
+</span>
+
+<tr>
+<td>
+
+
+
+<tr>
+<td>
+<a name="setappvolume"></a>
+
+<h6 class="commandsyntax">
+setappvolume [Process] [volume level] {Device Name/Index}
+</h6>
+Set the volume level of specific application under Windows 7/Vista/2008.
+<br>
+In the <span class="commandsyntax">[process]</span> parameter, you can specify the .exe filename 
+(For example: Firefox.exe, iexplore.exe, wmplayer.exe), or full path filename (For example: 'F:\Program Files\Internet Explorer\iexplore.exe')
+or the process ID (For example: /3426)
+<br>
+You can also specify 'focused' for this parameter, if you to want to set the volume of the focused application.
+<br>
+You can also specify 'SystemSounds' for this parameter, if you to want to set the 'System Sounds' volume.
+ 
+<br>
+The <span class="commandsyntax">[volume level]</span> parameter is a number between 0 and 1. 
+For example, if you want to set the volume to 50%, you should set this parameter to 0.5
+
+<br>
+The <span class="commandsyntax">{Device Name/Index}</span> is optional parameter.
+If you don't specify it, the default output device is used. 
+You can specify the device index as numeric value (0 = first device, 1 = second device, and so on)
+You also specify the full device name, like Speakers or Headphones. 
+In order to find out what sound devices are available in your system, use the showsounddevices command.
+
+
+<br>
+Examples:
+<span class="commandline">
+<br>setappvolume iexplore.exe 0.2
+<br>setappvolume wmplayer.exe 0.75 Speakers
+<br>setappvolume /1275 0.25 1
+<br>setappvolume Firefox.exe 0.5 
+<br>setappvolume focused 0.75
+</span>
+
+
+
+
+<tr>
+<td>
+<a name="changeappvolume"></a>
+
+<h6 class="commandsyntax">
+changeappvolume [Process] [volume level] {Device Name/Index}
+</h6>
+Increase/decrease the volume level of specific application under Windows 7/Vista/2008.
+<br>
+In the <span class="commandsyntax">[process]</span> parameter, you can specify the .exe filename 
+(For example: Firefox.exe, iexplore.exe, wmplayer.exe), or full path filename (For example: 'F:\Program Files\Internet Explorer\iexplore.exe')
+or the process ID (For example: /3426)
+<br>
+You can also specify 'focused' for this parameter, if you to want to change the volume of the focused application.
+<br>
+You can also specify 'SystemSounds' for this parameter, if you to want to set the 'System Sounds' volume.
+
+<br>
+The <span class="commandsyntax">[volume level]</span> parameter is a positive or negative number between 0 and 1. 
+positive number increases the volume, negative number decreases the volume.
+For example, if you want to increase the volume from 20% (current volume) to 70%, you should set this parameter to 0.5
+
+<br>
+The <span class="commandsyntax">{Device Name/Index}</span> is optional parameter.
+If you don't specify it, the default output device is used. 
+You can specify the device index as numeric value (0 = first device, 1 = second device, and so on)
+You also specify the full device name, like Speakers or Headphones. 
+In order to find out what sound devices are available in your system, use the showsounddevices command.
+
+
+<br>
+Examples:
+<span class="commandline">
+<br>changeappvolume iexplore.exe -0.2
+<br>changeappvolume wmplayer.exe 0.55 Speakers
+<br>changeappvolume /1275 -0.25 1
+<br>changeappvolume Firefox.exe 0.5 
+</span>
+
+
+
+
+
+<tr>
+<td>
+<a name="muteappvolume"></a>
+
+<h6 class="commandsyntax">
+muteappvolume [Process] [mute mode] {Device Name/Index}
+</h6>
+Increase/decrease the volume level of specific application under Windows 7/Vista/2008.
+<br>
+In the <span class="commandsyntax">[process]</span> parameter, you can specify the .exe filename 
+(For example: Firefox.exe, iexplore.exe, wmplayer.exe), or full path filename (For example: 'F:\Program Files\Internet Explorer\iexplore.exe')
+or the process ID (For example: /3426)
+<br>
+You can also specify 'focused' for this parameter, if you to want to mute/unmute the volume of the focused application.
+<br>
+You can also specify 'SystemSounds' for this parameter, if you to want to set the 'System Sounds' volume.
+
+<br>
+The <span class="commandsyntax">[mute mode]</span> may contains one of the following values:
+<br>0 = Unmute
+<br>1 = Mute
+<br>2 = Switch between mute and unmute.
+
+<br>
+The <span class="commandsyntax">{Device Name/Index}</span> is optional parameter.
+If you don't specify it, the default output device is used. 
+You can specify the device index as numeric value (0 = first device, 1 = second device, and so on)
+You also specify the full device name, like Speakers or Headphones. 
+In order to find out what sound devices are available in your system, use the showsounddevices command.
+
+
+<br>
+Examples:
+<span class="commandline">
+<br>muteappvolume iexplore.exe 0
+<br>muteappvolume wmplayer.exe 1 Speakers
+<br>muteappvolume /1275 2 1
+<br>muteappvolume Firefox.exe 1
+</span>
+
+
+<tr>
+<td>
+<a name="setdefaultsounddevice"></a>
+
+<h6 class="commandsyntax">
+setdefaultsounddevice [Device Name] {Role}
+</h6>
+Set the default sound device on Windows 7/Vista/2008.
+The [Device Name] is the name of the device, as appeared in the 
+sound devices list of windows, for example: Speakers, Line In, Microphone, and so on...
+<br>
+The {Role} parameter is optional and may countain one of the following values: 0 for Console
+(the default value), 1 for Multimedia, and 2 for Communications.
+
+<br>
+Examples:
+<span class="commandline">
+<br>setdefaultsounddevice &quot;Line In&quot;
+<br>setdefaultsounddevice &quot;Microphone&quot; 2
+</span>
+
+
+
+<tr>
+<td>
+<a name="setsubunitvolumedb"></a>
+<h6 class="commandsyntax">
+setsubunitvolumedb [Device Name] [Subunit Name] [Decibel Value]
+</h6>
+Set the sound volume (in Decibels) of sound device subunit.
+<br>
+The <span class="commandsyntax">[Device Name]</span> is the name of the device, as appeared in the 
+sound devices list of windows. In most cases the device name is 'Speakers'.
+<br>
+The <span class="commandsyntax">[Subunit Name]</span> is the name of a subunit, as appeared in the 'Level' tab
+of the device properties window. Examples for subunit name: Phone Line, Microphone,
+Internal MIC, Line In, and so on...
+
+
+<br>
+Examples:
+<span class="commandline">
+<br>setsubunitvolumedb &quot;Speakers&quot; &quot;Line In&quot; -25
+<br>setsubunitvolumedb &quot;Speakers&quot; &quot;Microphone&quot; -10
+</span>
+
+
+
+
+<tr>
+<td>
+<a name="mutesubunitvolume"></a>
+<h6 class="commandsyntax">
+mutesubunitvolume [Device Name] [Subunit Name] [mute mode]
+</h6>
+Mute/unmute the sound volume of sound device subunit.
+<br>
+The <span class="commandsyntax">[Device Name]</span> is the name of the device, as appeared in the 
+sound devices list of windows. In most cases the device name is 'Speakers'.
+<br>
+The <span class="commandsyntax">[Subunit Name]</span> is the name of a subunit, as appeared in the 'Level' tab
+of the device properties window. Examples for subunit name: Phone Line, Microphone,
+Internal MIC, Line In, and so on...
+
+<br>
+<br>
+The <span class="commandsyntax">[mute mode]</span> may contains one of the following values:
+<br>0 = Unmute
+<br>1 = Mute
+<br>2 = Switch between mute and unmute.
+
+<br>
+Examples:
+<span class="commandline">
+<br>mutesubunitvolume &quot;Speakers&quot; &quot;Line In&quot; 0
+<br>mutesubunitvolume &quot;Speakers&quot; &quot;Microphone&quot; 1
+</span>
+
+
+
+<tr>
+<td>
+<a name="showsounddevices"></a>
+
+<h6 class="commandsyntax">
+showsounddevices 
+</h6>
+Displays a message box with the list of all sound devices on Windows Vista/7/2008.
+<br>
+This command is useful for Windows Vista/7/2008, to easily find out which sound devices you can use on your system
+with the other sound volume commands.
+
+
+
+
+
+
+
+
+<a name="wait"></a>
+
+<h6 class="commandsyntax">
+wait [milliseconds]
+</h6>
+Simply wait the specified number of milliseconds.
+<br>
+Examples:
+<span class="commandline">
+<br>wait 1000
+<br>wait 500
+</span>
+
+<tr>
+<td>
+<a name="shellrefresh"></a>
+
+<h6 class="commandsyntax">
+shellrefresh
+</h6>
+Initiate a general refersh for Windows Explorer.
+This refresh command can be useful if you make a change in the Registry related to the shell file types
+(For example, if you change the icon of .gif extension), and you want that your changes will take affect immediately.
+
+
+<tr>
+<td>
+<a name="sysrefresh"></a>
+
+<h6 class="commandsyntax">
+sysrefresh {Refresh Type}
+</h6>
+Initiate a general system refresh. You can use this command to refresh your system after
+changing your system settings in the Registry (e.g: changing desktop icons size, environment variables, and so on..)
+{Refresh Type} is optional. 
+You can specify one of the following values: 
+&quot;environment&quot; - for refreshing the environment variables,
+&quot;policy&quot; - for policy settings, 
+&quot;intl&quot; for locale settings.
+<br>
+Examples:
+<span class="commandline">
+<br>sysrefresh
+<br>sysrefresh environment
+<br>sysrefresh policy
+</span>
+
+
+
+<tr>
+<td>
+<a name="setcursor"></a>
+
+<h6 class="commandsyntax">
+setcursor [X] [Y]
+</h6>
+Set the position of mouse cursor. The <span class="commandsyntax">[X]</span> and <span class="commandsyntax">[Y]</span> parameters specifies the desired cursor position.
+<br>
+Example:
+<span class="commandline">
+<br>setcursor 100 50
+</span>
+
+
+<tr>
+<td>
+<a name="setcursorwin"></a>
+
+<h6 class="commandsyntax">
+setcursorwin [X] [Y]
+</h6>
+Set the position of mouse cursor, relative to the top-left corner of the active window. 
+The <span class="commandsyntax">[X]</span> and <span class="commandsyntax">[Y]</span> parameters specifies the desired cursor position.
+<br>
+Example:
+<span class="commandline">
+<br>setcursor 100 50
+</span>
+
+
+<tr>
+<td>
+<a name="movecursor"></a>
+
+<h6 class="commandsyntax">
+movecursor [X] [Y]
+</h6>
+move the mouse cursor. The <span class="commandsyntax">[X]</span> and <span class="commandsyntax">[Y]</span> parameters specifies the number of pixels to move.
+Example:
+<span class="commandline">
+<br>movecursor 10 10
+</span>
+
+
+<tr>
+<td>
+<a name="dlg"></a>
+
+<h6 class="commandsyntax">
+dlg [Process Name] [Window Title] [Action] [Parameters]
+</h6>
+Allows you to interact with standard dialog-boxes and message-boxes of Windows.
+When a dialog-box is opened, you can use this command to &quot;click&quot; the ok/cancel/yes/no buttons, or fill
+the text-boxes in the dialog-box.
+<br>
+For example, the following commands fill the standard 'Run' dialog-box of Windows with 'calc.exe' process, and then
+click the 'OK' button. The '12298' is the control ID of the text-box in the Run dialog-box.
+You can find the control ID by using Spy++ of Microsoft, or by using my <a href="http://www.nirsoft.net/utils/winexp.html" target="winexp">WinExplorer</a> utility.
+
+<span class="commandline">
+<br>dlg &quot;explorer.exe&quot; &quot;run&quot; settext 12298  &quot;calc.exe&quot;
+<br>dlg &quot;explorer.exe&quot; &quot;run&quot; click ok
+</span>
+<p>
+The following command will choose the 'Yes' answer for any question dialog-box of Explorer process:
+<span class="commandline">
+<br>dlg &quot;explorer.exe&quot; &quot;&quot; click yes
+</span>
+
+<p>
+The following command will choose the 'Cancel' answer for any question dialog-box of any process:
+<span class="commandline">
+<br>dlg &quot;&quot; &quot;&quot; click cancel
+</span>
+
+<p>
+Parameters description:
+<ul>
+<li><span class="commandsyntax">[Process Name]</span>: 
+Specifies the process that created the desired window. You can specify only the process name or the full path of the process.
+If this parameter is empty string(&quot;&quot; ), the command will be executed on any process.
+<li><span class="commandsyntax">[Window Title]</span>: 
+Specifies the title of the window that you want the execute the action. 
+If this parameter is empty string(&quot;&quot; ), the command will be executed on any window, regardless the window title.
+
+<li><span class="commandsyntax">[Action]</span>: 
+You can specify one of the following options:
+<ul>
+<li><span class="special2">click</span>:
+Click the specified button. You can specify one of the following predefined values (For standard Windows dialog-boxes only !):
+yes, no, ok, cancel, retry, ignore, close, help. You can also specify any control ID as numeric value.
+
+<li><span class="special2">settext</span>:
+Set the text of the specified control. The first parameter of this action specifies the ID of the control, and the second parameter specifies
+the text.
+
+</ul>
+</ul>
+
+
+</ul>
+
+
+<tr>
+<td>
+<a name="dlgany"></a>
+
+<h6 class="commandsyntax">
+dlgany [Process Name] [Window Title] [Action] [Parameters]
+</h6>
+similar to dlg command, but also works on any window, even if it's not identified as a standard Windows dialog-box.
+
+<br>
+
+<tr>
+<td>
+<a name="returnval"></a>
+
+<h6 class="commandsyntax">
+returnval [Return Value]
+</h6>
+This command allows you to specify the return value for NirCmd. 
+The return value can be used by external program that run NirCmd.
+<br>
+For example, in the following command, NirCmd returns 0x30 value if the user choose the 'Yes' answer:
+<span class="commandline">
+<br>qboxcom &quot;Do you want to continue ?&quot; &quot;question&quot; returnval 0x30
+</span>
+
+
+<tr>
+<td>
+<a name="sendkeypress"></a>
+
+<h6 class="commandsyntax">
+sendkeypress [Keys Combination 1] [Keys Combination 2] [Keys Combination 3] ...
+</h6>
+Sends one or more key press combinations to the system. 
+The operating system will behave exactly as the user really pressed the specified keys combination.
+<br>
+The <span class="commandsyntax">[Key Combination]</span> parameter specifies 
+a single key press to send or a combination of a single key and shift/ctrl/alt/Windows keys, delimited by '+' character.
+<br>
+The key in the <span class="commandsyntax">[Key Combination]</span> parameter can be specifed as
+numeric <a href="http://msdn.microsoft.com/en-us/library/dd375731" target="virkey">virtual key code</a>
+(For example: 0x2e for Delete key), or as one of the following predefined values:
+a - z and 0 - 9 (for alphanumeric keys), F1 - F24 (for Fxx keys), shift, ctrl, alt, enter, esc
+,leftshift, rightshift, leftctrl, rightctrl, leftmenu, rightmenu, spc (space), down, up,
+left, right, home, end, insert, delete, plus, comma, minus, period, lwin, rwin (Windows key), apps,
+pageup, pagedown, tab, multiply, add, subtract, seperator, divide, backspace, pause,
+capslock, numlock, scroll, printscreen.
+<p>
+
+You can specify more than one <span class="commandsyntax">[Key Combination]</span> in a single sendkeypress command.
+
+
+<p>
+Here's some examples for using sendkeypress:
+<ul>
+<li>Send ctrl+shift+esc to show the task manager of Windows:
+<br>sendkeypress ctrl+shift+esc
+<li>Send ctrl+shift+esc to show the task manager of Windows and then move to the next window with alt+tab:
+<br>sendkeypress ctrl+shift+esc alt+tab
+<li>Switch the capslock mode:
+<br>sendkeypress capslock
+<li>Print 'Nir Sofer' to the current text editor in focus (The shift key combination is used to get the capital letters):
+<br>sendkeypress Shift+n i r spc shift+s o f e r
+<li>Save the current screen image into the clipboard (Ctrl+PrintScreen):
+<br>sendkeypress Ctrl+printscreen	
+<li>Send Ctrl+Shift+K and then Ctrl+Shift+A and then Alt+Shift+P:
+<br>sendkeypress ctrl+shift+k ctrl+shift+a alt+shift+p
+</ul>
+
+
+
+<tr>
+<td>
+<a name="sendkey"></a>
+
+<h6 class="commandsyntax">
+sendkey [Key] [press | down | up]
+</h6>
+Sends a keystroke to the system. 
+The operating system will behave exactly as the user really pressed the specified keys.
+<br>
+The <span class="commandsyntax">[Key]</span> parameter specifies the key as <a href="http://msdn.microsoft.com/en-us/library/dd375731" target="virkey">virtual key code</a>
+(For example: 0x2e for Delete key), or as one of the following predefined values:
+a - z and 0 - 9 (for alphanumeric keys), F1 - F24 (for Fxx keys), shift, ctrl, alt, enter, esc
+,leftshift, rightshift, leftctrl, rightctrl, leftmenu, rightmenu, spc (space), down, up,
+left, right, home, end, insert, delete, plus, comma, minus, period, lwin, rwin (Windows key), apps,
+pageup, pagedown, tab, multiply, add, subtract, seperator, divide, backspace, pause,
+capslock, numlock, scroll, printscreen.
+
+<br>
+The second parameter specifies the key action: 'press', 'down', or 'up'.
+For each key down action, you should also add the appropriate key up action.
+<p>
+
+In the following script example, the system behaves like the user presses Shift+Ctrl+Esc (the task manager should appear):
+<span class="commandline">
+<br>sendkey shift down
+<br>sendkey ctrl down
+<br>sendkey esc down
+<br>sendkey shift up
+<br>sendkey ctrl up
+<br>sendkey esc up
+</span>
+<p>
+More examples:
+<span class="commandline">
+<br>sendkey a press
+<br>sendkey f10 press
+<br>sendkey enter press
+<br>sendkey 0x2e press
+</span>
+
+
+
+<tr>
+<td>
+<a name="sendmouse"></a>
+
+<h6 class="commandsyntax">
+sendmouse [right | left | middle] [down | up | click | dblclick]
+</h6>
+<h6 class="commandsyntax">
+sendmouse [move] [x] [y]
+</h6>
+<h6 class="commandsyntax">
+sendmouse [wheel] [Wheel Value]
+</h6>
+
+Sends the specified mouse event to the system.
+The operating system will behave exactly as the user really made the specified mouse action.
+<br>
+Heres some example of sendmouse command:
+<ul>
+<li>Sent a right click (For most applications, a context menu is opened):
+<span class="commandline">
+<br>sendmouse right click
+</span>
+
+<li>Sent a double-click with the left mouse button:
+<span class="commandline">
+<br>sendmouse left dblclick
+</span>
+
+<li>Press the left mouse button, move the mouse cursor 30 pixels left and 20 pixels down, and then release the button:
+<span class="commandline">
+<br>sendmouse left down
+<br>sendmouse move -30 20
+<br>sendmouse left up
+</span>
+
+<li>Scroll the mouse wheel 10 units in standard wheel mouse. (On standard wheel mouse, the wheel value should be a multiple of 120).
+<span class="commandline">
+<br>sendmouse wheel 1200
+</span>
+
+
+</ul>
+
+
+<tr>
+<td>
+<a name="convertimage"></a>
+
+<h6 class="commandsyntax">
+convertimage [source filename] [destionation filename]
+</h6>
+Convert image file from one format from another.
+The following file formats are supported: .bmp, .gif, .png, .jpg, .tiff
+<br>
+This command only works on Windows XP/2003/Vista (GDI+ is required)
+
+<p>
+Examples:
+<span class="commandline">
+<br>convertimage &quot;c:\temp\test1.gif&quot; &quot;c:\temp\test1.png&quot;
+<br>convertimage &quot;c:\temp\test1.jpg&quot; &quot;c:\temp\test1.gif&quot;
+</span>
+
+
+
+<tr>
+<td>
+<a name="convertimages"></a>
+
+<h6 class="commandsyntax">
+convertimages [source wildcard] [extension]
+</h6>
+Convert multiple image files from one format from another.
+The following file formats are supported: .bmp, .gif, .png, .jpg, .tiff
+<br>
+This command only works on Windows XP/2003/Vista (GDI+ is required)
+
+<p>
+Examples:
+<span class="commandline">
+<br>convertimages &quot;c:\temp\a*.gif&quot; .png
+<br>convertimages &quot;c:\temp\*.jpg&quot; .gif
+</span>
+
+<tr>
+<td>
+<a name="savescreenshot"></a>
+
+<h6 class="commandsyntax">
+savescreenshot [filename] {x y width height}
+</h6>
+save the screenshot of current screen into the specified image filename.
+The following file formats are supported: .bmp, .gif, .png, .jpg, .tiff
+<br>
+You can also specify *clipboard* instead of real filename if you want to save the screenshot
+into the clipboard.
+<br>
+This command only works on Windows XP/2003/Vista (GDI+ is required)
+<br>
+You can also specify 4 optional parameters - x, y, width, and height, if you want to 
+save only a part of the screen.
+
+<p>
+Examples:
+<span class="commandline">
+<br>savescreenshot &quot;c:\temp\shot.png&quot; 
+<br>savescreenshot &quot;c:\temp\shot.png&quot; 50 50 300 200
+<br>savescreenshot *clipboard*  150 150 400 400
+</span>
+
+<tr>
+<td>
+<a name="savescreenshotfull"></a>
+
+<h6 class="commandsyntax">
+savescreenshotfull [filename] 
+</h6>
+similar to savescreenshot command, but on computer with multiple monitors, this command will take the 
+screenshot of all monitors, as opposed to savescreenshot command, which takes the screenshot of the primary monitor.
+<br>
+You can also specify *clipboard* instead of real filename if you want to save the screenshot
+into the clipboard.
+
+<tr>
+<td>
+<a name="savescreenshotwin"></a>
+
+<h6 class="commandsyntax">
+savescreenshotwin [filename] 
+</h6>
+save the screenshot of current active window into the specified image filename.
+The following file formats are supported: .bmp, .gif, .png, .jpg, .tiff
+<br>
+You can also specify *clipboard* instead of real filename if you want to save the screenshot
+into the clipboard.
+<br>
+This command only works on Windows XP/2003/Vista (GDI+ is required)
+
+<p>
+Examples:
+<span class="commandline">
+<br>savescreenshotwin &quot;c:\temp\win.png&quot; 
+<br>savescreenshotwin *clipboard*
+</span>
+
+
+
+<tr>
+<td>
+<a name="shellcopy"></a>
+
+<h6 class="commandsyntax">
+shellcopy [source file or wildcard] [destination] {Flags}
+</h6>
+Copy one or more files from one folder to another, and display a progress dialog, exactly like
+copying files in Explorer.
+<br>
+In the Flags section, you can specify one or more of the following values:
+<ul>
+<li><span class="special2">yestoall</span>: Automatically answer 'Yes' to all questions.
+<li><span class="special2">noerrorui</span>: Don't display errors in user interface.
+<li><span class="special2">silent</span>: Silent mode - don't display progress information.
+<li><span class="special2">nosecattr</span>: Don't copy the security attributes of the file.
+
+
+</ul>
+
+<p>
+Examples:
+<span class="commandline">
+<br>shellcopy &quot;c:\temp\*.*&quot; &quot;d:\temp&quot;
+<br>shellcopy &quot;c:\temp\*.*&quot; &quot;d:\temp&quot; yestoall noerrorui
+</span>
+
+
+
+<tr>
+<td>
+<a name="filldelete"></a>
+
+<h6 class="commandsyntax">
+filldelete [source file or wildcard] 
+</h6>
+fill the specified file or wildcard with zero-bytes, and then delete the files.
+This means that the content of the files deleted with this command cannot be recovered.
+ 
+<p>
+Examples:
+<span class="commandline">
+<br>filldelete &quot;c:\temp\*.*&quot;
+<br>filldelete &quot;c:\temp\myfile.dat&quot;
+</span>
+
+
+<tr>
+<td>
+<a name="speak"></a>
+
+<h6 class="commandsyntax">
+speak [type] [text/Filename] {rate} {volume} {.wav Output Filename} {Output Format}
+</h6>
+Speaks the contents of the text or file that you specify, by using the Speech library (SAPI) that comes with Windows XP and Windows Vista. 
+If {.wav Output Filename} and {Output Format} are specified, the speaking is saved into a .wav file instead of speaking on your sound device.
+<br>
+In the [type] parameter, you can specify one of the following values:
+<ul>
+<li><span class="special2">text</span>: The second parameter contains a simple text.
+<li><span class="special2">xml</span>: The second parameter contains a text with Speech xml data.
+<li><span class="special2">file</span>: The second parameter contains a text filename.
+</ul>
+<p>
+The {rate} parameter is optional parameter that you can specify the Speech rate, a value between -10 (very slow) and 10 (very fast).
+The {volume} parameter is optional parameter that you can specify the volume of the Speech, a value between 0 and 100.
+<p>
+if {.wav Output Filename} contains a .wav filename, you should also specify one of the following output format strings in
+the {Output Format} parameter:
+<br>
+8kHz8BitMono, 8kHz8BitStereo, 8kHz16BitMono, 8kHz16BitStereo, 11kHz8BitMono, 11kHz8BitStereo, 11kHz16BitMono, 11kHz16BitStereo, 12kHz8BitMono, 12kHz8BitStereo, 12kHz16BitMono, 12kHz16BitStereo, 16kHz8BitMono, 16kHz8BitStereo, 16kHz16BitMono, 16kHz16BitStereo, 22kHz8BitMono, 22kHz8BitStereo, 22kHz16BitMono, 22kHz16BitStereo, 24kHz8BitMono, 24kHz8BitStereo, 24kHz16BitMono, 24kHz16BitStereo, 32kHz8BitMono, 32kHz8BitStereo, 32kHz16BitMono, 32kHz16BitStereo, 44kHz8BitMono, 44kHz8BitStereo, 44kHz16BitMono, 44kHz16BitStereo, 48kHz8BitMono, 48kHz8BitStereo, 48kHz16BitMono, 48kHz16BitStereo, TrueSpeech_8kHz1BitMono, CCITT_ALaw_8kHzMono, CCITT_ALaw_8kHzStereo, CCITT_ALaw_11kHzMono, CCITT_ALaw_11kHzStereo, CCITT_ALaw_22kHzMono, CCITT_ALaw_22kHzStereo, CCITT_ALaw_44kHzMono, CCITT_ALaw_44kHzStereo, CCITT_uLaw_8kHzMono, CCITT_uLaw_8kHzStereo, CCITT_uLaw_11kHzMono, CCITT_uLaw_11kHzStereo, CCITT_uLaw_22kHzMono, CCITT_uLaw_22kHzStereo, CCITT_uLaw_44kHzMono, CCITT_uLaw_44kHzStereo, ADPCM_8kHzMono, ADPCM_8kHzStereo, ADPCM_11kHzMono, ADPCM_11kHzStereo, ADPCM_22kHzMono, ADPCM_22kHzStereo, ADPCM_44kHzMono, ADPCM_44kHzStereo, GSM610_8kHzMono, GSM610_11kHzMono, GSM610_22kHzMono, GSM610_44kHzMono
+
+
+
+<p>
+Examples:
+<span class="commandline">
+<br>speak text ~$clipboard$ 
+<br>speak text &quot;Please visit the Web site of NirSoft at http://www.nirsoft.net&quot; 2 80
+<br>speak file &quot;c:\temp\speak1.txt&quot;
+<br>speak file &quot;c:\temp\speak1.txt&quot; 0 100 &quot;c:\temp\speak.wav&quot; 48kHz16BitStereo
+</span>
+
+
+<tr>
+<td>
+<a name="elevate"></a>
+
+<h6 class="commandsyntax">
+elevate [Program] {Command-Line Parameters}
+</h6>
+For Windows Vista/7/2008 only: Run a program with administrator rights.
+When the [Program] contains one or more space characters, you must put it in quotes.
+<br>
+<p>
+Examples:
+<span class="commandline">
+<br>elevate notepad.exe
+<br>elevate notepad.exe C:\Windows\System32\Drivers\etc\HOSTS
+<br>elevate &quot;c:\program files\my software\abc.exe&quot; 
+</span>
+
+
+
+<tr>
+<td>
+<a name="elevatecmd"></a>
+
+<h6 class="commandsyntax">
+elevatecmd [NirCmd command]
+</h6>
+For Windows Vista/7/2008 only: Run a NirCmd command with administrator rights.
+
+<br>
+<p>
+Examples:
+<span class="commandline">
+<br>elevatecmd regsetval binary &quot;HKLM\Software\Test&quot; &quot;Value1&quot; &quot;6a cb ab dd 80 86 95&quot;
+</span>
+
+<tr>
+<td>
+
+<a name="runas"></a>
+<h6 class="commandsyntax">
+runas [Domain\User] [Password] [Process and Command-Line Parameters]
+</h6>
+Run a process with the specified user name/password.
+The first parameter can be specified in one of the 3 formats:
+User name only, Domain\User, and user@domain
+
+<p>
+Examples:
+<span class="commandline">
+<br>runas admin1 Password1 &quot;F:\Program Files\Mozilla Firefox\firefox.exe&quot;
+<br>runas Domain01\user01 myp234Jk c:\temp\myprogram.exe
+<br>runas user01@domain.com Nm1923a &quot;c:\temp\myprogram.exe&quot; -a -k
+</span>
+
+
+
+<a name="runassystem"></a>
+<h6 class="commandsyntax">
+runassystem [Process and Command-Line Parameters]
+</h6>
+Run a process with a 'SYSTEM' user. This command only works on Windows 7/8/2008/Vista.
+It also requires full administrator rights, so you should run it with elevatecmd command.
+
+<p>
+Example:
+<span class="commandline">
+<br>elevatecmd runassystem c:\windows\regedit.exe
+</span>
+
+
+
+<tr>
+<td>
+<a name="trayballoon"></a>
+
+<h6 class="commandsyntax">
+trayballoon [Title] [Balloon Text] [Icon File] [Timeout]
+</h6>
+Displays a tray balloon (For Windows XP and above).
+Be aware that when using this command, NirCmd will continue running until the balloon is closed or disappeared.
+<br>
+The [Title] parameter is the title of the balloon and the [Balloon Text] parameter specifies the text to display inside the balloon.
+In the [Icon File] parameter, you can specify .ico file (e.g.: c:\icons\myicon.ico) or .exe/.dll file with
+icon resource index or number (e.g.: shell32.dll,-154)
+<br>
+The [Timeout] parameter specifies the number of milliseconds to wait before the balloon is disappeared.
+
+<p>
+
+
+Examples:
+<span class="commandline">
+<br>trayballoon &quot;Hello&quot; &quot;This is a test...&quot; &quot;shell32.dll,22&quot; 15000
+<br>trayballoon &quot;Hello&quot; &quot;This is the text that will be appear inside the balloon !&quot; &quot;shell32.dll,-154&quot; 10000
+<br>trayballoon &quot;Hello&quot; &quot;This is the text that will be appear inside the balloon !&quot; &quot;c:\temp\icon1.ico&quot; 10000
+
+</span>
+
+
+<tr>
+<td>
+<a name="setconsolemode"></a>
+
+<h6 class="commandsyntax">
+setconsolemode [mode]
+</h6>
+Set the console display mode. Relevant only for nircmdc.exe
+<br>
+In the [mode] parameter, you can specify 1 for full screen mode or 2 for console window mode.
+
+<tr>
+<td>
+<a name="setconsolecolor"></a>
+
+<h6 class="commandsyntax">
+setconsolecolor [forecolor] [backcolor]
+</h6>
+Relevant only for nircmdc.exe
+<br>
+Set the current background and foreground color for the text in the console window.
+This command won't change the color of the existing text, but all text sent to stdout (with consolewrite
+command) after this command will be displayed in the specified color.
+<br>
+In the forecolor/backcolor parameters, you can specify any EGA color number between 0 and 15:
+<ul>
+<li>0 - black
+<li>1 - blue 
+<li>2 - green 
+<li>3 - cyan 
+<li>4 - red 
+<li>5 - magenta 
+<li>6 - brown 
+<li>7 - white 
+<li>8 - dark gray 
+<li>9 - bright blue 
+<li>10 - bright green 
+<li>11 - bright cyan 
+<li>12 - bright red 
+<li>13 - bright magenta 
+<li>14 - bright yellow 
+<li>15 - bright white 
+</ul>
+
+<p>
+Examples:
+<span class="commandline">
+<br>setconsolecolor 10 0
+<br>setconsolecolor 1 15
+</span>
+
+
+<tr>
+<td>
+<a name="consolewrite"></a>
+
+<h6 class="commandsyntax">
+consolewrite [text]
+</h6>
+Sends the specified text to the standard output (stdout).
+
+
+
+<tr>
+<td>
+<a name="debugwrite"></a>
+
+<h6 class="commandsyntax">
+debugwrite [text]
+</h6>
+Writes the specified text into the debug output. 
+You can view the text sent with this command in the <a href="http://technet.microsoft.com/en-us/sysinternals/bb896647.aspx" target="DebugView">DebugView</a> utility of SysInternals.
+
+
+
+<tr>
+<td>
+<a name="mediaplay"></a>
+
+<h6 class="commandsyntax">
+mediaplay [play time] [audio file]
+</h6>
+Plays the specified audio file (.mp3, .wav, and so on) for the specified
+number of milliseconds.
+
+
+<p>
+Examples:
+<span class="commandline">
+<br>mediaplay 10000 &quot;c:\temp\1.mp3&quot;
+<br>mediaplay 180000 &quot;c:\my files\1.wav&quot;
+</span>
+
+
+
+</table>
+
+<h4 class="utilsubject">Feedback</h4>
+If you have any problem, suggestion, comment, or you found a bug in my utility, 
+you can send a message to <a href="mailto:nirsofer@yahoo.com">nirsofer@yahoo.com</a>
+
+
+
+
+
+</BODY>
+</HTML>

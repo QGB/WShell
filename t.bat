@@ -1,5 +1,15 @@
+echo %~dp0
+
+
+
+
+
 
 @echo off
+
+
+
+
 
 set py=906bcd654654
 

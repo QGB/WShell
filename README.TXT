@@ -1,7 +1,9 @@
 #Wshell
-More commands for Windows shell (base clink cygwin git mingw python and more)
+More commands for Windows shell (base clink cygwin git mingw python and more
+
 ##Install:
 Run [!nstall.bat] as Administrator
+
 ##Usage:
 ```
 >ws

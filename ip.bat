@@ -1,1 +1,1 @@
-@ipconfig.exe
+@ipconfig.exe %*

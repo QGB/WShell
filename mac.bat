@@ -1,0 +1,1 @@
+@ipconfig /all|findstr "IP Phys"

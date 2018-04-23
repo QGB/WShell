@@ -1,0 +1,1 @@
+mklink /d "C:\Users\Administrator\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch" "G:\QGB\Quick Launch"

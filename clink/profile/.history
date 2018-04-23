@@ -2741,3 +2741,902 @@ ipy
 ip
 SYSTEMINFO
 pwd
+ipython TerminalInteractiveShell.confirm_exit = False
+ipython --help
+ipython --help|grep exi
+ipython --no-confirm-exit
+set
+ipy
+::ew
+::ewuuuuuuyyyrere
+ipython
+ipython TerminalInteractiveShell.confirm_exit = False
+ipython --help
+ipython --help|grep exi
+ipython --no-confirm-exit
+set PATH=G:\Python27\
+set PATH=G:\Python27\;G:\QGB\babun\cygwin\home\qgb\wshell
+ipy
+ipy  --no-confirm-exit 
+ipy  --no-confirm
+alias -s
+alias -
+alias -ww
+ip
+SYSTEMINFO
+ip
+csd
+cdsg
+mklink
+d
+ws
+alias
+c
+setx /?
+ipy
+mklink /d C:\Users\lenovo\OneDrive G:\qgb
+alias oneDrive
+onedrive.bat 
+npp
+npp 
+npp py/s.py
+npp py\s
+npp py\s.
+npp py/s.
+npp py/s
+npp py
+npp py/
+npp p
+npp t
+npp t\
+npp t\a
+npp t\zz
+npp t\i
+pwd
+npp t\h
+npp ///////////
+npp ::::::::;;
+set
+python %qp%
+python -c %qp%
+python -c "%qp%"
+echo %qp%
+onedrive
+mklink /d C:\Users\lenovo\OneDrive\QGB G:\qgb
+alias -ww
+ip
+ipy
+ip
+SYSTEMINFO
+pwd
+echo %F%
+%F% "https://g.kfd.me/webhp?newwindow=1^&safe=active^&gws_rd=cr^&dcr=0^&ei=pc4rWtPRCce10ATJu7qwCg"
+%F% "https://g.kfd.me/webhp?newwindow=1^&safe=active^&gws_rd=cr^&dcr=0^&ei=pc4rWtPRCce10ATJu7qwCg" -I
+%f% "https://g.kfd.me/webhp?newwindow=1^&safe=active^&gws_rd=cr^&dcr=0^&ei=pc4rWtPRCce10ATJu7qwCg" -H "accept-encoding: gzip, deflate, br" -H "accept-language: zh-CN,zh;q=0.8,zh-TW;q=0.6,en;q=0.4" -H "upgrade-insecure-requests: 1" -H "user-agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 YaBrowser/17.10.1.1204 Yowser/2.5 Safari/537.36" -H "accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8" -H "referer: https://kfd.me/" -H "authority: g.kfd.me" -H "cookie: __cfduid=d74ab8e82f8e81b69b96f6c2103a8c2801512638154; GZ=Z=0; _ga=GA1.2.1150844006.1509723171; _gid=GA1.2.1758462696.1512726263" --compressed
+%f% "https://g.kfd.me/webhp?newwindow=1^&safe=active^&gws_rd=cr^&dcr=0^&ei=pc4rWtPRCce10ATJu7qwCg" -H "accept-encoding: gzip, deflate, br" -H "accept-language: zh-CN,zh;q=0.8,zh-TW;q=0.6,en;q=0.4" -H "upgrade-insecure-requests: 1" -H "user-agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 YaBrowser/17.10.1.1204 Yowser/2.5 Safari/537.36" -H "accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8" -H "referer: https://kfd.me/" -H "authority: g.kfd.me" -H "cookie: __cfduid=d74ab8e82f8e81b69b96f6c2103a8c2801512638154; GZ=Z=0; _ga=GA1.2.1150844006.1509723171; _gid=GA1.2.1758462696.1512726263" --compressed -I
+%F% "https://g.kfd.me/webhp?newwindow=1^&safe=active^&gws_rd=cr^&dcr=0^&ei=pc4rWtPRCce10ATJu7qwCg" -H "accept-encoding: gzip, deflate, br" -H "accept-language: zh-CN,zh;q=0.8,zh-TW;q=0.6,en;q=0.4" -H "upgrade-insecure-requests: 1" -H "user-agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 YaBrowser/17.10.1.1204 Yowser/2.5 Safari/537.36" -H "accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8" -H "cache-control: max-age=0" -H "authority: g.kfd.me" -H "cookie: __cfduid=d74ab8e82f8e81b69b96f6c2103a8c2801512638154; GZ=Z=0; _ga=GA1.2.1150844006.1509723171; _gid=GA1.2.1758462696.1512726263" -H "referer: https://kfd.me/" --compressed -i
+%F% "https://g.kfd.me/webhp?newwindow=1^&safe=active^&gws_rd=cr^&dcr=0^&ei=pc4rWtPRCce10ATJu7qwCg" -H "accept-encoding: gzip, deflate, br" -H "accept-language: zh-CN,zh;q=0.8,zh-TW;q=0.6,en;q=0.4" -H "upgrade-insecure-requests: 1" -H "user-agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 YaBrowser/17.10.1.1204 Yowser/2.5 Safari/537.36" -H "accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8" -H "cache-control: max-age=0" -H "authority: g.kfd.me" -H "cookie: __cfduid=d74ab8e82f8e81b69b96f6c2103a8c2801512638154; GZ=Z=0; _ga=GA1.2.1150844006.1509723171; _gid=GA1.2.1758462696.1512726263" -H "referer: https://kfd.me/" --compressed -I
+curl "https://g.kfd.me/webhp?newwindow=1^&safe=active^&gws_rd=cr^&dcr=0^&ei=pc4rWtPRCce10ATJu7qwCg" -H "accept-encoding: gzip, deflate, br" -H "accept-language: zh-CN,zh;q=0.8,zh-TW;q=0.6,en;q=0.4" -H "upgrade-insecure-requests: 1" -H "user-agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 YaBrowser/17.10.1.1204 Yowser/2.5 Safari/537.36" -H "accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8" -H "cache-control: max-age=0" -H "authority: g.kfd.me" -H "cookie: __cfduid=d74ab8e82f8e81b69b96f6c2103a8c2801512638154; GZ=Z=0; _ga=GA1.2.1150844006.1509723171; _gid=GA1.2.1758462696.1512726263" -H "referer: https://kfd.me/" --compressed
+cuurl
+%F%  "https://g.kfd.me/webhp?newwindow=1^&safe=active^&gws_rd=cr^&dcr=0^&ei=pc4rWtPRCce10ATJu7qwCg" -H "accept-encoding: gzip, deflate, br" -H "accept-language: zh-CN,zh;q=0.8,zh-TW;q=0.6,en;q=0.4" -H "upgrade-insecure-requests: 1" -H "user-agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 YaBrowser/17.10.1.1204 Yowser/2.5 Safari/537.36" -H "accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8" -H "cache-control: max-age=0" -H "authority: g.kfd.me" -H "cookie: __cfduid=d74ab8e82f8e81b69b96f6c2103a8c2801512638154; GZ=Z=0; _ga=GA1.2.1150844006.1509723171; _gid=GA1.2.1758462696.1512726263" -H "referer: https://kfd.me/" --compressed
+%F%  "https://g.kfd.me/webhp?newwindow=1%5E&amp;ei=pc4rWtPRCce10ATJu7qwCg&amp;gws_rd=cr&amp;dcr=0" -H "accept-encoding: gzip, deflate, br" -H "accept-language: zh-CN,zh;q=0.8,zh-TW;q=0.6,en;q=0.4" -H "upgrade-insecure-requests: 1" -H "user-agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 YaBrowser/17.10.1.1204 Yowser/2.5 Safari/537.36" -H "accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8" -H "cache-control: max-age=0" -H "authority: g.kfd.me" -H "cookie: __cfduid=d74ab8e82f8e81b69b96f6c2103a8c2801512638154; GZ=Z=0; _ga=GA1.2.1150844006.1509723171; _gid=GA1.2.1758462696.1512726263" -H "referer: https://kfd.me/" --compressed
+%F%  "https://g.kfd.me/webhp?newwindow=1^&safe=active^&gws_rd=cr^&dcr=0^&ei=pc4rWtPRCce10ATJu7qwCg" -H "accept-encoding: gzip, deflate, br" -H "accept-language: zh-CN,zh;q=0.8,zh-TW;q=0.6,en;q=0.4" -H "upgrade-insecure-requests: 1" -H "user-agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 YaBrowser/17.10.1.1204 Yowser/2.5 Safari/537.36" -H "accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8" -H "cache-control: max-age=0" -H "authority: g.kfd.me" -H "cookie: __cfduid=d74ab8e82f8e81b69b96f6c2103a8c2801512638154; GZ=Z=0; _ga=GA1.2.1150844006.1509723171; _gid=GA1.2.1758462696.1512726263" -H "referer: https://kfd.me/" --compressed -I
+%F% "https://g.kfd.me/webhp?newwindow=1^&safe=active^&gws_rd=cr^&dcr=0^&ei=pc4rWtPRCce10ATJu7qwCg" -H "accept-encoding: gzip, deflate, br" -H "accept-language: zh-CN,zh;q=0.8,zh-TW;q=0.6,en;q=0.4" -H "upgrade-insecure-requests: 1" -H "user-agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 YaBrowser/17.10.1.1204 Yowser/2.5 Safari/537.36" -H "accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8" -H "cache-control: max-age=0" -H "authority: g.kfd.me" -H "cookie: __cfduid=d74ab8e82f8e81b69b96f6c2103a8c2801512638154; GZ=Z=0; _ga=GA1.2.1150844006.1509723171; _gid=GA1.2.1758462696.1512726263" -H "referer: https://kfd.me/" --compressed
+%F% https://g.kfd.me
+%F% https://g.kfd.me -I
+which curl
+where curl.exe
+g
+g:
+cd QGB\Anaconda2\Scripts\
+set |grep PATH
+set |grep pat
+ls
+%f%
+echo %f%
+set Path=G:\QGB\Anaconda2\Library\bin\;%path%
+curl
+G:\QGB\Anaconda2\Library\bin\
+curl "https://g.kfd.me/webhp?newwindow=1^&safe=active^&gws_rd=cr^&dcr=0^&ei=KDgtWrnUDoLw0ATrk5gQ" -H "accept-encoding: gzip, deflate, br" -H "accept-language: zh-CN,zh;q=0.8,zh-TW;q=0.6,en;q=0.4" -H "upgrade-insecure-requests: 1" -H "user-agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 YaBrowser/17.10.1.1204 Yowser/2.5 Safari/537.36" -H "accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8" -H "referer: https://kfd.me/" -H "authority: g.kfd.me" -H "cookie: __cfduid=d74ab8e82f8e81b69b96f6c2103a8c2801512638154; GZ=Z=0; _ga=GA1.2.1150844006.1509723171; _gid=GA1.2.1758462696.1512726263" --compressed
+ipy
+ipy  --no-confirm-exit 
+ipy  --no-confirm
+alias -s
+alias -
+alias -ww
+ip
+ipy
+ip
+SYSTEMINFO
+pwd
+whois
+whois qq.com
+c
+whois lk.lk
+whois lk.com
+whois lk.cn
+whois64.exe 
+whois64.exe qq.cn
+cdt
+python
+python -v
+python.exe
+python.exe  -v
+python.exe  -V
+python.exe  -v
+python.exe  -V
+alias pyqt -cd
+cds
+npp cdpyqt.bat 
+pyqt
+ipy
+ipython qtconsole
+jupyter qtconsole
+jupyter qtconsole
+cdpy
+cda
+cdconda
+cdq
+cdqp
+cdqp
+python -c 'import PyQt5'
+python -c "import PyQt5"
+python -c "import PyQt5;print PyQt5"
+python -c "import PyQt5.QtCore;print PyQt5"
+pythonw jupyter-qtconsole-script.py 
+c
+python.exe  -V
+npp qpsu.py 
+qpsu
+import sys,os;sys.path.append('G:/QGB/babun/cygwin/lib/python2.7/');from qgb import *
+ipy
+cdpy
+cda
+cdconda
+cdq
+cdqp
+cdcode
+cdconda.bat 
+qmake
+pyqt
+jupyter qtconsole
+set
+conda
+conda update pyqt5
+conda update 
+where pip
+where pip.exe 
+pip.exe  install PyQt5
+wh
+where pip.bat|npp
+cds
+cds py
+npp npp
+where pip|npp
+qp
+qpsu
+on-qt5
+jupter qtconsole
+python -c "import sip"
+python -c "import sip;print sip"
+jupyter qtconsole
+jupyter qtconsole|grep D
+jupyter qtconsole|grep DLL
+jupyter qtconsole 2>1|grep DL
+jupyter qtconsole 2>1
+jupyter qtconsole 2>0
+jupyter qtcon
+jupyter qtconsole 
+qtplugininfo
+npp wshell.bat 
+qtplugininfo
+ --full-json
+jupyter qtconsole  1>nul
+jupyter qtconsole  2>nul
+jupyter qtconsole  2>1
+jupyter qtconsole  2>1>0
+jupyter qtconsole  1<2
+mklink
+mklink /D G:\QGB\software\xxnet\data data
+ping 9
+ping 9 -t
+alias cda3 -cd
+cd ../..
+cd Anaconda2\Scripts\
+alias  -cd cda2
+cda3
+cda2
+ipy
+cda3
+cda2
+cd G:\\QGB\\babun\\cygwin\\home\\qgb\\github
+cd ..
+alias babun -cd
+cdt
+cdbabun
+cd github\
+cd mousetrap\
+ipy
+ipy
+cdgit mousetrap\
+py mousetrap.py 
+ipy
+cdgit mousetrap\
+py
+py mousetrap.py 
+python mousetrap.py 
+alias babun -cd
+cdt
+cd github\
+ipy
+cdbabun
+cd github\mousetrap\
+py
+pip install cherrypy
+cd ..
+cd websocket-remote-mouse\
+ls
+dir
+py server\macos.py 
+pipdb pyobjc-framework-Quartz
+充电 
+cd..
+v
+cd mousetrap\
+py mousetrap.py 
+alias babun -cd
+cdt
+cdbabun
+cd mousetrap\
+pipdb
+pipdb cherrypy
+cdbabun.bat 
+cd github\
+alias -cd
+alias -cd github
+alias -cd git
+cdgit.bat 
+cdgit mousetrap\
+py cheese.py
+ipy
+qpsu
+py
+qpsu
+py
+cds
+exp
+npp cdt
+echo %wsdriver%
+cdt
+setip123.bat 
+%wsdriver%
+cd%wsdriver%
+cdt
+ipy
+npp
+cdq
+cdqp
+npp U
+x
+adb
+x
+py cheese.py
+ipy
+qpsu
+py
+qpsu
+py
+exp
+echo %wsdriver%
+cdt
+setip123.bat 
+%wsdriver%
+cd%wsdriver%
+cdt
+ipy
+cds
+npp cd
+npp ipy
+npp cdt
+npp qpsu.bat 
+echo %cdpath%
+echo " %cdpath%"
+cdt %T%
+p 19
+ping.exe 192.168.2.3
+ping.exe 192.168.2.3 -t
+cdadb
+adb shell
+ipy
+ipy
+adb shell
+ipy
+ipy
+x
+ p
+cda
+ping 9
+ipy
+ping.exe 192.168.2.3 -t
+cdadb
+adb shell
+.
+where ip\
+where ip
+where ip.bat
+where ip.bat|npp
+  ip
+  ip
+  ip
+ip
+P
+ipy
+cdt %T%
+p 19
+ping.exe 192.168.2.3
+ping.exe 192.168.2.3 -t
+cdadb
+adb shell
+cds py
+npp alias.py 
+c:
+alias -cd cdlenovo
+cds
+cdlenovo.bat 
+p
+qr
+qr -h
+chcp 65536
+qr 77
+qr 77 2>&1 |npp
+qr 77 2>&1 |grep .py
+ip
+qr 77 2>&1 |findstr ".py"
+qr 77 2>&1 |findstr "py"
+qr 77 2>&1 |more
+qr 77 |more
+cdt
+qr 77 >qr77
+npp qr77
+conda
+conda list
+pip /?
+pip 
+pip  search qr
+pip  install 
+pip  install qrtool
+pip  install qrtools
+pip  uninstall qrtools
+git
+pip  uninstall qrcode
+npp qpsu.bat 
+echo %cdpath%
+echo " %cdpath%"
+cdt %T%
+p 19
+ping.exe 192.168.2.3
+ping.exe 192.168.2.3 -t
+cdadb
+adb shell
+ipy
+ipy
+adb shell
+ipy
+ipy
+x
+cdlenovo.bat 
+cd %home%
+cd %homepath%
+alias cdh
+cds
+cdh
+route print
+route /?
+route print |npp
+route print *1*
+route print *192*
+route print *192
+route print 
+arp -a
+b0-95-8e-3a-1e-d5
+set
+p
+p|npp
+cdqp
+cdspy
+exp
+npp S
+ipconfig
+ping 192.168.2.141
+ping.exe 192.168.2.141
+ping.exe 192.168.2.141 -t
+cd C:\Users\lenovo\OneDrive\
+alias linkChromExt C:\Users\lenovo\OneDrive\
+alias linkChromExt mklink /d C:\Users\lenovo\OneDrive\chromExt G:\QGB\babun\cygwin\home\qgb\chromExt
+cds
+npp lin
+linkchromext.bat 
+npp lin
+linkchromext.bat 
+alias android_studio.exe.bat
+setx /？
+setx /?
+where android_studio.exe.bat |npp
+where studio64.exe 
+android_studio.exe.bat 
+echo %java_home%
+cds
+ npp wshell.bat 
+x
+linkchromext.bat 
+cdadbdvdvdvdd
+cdadb
+adbc
+adbc 127
+adbs
+setx /?
+where android_studio.exe.bat |npp
+where studio64.exe 
+android_studio.exe.bat 
+echo %java_home%
+ npp wshell.bat 
+x
+linkchromext.bat 
+cdadbdvdvdvdd
+adbc
+adbc 127
+adb push G:\QGB\babun\cygwin\home\qgb\github\Android-LockScreenSample-DisableHomeButtonKey\app\build\outputs\apk\app-debug.apk /data/local/tmp/com.github.dubu.lockscreensample
+adb /?
+grep
+cds
+adb
+npp wshell.bat 
+@set path=G:\Program Files\Git\usr\bin;%path%
+cdadb
+adb |grep in
+adb |grep instal
+adb install G:\QGB\babun\cygwin\home\qgb\github\Android-LockScreenSample-DisableHomeButtonKey\app\build\outputs\apk\app-debug.apk 
+k
+alias adbk
+adbk
+adbc 125
+alias adbd
+adbd
+adbs
+adbd
+adbs
+adb push G:\QGB\babun\cygwin\home\qgb\github\Android-LockScreenSample-DisableHomeButtonKey\app\build\outputs\apk\app-debug.apk /data/local/tmp/com.github.dubu.lockscreensample
+ipconfig.exe /renew
+route -print
+route print
+route print|grep ..
+route print|more
+ipconfig.exe /?
+ipconfig.exe /renew 17
+ipconfig.exe /renew *
+cdt
+ipconfig.exe /renew * > ip145.txt
+npp ip
+npp ip1
+ip /renew
+route print |more
+alias rp route print |more
+rp
+ipy
+ipy 
+ipy 
+ws
+mklink "user data" "C:\Users\lenovo\AppData\Local\Yandex\YandexBrowser\User Data\"
+alias lenovoGC mklink "user data" "C:\Users\lenovo\AppData\Local\Yandex\YandexBrowser\User Data\"
+n
+nl
+npp
+lenovogc.bat 
+x
+8i
+ip
+ipy 
+mklink "user data" "C:\Users\lenovo\AppData\Local\Yandex\YandexBrowser\User Data\"
+alias lenovoGC mklink "user data" "C:\Users\lenovo\AppData\Local\Yandex\YandexBrowser\User Data\"
+n
+nl
+lenovogc.bat 
+8i
+ip
+npm install -g cnpm
+npm config set registry https://registry.npm.taobao.org
+npm config get registry
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+alias npmTaobao npm install -g cnpm --registry=https://registry.npm.taobao.org
+cnpm install webpack -g
+npm config -l
+npm config -ls
+npm config -ls -l
+npm ls -g
+npm ls -g|grep npm
+set |grep PATH
+set 
+set |grep Path
+set |grep Path|npp
+npp
+alias -py getCmd
+getcmd
+echo 233|getcmd
+echo 233|python  G:\QGB\babun\cygwin\home\qgb\wshell\py/getCmd.py
+cds
+npp ws
+echo %homePath%
+ws
+npp cnp
+set
+set|grep leno
+cnpm
+x
+netstat -ano|grep 1080
+netstat -ano
+ping 192.168.2.123 -t -l 65500
+d b.apk
+ping 192.168.2.123 -t -l 65500
+d b.apk
+curl http://192.168.2.11
+curl http://192.168.2.22
+echo 233|python  G:\QGB\babun\cygwin\home\qgb\wshell\py/getCmd.py
+cds
+npp ws
+echo %homePath%
+ws
+npp cnp
+set
+set|grep leno
+x
+cdesk
+cnpm
+cnpm install -g webpack
+cdt web-happy
+cd web-happy\
+webpack
+ls
+npm install webpack-dev-server -g
+Error: Cannot find module 'webpack'
+npm i -D webpack
+npm i -D express
+npm i -D 
+npm i -D http-proxy-middleware
+npm i -D webpack-dev-middleware
+npp pac
+npp run  dev
+npm run  dev
+npm run  
+npm run-script
+ webpack -p --config webpack.production.config.js --progress --profile --colors
+npm install -d
+exp
+npm start
+ipy
+npm i -D webpack
+npm i -D express
+npm i -D 
+npm i -D http-proxy-middleware
+npm i -D webpack-dev-middleware
+npp pac
+npp run  dev
+npm run  dev
+npm run  
+npm run-script
+ webpack -p --config webpack.production.config.js --progress --profile --colors
+npm install -d
+exp
+npm start
+arp -a|grep 30-
+alias lenovo
+lenovo
+alias test
+npp g:/qgb/babun/cygwin/home/qgb/wshell/test.bat
+cds
+npp py\npp
+cdqp
+npp U
+set deBug=1
+npp
+cdqgb
+cdbabun
+alias cdhome
+cdhomw
+cdhome
+npp chromExt\tabList\background.js 
+ipy
+a
+arp -a
+arp -a|grep 3
+ping 192.168.2.122
+ping.exe 192.168.2.122
+ping.exe 192.168.2.122 -t
+ip
+ipy
+cdqp N
+ipython
+cdadb
+adbs
+mklink
+mklink interpreter.js G:\QGB\babun\cygwin\home\qgb\jsjs\lib\interpreter.js
+echo mklink interpreter.js G:\QGB\babun\cygwin\home\qgb\jsjs\lib\interpreter.js >mk.bat
+adbs
+mklink
+mklink interpreter.js G:\QGB\babun\cygwin\home\qgb\jsjs\lib\interpreter.js
+echo mklink interpreter.js G:\QGB\babun\cygwin\home\qgb\jsjs\lib\interpreter.js >mk.bat
+cdbabun
+cdbabun chromExt\tabList\
+alias -cd tablist
+cdtablist
+eng
+mk
+cdt jsjs
+cd jsjs
+cdgithub
+cdbabun github
+alias -cd cdgithub
+cda3
+cdgithub jsjs
+npm run dev
+npm install -g
+ipy
+history
+alias mklinkQuickLaunch mklink /d "C:\Users\Administrator\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch" "G:\QGB\Quick Launch"
+exp
+idaq
+at
+schtasks
+alias cdkiller -cd
+cdadb
+cdkiller
+adbc 128
+cdadb
+adbc 102
+adbd
+ip
+ipy
+ping 172.16.41.1
+ping 172.16.41.1 -t
+adbc 172.16.41.192
+adb connect 172.16.41.192
+adbs
+G:
+cd "Program Files
+exp
+npm install -d
+exp
+npm start
+arp -a|grep 30-
+alias lenovo
+lenovo
+alias test
+npp g:/qgb/babun/cygwin/home/qgb/wshell/test.bat
+npp py\npp
+cdqp
+npp U
+set deBug=1
+npp
+cdqgb
+cdbabun
+alias cdhome
+cdhomw
+cdhome
+npp chromExt\tabList\background.js 
+ipy
+a
+arp -a
+arp -a|grep 3
+ping 192.168.2.122
+ping.exe 192.168.2.122
+ping.exe 192.168.2.122 -t
+cdqp N
+ipython
+mklink
+mklink interpreter.js G:\QGB\babun\cygwin\home\qgb\jsjs\lib\interpreter.js
+echo mklink interpreter.js G:\QGB\babun\cygwin\home\qgb\jsjs\lib\interpreter.js >mk.bat
+adbs 192.168.2.128
+adbs -s 192.168.2.128:5555
+adb -s 192.168.2.128:5555 shell
+g:
+npp adbs
+c:
+adbs 192.168.2.128:5555
+adbk
+mount
+adbd
+adbs
+adbs 
+cds
+cdadb
+ping 172.17.1.8
+ip
+adbc 128
+ADBs
+ipy
+alias linkqgbjs mklink /d qgb G:\QGB\babun\cygwin\home\qgb\chromExt\tabList\js
+linkqgbjs
+g:
+alias cdxxnet385 -cd
+alias cdxx385 -cd
+cdxx385.bat 
+linkqgbjs.bat 
+cdt
+gc https://github.com/AdguardTeam/AdguardBrowserExtension
+exp
+ipy
+del nbtstat.exe 
+ping 192.168.2.73
+ping 192.168.2.73 -t
+ping 192.168.2.73 -t -l 65500
+ipy
+adbd
+ipy
+adbd
+adbc 39
+cdxx385.bat 
+linkqgbjs.bat 
+cdt
+gc https://github.com/AdguardTeam/AdguardBrowserExtension
+exp
+ipy
+del nbtstat.exe 
+ping 192.168.2.73
+ping 192.168.2.73 -t
+ping 192.168.2.73 -t -l 65500
+ipy
+adbd
+ipy
+adbc 39
+adbc 75
+adbd
+adb install C:\QGB\Android\sdk\platform-tools\adbWireless1.5.4.apk
+adb install C:\Users\Administrator\Downloads\NewKingrootV5.3.6_C196_B626_office_release_2018_03_20_20180322144108_105003.apk
+adb install
+adbi
+alias adbi adb install %*
+adbi G:\QGB\babun\cygwin\home\qgb\github\Lightning-Browser\app\build\outputs\apk\lightningPlus\debug\app-lightningPlus-debug.apk
+alias cdadbKiller
+alias cdadbKiller -cd
+alias cdadbKill -cd
+cdadb
+cds py
+npp alias.py 
+cdadbKill.bat 
+adbi Z:\root\Project\assets\kinguser.apk
+adb uninstall
+adb uninstall com.kingroot.kinguser
+adb shell am start -n com.kingroot.kinguser/.activitys.SliderMainActivity
+adbc 74
+adbs
+set|grep PYTHONHOM
+cdt
+git
+set
+cds
+npp wsh
+adbi Z:\root\Project\assets\kinguser.apk
+adb uninstall
+adb uninstall com.kingroot.kinguser
+adb shell am start -n com.kingroot.kinguser/.activitys.SliderMainActivity
+adbc 74
+adbs
+set|grep PYTHONHOM
+set
+cds
+npp wsh
+cdt
+git
+git clone https://github.com/QGB/qgb.github.io
+cd qgb.github.io\
+up.bat chrome
+npm
+ npm install -g node-inspector
+cd ..
+md github
+cd github
+gc https://github.com/fczbkk/css-selector-generator-benchmark
+alias -cd
+alias github -cd
+cd css-selector-generator-benchmark\
+npm install
+npp
+npm test
+npp package.json 
+x
+cdtcc
+cd tcc
+cdtcc
+alias gamepanel_py 1
+mv G:\QGB\py\py.exe C:\WINDOWS\system32\GamePanel.exe
+make
+py
+alias gamepanel_py mv G:\QGB\py\py.exe C:\WINDOWS\system32\GamePanel.exe
+npp
+del
+del /?
+del /f C:\WINDOWS\system32\GamePanel.exe
+gamepanel_py.bat 
+npp wsh
+git clone https://github.com/QGB/qgb.github.io
+cd qgb.github.io\
+up.bat chrome
+npm
+ npm install -g node-inspector
+cd ..
+md github
+gc https://github.com/fczbkk/css-selector-generator-benchmark
+alias -cd
+alias github -cd
+cd css-selector-generator-benchmark\
+npm install
+npp
+npm test
+npp package.json 
+x
+cdw.bat 
+cdh
+cdd.bat 
+cdesk.bat 
+gc
+gc https://coding.net/u/qgb/p/Test
+exp Test\
+git 
+git commit 
+cd Test\
+q
+gt
+git
+git e
+git reset
+git reset -h
+git reset --hard 70796b34c2507a0c4867c2327b0b03deac1a88ca
+npp liwei.py 
+git reset 
+git reset --hard 70796b34c2507a0c4867c2327b0b03de
+git reset --hard 951a
+git reset --hard 79f
+git reset --hard 79f4
+gitlog
+git pull origin master
+git log
+git reset --hard 67a5
+./up
+up.bat
+git push cq master -f
+cdtcc
+py
+GamePanel.exe 
+c:
+alias cdLiwei -cd
+cdqp
+cdLiwei.bat 
+git pull cq master
+up.bat beep
+down
+update
+  netsh interface teredo set state enterpriseclient server=default
+  // 测试 IPv6 连接
+  ping -6 ipv6.test-ipv6.com
+  ping -6 [2001:470:1:18::125]
+  // 重置 IPv6 配置
+  netsh interface ipv6 reset
+ netsh interface teredo set state server=teredo.remlab.net
+IPCONFIG /ALL|grep Ter
+IPCONFIG /ALL
+ ping -6 ipv6.test-ipv6.com
+ls
+cdt
+cd github
+gc https://github.com/SeaHOH/pteredor
+cd pteredor\
+pip install win_inet_pton
+pip install --upgrade pip
+python pteredor.py -h -p 54301
+ipconfig /all
+255.255.255.0
+ping -6 [2001:470:1:18::125]
+ping -6 [2001:470:1:18::125] -t
+ping.exe -6 [2001:470:1:18::125] -t
+netsh int teredo show state
+G:\QGB\software\xxnet\code\3.11.7\gae_proxy\local\ipv6_tunnel\disable_ipv6.bat
+G:\QGB\software\xxnet\code\3.11.7\gae_proxy\local\ipv6_tunnel\enable_ipv6.bat
