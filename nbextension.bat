@@ -1,0 +1,1 @@
+G:\QGB\Anaconda3\Scripts\jupyter.exe nbextension %*

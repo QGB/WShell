@@ -1,1 +1,1 @@
-cds&cd exe\keymap&start "" keymap.exe %*
+@start "" "G:\QGB\babun\cygwin\home\qgb\wshell\exe\keymap\KeyMap.exe"

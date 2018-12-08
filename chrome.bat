@@ -1,1 +1,1 @@
-start "" C:\Users\QGB\AppData\Local\Google\Chrome\Application\chrome.exe %*
+@start "" "G:\QGB\Chrome\Application\chrome.exe"

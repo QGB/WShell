@@ -1,0 +1,1 @@
+@G:&@cd G:\QGB\babun\cygwin\home\qgb\wshell\exe\nmap-7.70\%*

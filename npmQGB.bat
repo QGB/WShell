@@ -1,0 +1,1 @@
+npm adduser < %QGB%npm_qgb.info

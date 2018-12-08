@@ -1,1 +1,3 @@
-@python %~dp0py/netTool.py %* --nslookup   
+@REM @python %~dp0py/netTool.py %* --nslookup   
+
+netstat.exe -ano

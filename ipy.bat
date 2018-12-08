@@ -1,23 +1,32 @@
 @echo off
+call setqp.bat
+
+if "%1%"=="2" (goto ipy2)
+if "%1%"=="3" (goto ipy3) else (goto ipy2)
+
+if "%*"=="" (goto ipy2)
+
+goto end
+:ipy2
+::if not contains conda  #todo  多次调用 可能会重复设置
+REM if x%pyPath:conda=%==x%pyPath% (set pyPath=python %pyPath%)
+
+%pyPath%Scripts\ipython.exe %ipyArgs%
+goto end
+
+
+:ipy3
+ipython3 %ipyArgs%
+goto end
+:: ipy 2 3 有重复参数，为了可读性，放弃DRY吧。。。
+
+: --no-confirm-exit 
+
 : set PATH=G:\Python27\;G:\QGB\babun\cygwin\home\qgb\wshell
 ::test 
 
-
-@for %%i in (python.exe) do @set py=%%~$PATH:i
-
-@for %%i in ( %py%) do @set py=%%~dpi
-
-
-
-@for /f "delims=" %%i in ('qpsu.bat "clipboard=f" "escape=t" "c=t"') do @set qp=%%i
-
 : @echo %qp%
 : if not x%py:conda=%==x%py% echo It contains conda
-::if not contains conda
-if x%py:conda=%==x%py% set py=python %py%
-
-:if "%debug%"=="" echo %qp%
-
-%py%Scripts\ipython.exe --no-banner  --autocall=2  "--InteractiveShellApp.exec_lines=['%qp%','NPP=npp=U.npp']" %*
-
 : --no-confirm-exit 
+
+:end

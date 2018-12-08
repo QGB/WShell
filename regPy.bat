@@ -1,0 +1,1 @@
+copy /Y %~dp0file\python27.dll  %windir%

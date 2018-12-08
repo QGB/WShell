@@ -1,0 +1,1 @@
+%~dp0exe/nircmd/nircmd %*

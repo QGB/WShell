@@ -1,0 +1,1 @@
+@start "" "G:\QGB\software\ssh\MobaXterm Professional 10.4\MobaXterm.exe"

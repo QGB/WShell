@@ -3,7 +3,9 @@ qpsu=os.getenv('QPSU') or r'G:\QGB\babun\cygwin\lib\python2.7\qgb'
 sys.path.append(qpsu[:-4])
 try:
 	from qgb import *
-except:
+except Exception as e:
+	import pdb;pdb.set_trace()
+	raise Exception('#error import qgb in S.py',e)
 	from pprint import pprint
 	p=os.getenv('conda')
 	# pprint(p[:-1] in sys.path)
@@ -31,16 +33,13 @@ except:
 					else:f=root+'/'+j
 					j=destination+j
 					cmd='copy "{0}" "{1}"'.format(f,j)
-					print cmd
+					print(cmd)
 		__import__('code').interact(banner="",local=locals())
 	copy(qpsu,p+'qgb',ext='.pyc',no='.git')
 	
 	
 	# exit()
-	
-a= sys.argv
-path=os.path
-stdin=sys.stdin
+
 
 # 'd:\pm'
 # print [qpsu]
@@ -53,7 +52,7 @@ def es(a):
 	# print U.cmd('es',a)
 	import subprocess as sp
 	
-	print sp.Popen(('cmd','/k','es','*qgb\\U.py'))
+	print( sp.Popen(('cmd','/k','es','*qgb\\U.py'))   )
 	
 	U.x()
 
@@ -83,11 +82,6 @@ def __backImport():
 	if '.py' not in name.lower():
 		return ''
 	return T.sub(name,'','.')
-if __name__!='__main__':
-	frame=sys._getframe().f_back
-	if frame.f_code.co_name=='patched_import':frame=frame.f_back#pycharm
-	name=__backImport()
-#################################################
 
 
 def autoPath(a):
@@ -128,14 +122,25 @@ def getShellPath(fileName=''):
 		return p.replace('\\','/')+'/'+fileName
 
 	
-p=getShellPath()
-py=p+'/py/'
+
 # print p
 
 def info():
 
 	__import__('code').interact(banner="",local=frame.f_globals)
-	return
-
-	
+	return	
 	import IPython;IPython.embed(locals=frame.f_locals,globals=frame.f_globals)
+#####################################
+if __name__!='__main__':	
+	a= sys.argv
+	path=os.path
+	stdin=sys.stdin
+	p=getShellPath()
+	py=p+'/py/'
+	frame=sys._getframe().f_back
+	if frame.f_code.co_name=='patched_import':frame=frame.f_back#pycharm
+	name=__backImport()
+	file=name+'.py'
+	cmd=Win.getCmd().strip()
+	arg=T.sub(cmd,a[0],'').strip()
+#################################################

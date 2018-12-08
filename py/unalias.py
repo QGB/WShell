@@ -1,10 +1,19 @@
 import S
-
-if S.a>2:
-	print 'alias short longCmd'
-	print S.a
+import alias
+if len(S.a)<2:
+	print 'unalias name[.bat]'
+	# print S.a
 	exit()
-	
-print S.a
-	
-# print S.p
+#todo auto remove ws/py
+
+
+# U.pprint(U.dir(S))
+print S.a,U.pwd(),S.p
+
+name=S.a[1]
+if not name.endswith('.bat'):name+='.bat'
+
+name=S.p+name
+if alias.old(name):U.pause()
+
+print F.delete(name)

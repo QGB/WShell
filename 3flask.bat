@@ -1,0 +1,1 @@
+G:\QGB\Anaconda2\Scripts\flask-script.py %*

@@ -1,0 +1,1 @@
+"C:\QGB\Android\Android Studio\jre\bin\java.exe" %*

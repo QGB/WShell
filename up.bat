@@ -1,4 +1,10 @@
-chmod -R 777 ./*
+: %wspath%exe\pos.exe 666
+git pull cq master
+
+if not defined wspath (set wspath=G:\QGB\babun\cygwin\home\qgb\wshell\)
+
+if "%*"=="" (for /f "delims=" %%i in ('%wspath%datetime.bat') do set commit_msg=%%i ) else (set commit_msg=%*)
+
 
 for %%a in ("%cd%") do set repo=%%~nxa
 
@@ -9,8 +15,9 @@ git config --global core.filemode false
 git config --global credential.helper store
 
 git remote add q https://github.com/qgb/%repo%
-git remote add cq https://coding.net/u/qgb/p/%repo%/git
+git remote add cq https://coding.net/u/qgb/p/%repo%/git/
 git add -A
-git commit -m %*
+git commit -m "%commit_msg%"
 git push cq master 
 git push q master 
+

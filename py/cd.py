@@ -6,6 +6,7 @@ Win=U.Win
 # Win.getCmdLine=getCmdLine
 cmd= Win.getCmdLine()
 r= F.getPaths(cmd)
+# U.log(r)
 for i,v in enumerate(r):
 	# print U.getShellPath(),v
 	if U.gsw in v:
@@ -13,11 +14,17 @@ for i,v in enumerate(r):
 		v=r[i]=U.gst
 
 	if '&' not in v[:3]:
-		r[i]='{0}&cd "{1}"'.format(v[:2],v)
+	#  gst path no space ,  otherwise err in bat @set "gst=.."".. "
+		r[i]='{0}&cd {1}'.format(v[:2],v)
 # r=U.delMuti(r)
 # for i in rZ
-
-U.p(r[-1])
+if r:
+	# U.msgbox(r)
+	U.p(r[-1])
+else:
+	v=U.gst
+	U.p('{0}&cd {1}'.format(v[:2],v)   )
+# U.log(r)
 
 exit()
 def getPaths(a):

@@ -33,5 +33,6 @@ for i in range(len(S.a)):
 	# exit()
 # print S.a	
 
-U.cmd(S.a)
+U.run(S.a)
+U.exit()
 # except:exit()

@@ -1,0 +1,1 @@
+"G:\QGB\babun\cygwin\bin\wget.exe" %*

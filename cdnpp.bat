@@ -1,1 +1,1 @@
-@g:&@cd g:\QGB\Notepad++\%*
+@G:&@cd G:\QGB\npp\%*

@@ -1,0 +1,1 @@
+@%HOMEDRIVE%&@cd %HOMEPATH%\Videos\%*

@@ -1,0 +1,1 @@
+runas /user:administrator "notepad.exe %windir%\System32\drivers\etc\hosts"

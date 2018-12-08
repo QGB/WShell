@@ -1,0 +1,1 @@
+@start "" "G:\QGB\software\scrcpy-win64\scrcpy.exe"

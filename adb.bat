@@ -1,0 +1,1 @@
+@"G:\Android\SDK\platform-tools\adb.exe" %*

@@ -3640,3 +3640,2000 @@ ping.exe -6 [2001:470:1:18::125] -t
 netsh int teredo show state
 G:\QGB\software\xxnet\code\3.11.7\gae_proxy\local\ipv6_tunnel\disable_ipv6.bat
 G:\QGB\software\xxnet\code\3.11.7\gae_proxy\local\ipv6_tunnel\enable_ipv6.bat
+cd Test\
+q
+gt
+git
+git e
+git reset
+git reset -h
+git reset --hard 70796b34c2507a0c4867c2327b0b03deac1a88ca
+npp liwei.py 
+git reset 
+git reset --hard 70796b34c2507a0c4867c2327b0b03de
+git reset --hard 951a
+git reset --hard 79f
+git reset --hard 79f4
+gitlog
+git pull origin master
+git log
+git reset --hard 67a5
+./up
+up.bat
+git push cq master -f
+cdtcc
+py
+GamePanel.exe 
+c:
+alias cdLiwei -cd
+cdqp
+cdLiwei.bat 
+git pull cq master
+up.bat beep
+down
+update
+  netsh interface teredo set state enterpriseclient server=default
+  // 测试 IPv6 连接
+  ping -6 ipv6.test-ipv6.com
+  ping -6 [2001:470:1:18::125]
+  // 重置 IPv6 配置
+  netsh interface ipv6 reset
+ netsh interface teredo set state server=teredo.remlab.net
+IPCONFIG /ALL|grep Ter
+IPCONFIG /ALL
+ ping -6 ipv6.test-ipv6.com
+ls
+cdt
+cd github
+gc https://github.com/SeaHOH/pteredor
+cd pteredor\
+pip install win_inet_pton
+pip install --upgrade pip
+python pteredor.py -h -p 54301
+ipconfig /all
+255.255.255.0
+ping -6 [2001:470:1:18::125]
+ping -6 [2001:470:1:18::125] -t
+ping.exe -6 [2001:470:1:18::125] -t
+netsh int teredo show state
+G:\QGB\software\xxnet\code\3.11.7\gae_proxy\local\ipv6_tunnel\disable_ipv6.bat
+G:\QGB\software\xxnet\code\3.11.7\gae_proxy\local\ipv6_tunnel\enable_ipv6.bat
+gc https://coding.net/u/qgb/p/npp Notepad++
+alias gcnpp git clone https://coding.net/u/qgb/p/npp Notepad++
+set|grep Rom
+set|grep App
+npp\
+cdadb
+ADBD
+adb forward tcp:1111 localabstract:chrome_devtools_remote
+adb forward tcp:9919 localabstract:chrome_devtools_remote
+adbs  -s 192.168.2.39
+fastboot oem get identifier token
+adbk
+adbd
+adb forward tcp:8888 tcp:8888
+npm i --save lodash
+setx debug 1
+env
+env|grep debug
+set
+set|grep debug
+setx /?
+cdkiller.bat er
+cdkiller.bat 
+adbc 39
+adbs
+npp "G:\QGB\babun\cygwin\lib\python2.7\qgb\U.py" 1541
+npp "G:\QGB\babun\cygwin\lib\python2.7\qgb\U.py"
+cccc
+msgbox
+monitorOn
+monitorOff
+beep
+echo \a
+py_qp
+py_qp U.beep()
+alias pyqp @py_qp
+alias pyqp @py_qp %*
+npp
+qpsu
+pyqp U.beep()
+pyqp print(dir())
+UTNF.py
+py print(dir())
+py -c print(dir())
+alias chrome G:\QGB\Chrome\Application\chrome.exe -s
+chrome
+wlan
+ipy
+pyqp
+qp
+qp U.beep()
+qp U.beep(ms=888)
+qp U.beep(ms=1234)
+qp U.beep(hz=8888)
+qp U.beep(hz=888)
+qp U.beep(hz=888,ms=6454)
+qp U.beep(hz=888,ms=6454);
+qp print locals
+qp print locals()
+qp U.pprint( locals())
+qp Win.getAllAdapter
+qp Win.getAllAdapters
+qp Win.getAllInterface
+qp Win.getAllNetworkInterface
+qp Win.getAllNetworkInterfaces
+qp U.pprint( F.__dict__)
+qp U.pprint( N.__dict__)
+qp globals()+{'a':3}
+qp globals().update({'a':3});U.pprint(globals())
+qp globals().update({N.__dict__);U.pprint(globals())
+qp globals().update(N.__dict__);U.pprint(globals())
+qp Win.getAllNetworkInterfaces()
+qp print Win.getAllNetworkInterfaces()
+ip
+ip /all
+qp print 
+qp U.pprint() 
+qp U.pprint(1) 
+qp U.pprint(1,2) 
+qp U.pprint([1,2]) 
+qp help(N.setIP)
+qp N.setIP(ip=2.2,adapter=12)
+ipython
+ip
+ipython
+qp U.pprint( N.__dict__)
+qp globals()+{'a':3}
+qp globals().update({'a':3});U.pprint(globals())
+qp globals().update({N.__dict__);U.pprint(globals())
+qp globals().update(N.__dict__);U.pprint(globals())
+qp Win.getAllNetworkInterfaces()
+qp print Win.getAllNetworkInterfaces()
+ip
+ip /all
+qp print 
+qp U.pprint() 
+qp U.pprint(1) 
+qp U.pprint(1,2) 
+qp U.pprint([1,2]) 
+qp help(N.setIP)
+qp N.setIP(ip=2.2,adapter=12)
+ipython
+ip
+ipython
+cdt
+qp 2
+aliasa nppqp npp %qpsu%%1%.py
+alias nppqp npp %qpsu%%1%.py
+qp py
+qp U
+npp
+cdv
+exp
+start ipython3
+alias nppqp npp %qpsu%%1%.py
+qp py
+qp U
+npp
+cdv
+exp
+start ipython3
+echo %py%
+ipy 3
+echo %pypath%
+set qp=
+ipy 2
+qp Win.getAllInterface
+qp Win.getAllNetworkInterface
+qp Win.getAllNetworkInterfaces
+qp U.pprint( F.__dict__)
+qp U.pprint( N.__dict__)
+qp globals()+{'a':3}
+qp globals().update({'a':3});U.pprint(globals())
+qp globals().update({N.__dict__);U.pprint(globals())
+qp globals().update(N.__dict__);U.pprint(globals())
+qp Win.getAllNetworkInterfaces()
+qp print Win.getAllNetworkInterfaces()
+ip
+ip /all
+qp print 
+qp U.pprint() 
+qp U.pprint(1) 
+qp U.pprint(1,2) 
+qp U.pprint([1,2]) 
+qp help(N.setIP)
+qp N.setIP(ip=2.2,adapter=12)
+ipython
+ip
+ipython
+qp U.pprint( N.__dict__)
+qp globals()+{'a':3}
+qp globals().update({'a':3});U.pprint(globals())
+qp globals().update({N.__dict__);U.pprint(globals())
+qp globals().update(N.__dict__);U.pprint(globals())
+qp Win.getAllNetworkInterfaces()
+qp print Win.getAllNetworkInterfaces()
+ip
+ip /all
+qp print 
+qp U.pprint() 
+qp U.pprint(1) 
+qp U.pprint(1,2) 
+qp U.pprint([1,2]) 
+qp help(N.setIP)
+qp N.setIP(ip=2.2,adapter=12)
+ipython
+ip
+ipython
+cdt
+qp 2
+aliasa nppqp npp %qpsu%%1%.py
+alias nppqp npp %qpsu%%1%.py
+qp py
+qp U
+npp
+cdv
+exp
+start ipython3
+pos
+pos ？
+pos 11
+pos 99
+pos 88
+pos 55
+pos 66
+ipy3
+setx qp %qp%
+setx qp=%qp%
+setx gqp=%qp%
+setx
+setx /?
+setx qp 1
+echo %java_home%
+%qp%
+eng
+setx qq %qp%
+gbk
+setx qp "%qp%"
+echo %qp%
+cdjs
+./up.bat qgb.js
+up.bat qgb.js
+qpsu
+py
+title qgb.js
+nppbat ipy
+echo %pypath%
+nppbat setqp
+start "111111" cmd
+verify
+verify qp
+verify qpsu
+VERIFY OTHER 2>nul
+VERIFY  2>nul
+%qpsu%
+echo %qpsu%
+VERIFY qpsu 2>nul
+set ipyargs=32
+IF DEFINED qpsu (echo 233)
+ipython3
+echo %ipyargs%
+ ipython3 %ipyargs%
+ipython3 --no-banner  --autocall=2
+ipython3 --no-banner  --autocall=2 --InteractiveShellApp.exec_lines=['']
+ipython3 --no-banner  --autocall=2 --InteractiveShellApp.exec_lines=['NPP=npp=2']
+ipython3 --no-banner  --autocall=2 --InteractiveShellApp.exec_lines=['NPP=npp=2U']
+ ipython3 %ipyargs%
+setqp
+echo ipython3 %ipyargs%
+ ipython3 %ipyargs%
+ipy 2
+ipython2
+ipy
+ipython2 --
+ipy --
+ipy 12
+ipy --weca
+ipy2 --fewfx
+ipy --fewfx
+ipy 3
+@echo off
+call setqp.bat
+:ipy3
+ipy2
+set qp=
+ipy 2
+if defined qp (echo 232)
+cdjs
+cdv
+ipy
+cdv
+cd ..\OneDrive\
+mklink /d chromExt G:\QGB\babun\cygwin\home\qgb\chromExt
+G:\QGB\babun\cygwin\home\qgb\wshell\wSetx.bat
+G:\QGB\babun\cygwin\home\qgb\wshell\wSetx.bat
+ws
+G:\QGB\babun\cygwin\home\qgb\wshell\wSetx.bat
+G:\QGB\babun\cygwin\home\qgb\wshell\wSetx.bat
+ws
+exit
+ip
+ipython
+qp U.pprint( N.__dict__)
+qp globals()+{'a':3}
+qp globals().update({'a':3});U.pprint(globals())
+qp globals().update({N.__dict__);U.pprint(globals())
+qp globals().update(N.__dict__);U.pprint(globals())
+qp Win.getAllNetworkInterfaces()
+qp print Win.getAllNetworkInterfaces()
+ip
+ip /all
+qp print 
+qp U.pprint() 
+qp U.pprint(1) 
+qp U.pprint(1,2) 
+qp U.pprint([1,2]) 
+qp help(N.setIP)
+qp N.setIP(ip=2.2,adapter=12)
+ipython
+ip
+ipython
+cdt
+qp 2
+aliasa nppqp npp %qpsu%%1%.py
+alias nppqp npp %qpsu%%1%.py
+qp py
+qp U
+cdv
+exp
+start ipython3
+setqp
+alias setqp @echo off
+npp
+test
+setx qp
+setx qp=
+setx qp ""
+alias ipy2 ipy 2
+ipy2
+echo %py%
+set qp=
+qpsu
+ --no-banner  --autocall=2  "--InteractiveShellApp.exec_lines=['%qp%','NPP=npp=U.npp']" 
+echo %ipy%
+set ipy --no-banner  --autocall=2  "--InteractiveShellApp.exec_lines=['%qp%','NPP=npp=U.npp']" 
+echo %qp%
+ipy 3
+ipy 2
+ipy
+ipy3w
+ipy3
+cdv
+exp
+%T%%
+%T%
+start ipython3
+nppbat ipy
+ipy3
+start ipy3
+npp flaskT.py
+ipy
+set qp=
+ipy 2
+git pull cq master
+git pull origin master
+up.bat tablist\js
+npp
+ipy 3
+ipy 2
+ipy
+ipy3w
+ipy3
+%T%%
+%T%
+start ipython3
+ipy3
+start ipy3
+npp flaskT.py
+set qp=
+ipy 2
+up.bat tablist\js
+cd %appdata%
+cd c:
+c:
+cd Notepad++
+ls
+git pull cq master
+npp  plugins/config/npes_saved.txt
+npp session.xml 
+up.bat lenovo
+git pull origin master
+cdnpp
+gpom
+exp
+cdv
+pip install dulwich
+pip install dulwich --pure
+pip install dulwich -globals=
+pip install dulwich --globals=
+pip install dulwich --globals=p
+gc https://github.com/dulwich/dulwich
+git clone https://github.com/dulwich/dulwich --depth=1
+cd dulwich\
+python setup.py --pure install
+npp
+nppbat ipy
+ipy
+call setqp.bat
+setqp
+setqp.bat
+setqp
+echo ipython3 %ipyargs%
+ ipython3 %ipyargs%
+ipy 2
+ipython2
+ipy
+ipython2 --
+ipy --
+ipy 12
+ipy --weca
+ipy2 --fewfx
+ipy --fewfx
+ipy 3
+@echo off
+call setqp.bat
+:ipy3
+ipy2
+set qp=
+ipy 2
+if defined qp (echo 232)
+cdv
+cd ..\OneDrive\
+mklink /d chromExt G:\QGB\babun\cygwin\home\qgb\chromExt
+G:\QGB\babun\cygwin\home\qgb\wshell\wSetx.bat
+G:\QGB\babun\cygwin\home\qgb\wshell\wSetx.bat
+ws
+G:\QGB\babun\cygwin\home\qgb\wshell\wSetx.bat
+G:\QGB\babun\cygwin\home\qgb\wshell\wSetx.bat
+ws
+exit
+nppbat cdv
+>alias cdad c:&cd %appdata%
+>alias cdad "c:&cd %appdata%"
+alias cdad
+alias cdad c
+alias cdad ccv
+alias cdad cc
+alias cdad "c:&cd %appdata%"]
+startsend
+qp '123'[:-1]
+nppqp
+nppw?
+nppw
+nppbat nppw
+qp U.npp(U)
+qp U.npp(T)
+alias cdad "c:&cd %appdata%"
+npp
+nppbat cdad
+qp U.getcmd
+qp U.getCmd()
+alias cdad 
+cdjs
+cdad
+cdad "Notepad++
+up.bat qgb.js
+git pull cq master
+cdqgb
+cdqgb npp
+ls
+nppbat npm
+npm
+cdv
+ipy
+ipy
+cdv
+gc https://github.com/wdongjia/python-demo
+exp python-demo\
+cdnpp
+cdqgb
+cdqgb npp
+ls
+cdad
+exp
+pip install dulwich --globals=p
+gc https://github.com/dulwich/dulwich
+git clone https://github.com/dulwich/dulwich --depth=1
+cd dulwich\
+python setup.py --pure install
+npp
+nppbat ipy
+call setqp.bat
+setqp
+setqp.bat
+cdv
+nppbat setqp
+set pyPath=python G:\QGB\Anaconda2\
+setx pyPath=python G:\QGB\Anaconda2\
+setx pyPath python G:\QGB\Anaconda2\
+setx pyPath "python G:\QGB\Anaconda2\"
+setx pyPath "G:\QGB\Anaconda2\"
+setx pyPath G:\QGB\Anaconda2\
+set pyPath=G:\QGB\Anaconda2\
+ipy
+cdwspy
+nppbat ipy3
+set
+set|grep PYT
+set|grep T
+ipy3
+cdqgb npp
+ls
+cdad
+exp
+npp up.bat 
+up.bat 
+git status
+git remote
+git remote cq
+git config
+npp .git\config 
+git push
+git config -l
+gs
+nppqp
+nppw?
+nppw
+nppbat nppw
+qp U.npp(U)
+qp U.npp(T)
+alias cdad "c:&cd %appdata%"
+npp
+nppbat cdad
+qp U.getcmd
+qp U.getCmd()
+alias cdad 
+cdjs
+cdad
+cdad "Notepad++
+up.bat qgb.js
+git pull cq master
+cdqgb
+nppbat npm
+npm
+ipy
+cd python-demo\
+ls
+py
+echo %T%
+qpsu
+alias nppqp npp %qp%%1.py
+echo %qpath%
+echo %qpsu%
+alias nppqp
+nppqp U
+%T%
+cdqgb npp
+alias cdqn cdqgb npp
+cdqn
+ip
+gpcq
+cdv
+qp U.pprint() 
+qp U.pprint(1) 
+qp U.pprint(1,2) 
+qp U.pprint([1,2]) 
+qp help(N.setIP)
+qp N.setIP(ip=2.2,adapter=12)
+ipython
+ip
+ipython
+qp U.pprint( N.__dict__)
+qp globals()+{'a':3}
+qp globals().update({'a':3});U.pprint(globals())
+qp globals().update({N.__dict__);U.pprint(globals())
+qp globals().update(N.__dict__);U.pprint(globals())
+qp Win.getAllNetworkInterfaces()
+qp print Win.getAllNetworkInterfaces()
+ip
+ip /all
+qp print 
+qp U.pprint() 
+qp U.pprint(1) 
+qp U.pprint(1,2) 
+qp U.pprint([1,2]) 
+qp help(N.setIP)
+qp N.setIP(ip=2.2,adapter=12)
+ipython
+ipython
+cdt
+qp 2
+aliasa nppqp npp %qpsu%%1%.py
+alias nppqp npp %qpsu%%1%.py
+qp py
+qp U
+npp
+cdv
+start ipython3
+pos
+pos ？
+pos 11
+pos 99
+pos 88
+pos 55
+pos 66
+setx qp %qp%
+setx qp=%qp%
+setx gqp=%qp%
+setx
+setx /?
+setx qp 1
+echo %java_home%
+%qp%
+eng
+setx qq %qp%
+gbk
+setx qp "%qp%"
+echo %qp%
+cdjs
+./up.bat qgb.js
+up.bat qgb.js
+qpsu
+py
+title qgb.js
+nppbat ipy
+echo %pypath%
+nppbat setqp
+start "111111" cmd
+verify
+verify qp
+verify qpsu
+VERIFY OTHER 2>nul
+VERIFY  2>nul
+%qpsu%
+echo %qpsu%
+VERIFY qpsu 2>nul
+set ipyargs=32
+IF DEFINED qpsu (echo 233)
+ipython3
+echo %ipyargs%
+ ipython3 %ipyargs%
+ipython3 --no-banner  --autocall=2
+ipython3 --no-banner  --autocall=2 --InteractiveShellApp.exec_lines=['']
+ipython3 --no-banner  --autocall=2 --InteractiveShellApp.exec_lines=['NPP=npp=2']
+ipython3 --no-banner  --autocall=2 --InteractiveShellApp.exec_lines=['NPP=npp=2U']
+ ipython3 %ipyargs%
+echo ipython3 %ipyargs%
+ ipython3 %ipyargs%
+ipy 2
+ipython2
+ipy
+ipython2 --
+ipy --
+ipy 12
+ipy --weca
+ipy2 --fewfx
+ipy --fewfx
+ipy 3
+@echo off
+call setqp.bat
+:ipy3
+set qp=
+ipy 2
+if defined qp (echo 232)
+cdv
+cd ..\OneDrive\
+mklink /d chromExt G:\QGB\babun\cygwin\home\qgb\chromExt
+ls
+cat G:/QGB/babun/cygwin/home/qgb/jsjs/lib/interpreter.js
+cdbabun
+cd chromExt\
+cd tabList\
+mklink interpreter.js G:/QGB/babun/cygwin/home/qgb/jsjs/lib/interpreter.js
+mklink interpreter.js G:\QGB\babun\cygwin\home\qgb\github\jsjs\lib\interpreter.js
+pstree
+curl https://coding.net/u/qgb/p/js/git/raw/master/qgb.js
+md5 G:\QGB\babun\cygwin\home\qgb\js\qgb.js
+md5 G:\QGB\babun\cygwin\home\qgb\chromExt\tabList\js\qgb.js
+ll
+ll G:\QGB\babun\cygwin\home\qgb\js\qgb.js
+ll G:\QGB\babun\cygwin\home\qgb\chromExt\tabList\js\qgb.js
+G:\QGB\babun\cygwin\home\qgb\js\qgb.js
+npp qgb.js 
+git pull cq masteer
+git pull cq master
+alias gpc git pull cq masteer
+alias gpc git pull cq master
+apc
+gpc
+ping v
+nppwspy nettool
+ping
+ping 192
+PING 3
+QP U.subprocess
+QP U.subprocess(['ping.exe', '192.168.2.3'])
+QP dir ( U.subprocess(['ping.exe', '192.168.2.3']) )
+QP U.subprocess('ping.exe', '192.168.2.3').pid
+QP U.subprocess(['ping.exe', '192.168.2.3']).pid
+QP U.subprocess(['ping.exe', '192.168.2.3']).stdout.read(-1)
+cyg
+ping zhi
+ping zhihu.com
+ws
+pos 77 -11
+pos 77 -11 32
+pos 0
+up
+up test
+qp U.sleep(66)
+git log
+git commit -m a
+git config --local -l
+git config --global -l
+GIT
+NPP C:\Program Files\Git\mingw64/etc/gitconfig
+NOTEpade++ C:\Program Files\Git\mingw64/etc/gitconfig
+notepad++
+notepad++ C:\Program Files\Git\mingw64/etc/gitconfig
+git config --system --unset credential.helper
+git config --system -l
+git push cq master
+gcqgb
+gcoding
+git config
+git config -l
+alias gcq git clone https://coding.net/u/qgb/p/%1/git %1
+cd ..
+gcq js
+cd js
+gpush
+qp 'A s s e r t i o n   f a i l e d !'
+qp 'A s s e r t i o n   f a i l e d !'.replace(' ','')
+ git subtree 
+ git subtree  
+git add -a
+git add -A
+C:\Program Files\Docker Toolbox\installers\git\git.exe
+"C:\Program Files\Docker Toolbox\installers\git\git.exe"
+"C:\Program Files\Docker Toolbox\installers\git\git.exe" push origin master
+where git.exe
+git pull origin master
+nppwspy unalias 
+pwd
+unalias gi
+npp "G:\QGB\Anaconda2\lib\pprint.py" 326
+npp "G:\QGB\Anaconda2\lib\pprint.py" 
+alias git "C:\Program Files\Docker Toolbox\installers\git\git.exe" %*
+unalias git
+git
+git push origin master
+alias gpom git push origin master
+ip
+qp ''
+alias repath qp '''%*'''.replace('\\','/')
+alias repath @qp '''%*'''.replace('\\','/')
+repath
+nppbat repath
+up.bat
+git config  user.email qgbcs1@gmail.com
+git config  user.name QGB
+git config  core.filemode false
+git config  credential.helper store
+git config credential.helper store
+gpom
+HISTORY
+history
+doskey
+doskey /?
+pip install dulwich --global-option="--pure"
+doskey /?pip install dulwich --global-option=--pure
+pip install dulwich --global-option=--pure
+repath G:\QGB\babun\cygwin\home\qgb\js
+repath C:\Users\Administrator\Videos\js
+setqp
+set
+set pythonHome=
+cdwspy
+ipy
+ipy2
+cdv
+crt lk.lk.crt 
+crt G:\QGB\babun\cygwin\lib\python2.7\qgb\N\lk.lk.crt 
+cd123crt
+cd..
+openssl x509 -noout -modulus -in  Certkey.pem 
+openssl x509 -noout -modulus -in  CAkey.pem 
+cd certs\
+openssl x509 -noout -modulus -in  lk.lk.crt 
+cdtablist
+python3 flaskT.py 
+cdjs
+exp
+npp item.js
+ping 3
+ping 3 -t
+ipy3
+cdv
+ipy3
+alias gpom git push origin master
+ip
+qp ''
+alias repath qp '''%*'''.replace('\\','/')
+alias repath @qp '''%*'''.replace('\\','/')
+repath
+nppbat repath
+up.bat
+git config  user.email qgbcs1@gmail.com
+git config  user.name QGB
+git config  core.filemode false
+git config  credential.helper store
+git config credential.helper store
+gpom
+HISTORY
+history
+doskey
+doskey /?
+pip install dulwich --global-option="--pure"
+doskey /?pip install dulwich --global-option=--pure
+pip install dulwich --global-option=--pure
+repath G:\QGB\babun\cygwin\home\qgb\js
+repath C:\Users\Administrator\Videos\js
+setqp
+set
+set pythonHome=
+cdwspy
+ipy
+ipy2
+cdv
+crt lk.lk.crt 
+crt G:\QGB\babun\cygwin\lib\python2.7\qgb\N\lk.lk.crt 
+cd123crt
+cd..
+openssl x509 -noout -modulus -in  Certkey.pem 
+openssl x509 -noout -modulus -in  CAkey.pem 
+cd certs\
+openssl x509 -noout -modulus -in  lk.lk.crt 
+cdtablist
+python3 flaskT.py 
+npp item.js
+ping 3
+ping 3 -t
+ipy3
+ipy3
+npm cache clear
+npm cache clear --force
+npm set registry http://registry.npmjs.org  
+npm get registry 
+npm publish --tag 0.0.1  
+npm publish
+npm publish -tag 0.02
+npm publish -tag 0.0.2
+npm publish .
+npm publish --tag latest
+npm -v
+npm publish -f
+npm publish qgb
+npm publish 
+npm adduser
+npm login
+alias npmUp
+npm adduser < echo qgb
+npp qgb.info
+npm adduser < qgb.info 
+echo %qgb^
+echo %qgb%
+npmUp
+echo print(233)|python
+ipython 
+t
+pwd
+nppbat gpush
+alias npmQGB npm adduser < %QGB%npm_qgb.info
+npp
+npmqgb
+npm unpublish
+npm unpublish --force
+alias npmUndo npm unpublish --force
+npm unpublish -h
+npmundo qgb@0.0.2
+npmundo qgb@0.0.1
+cdv
+ls
+exp
+cd js
+npm i qgb
+cdjs
+npp package
+npp package.json 
+nppbat npmup
+ npmundo
+ npmundo
+ npmundo
+ npmundo
+ npmundo
+np
+ npmundo
+ npmup
+ npmup
+nppbat nppundo
+nppbat npmundo
+ npmundo
+ npmundo
+npmup
+G:\\QGB\\Anaconda3\\python.exe -m ipykernel_launcher --existing C:\\Users\\Administrator\\AppData\\Roaming\\jupyter\\runtime\\kernel-0846fbea-8038-470b-99fb-7e44b29d341d.json
+'G:\\QGB\\Anaconda3\\python.exe -m ipykernel_launcher -f C:\\Users\\Administrator\\AppData\\Roaming\\jupyter\\runtime\\kernel-0846fbea-8038-470b-99fb-7e44b29d341d.json'
+G:\\QGB\\Anaconda3\\python.exe -m ipykernel_launcher -f C:\\Users\\Administrator\\AppData\\Roaming\\jupyter\\runtime\\kernel-0846fbea-8038-470b-99fb-7e44b29d341d.json
+ npmundo
+ npmundo
+np
+ npmundo
+ npmup
+ npmup
+nppbat nppundo
+nppbat npmundo
+ npmundo
+ npmundo
+npmup
+G:\\QGB\\Anaconda3\\python.exe -m ipykernel_launcher --existing C:\\Users\\Administrator\\AppData\\Roaming\\jupyter\\runtime\\kernel-0846fbea-8038-470b-99fb-7e44b29d341d.json
+'G:\\QGB\\Anaconda3\\python.exe -m ipykernel_launcher -f C:\\Users\\Administrator\\AppData\\Roaming\\jupyter\\runtime\\kernel-0846fbea-8038-470b-99fb-7e44b29d341d.json'
+G:\\QGB\\Anaconda3\\python.exe -m ipykernel_launcher -f C:\\Users\\Administrator\\AppData\\Roaming\\jupyter\\runtime\\kernel-0846fbea-8038-470b-99fb-7e44b29d341d.json
+ipython qtconsole
+ipython3 qtconsole
+cd C:\Users\Administrator\AppData\Roaming\jupyter\runtime
+alias -cd jupy
+alias -cd Jupy
+cdjupy
+ipython qtconsole --existing kernel-0846fbea-8038-470b-99fb-7e44b29d341d.json
+ipython3 qtconsole --existing kernel-0846fbea-8038-470b-99fb-7e44b29d341d.json
+jupyter --existing kernel-0846fbea-8038-470b-99fb-7e44b29d341d.json
+jupyter --existing ./kernel-0846fbea-8038-470b-99fb-7e44b29d341d.json
+jupyter nootbook --existing ./kernel-0846fbea-8038-470b-99fb-7e44b29d341d.json
+alias  jupyter cdac
+cdpy3
+cdconda3
+nppwspy alias
+python
+alias cdAconda3 @cdconda3 %*
+ALIAS jupyter cdAconda3
+npp 
+set
+nppbat wshell
+G:\QGB\Anaconda3\python.exe G:\QGB\Anaconda3\Scripts\jupyter-notebook-script.py 
+call jupyter
+py3
+cdAconda3.bat 
+alias py3 %CD%
+cd ..
+cdjs
+cdv
+alias py3 %conda3%python.exe %*
+set|grep cond
+alias py3 %py3path%python.exe %*
+py3 G:\QGB\Anaconda3\Scripts\jupyter-notebook-script.py 
+jupyter
+jupyter.bat
+where jupyter.exe
+G:\\QGB\\Anaconda3\\python.exe -m ipykernel_launcher -f C:\\Users\\Administrator\\AppData\\Roaming\\jupyter\\runtime\\kernel-0846fbea-8038-470b-99fb-7e44b29d341d.json
+jupyter
+set|grep cond
+alias py3 %py3path%python.exe %*
+py3 G:\QGB\Anaconda3\Scripts\jupyter-notebook-script.py 
+jupyter.bat
+where jupyter.exe
+cdv
+c:
+c
+cdc
+cd /
+cd Windows
+jupyter
+git config  user.name QGB
+git config  core.filemode false
+git config  credential.helper store
+git config credential.helper store
+gpom
+HISTORY
+history
+doskey
+doskey /?
+pip install dulwich --global-option="--pure"
+doskey /?pip install dulwich --global-option=--pure
+pip install dulwich --global-option=--pure
+repath G:\QGB\babun\cygwin\home\qgb\js
+repath C:\Users\Administrator\Videos\js
+setqp
+set
+set pythonHome=
+cdwspy
+ipy
+ipy2
+cdv
+crt lk.lk.crt 
+crt G:\QGB\babun\cygwin\lib\python2.7\qgb\N\lk.lk.crt 
+cd123crt
+cd..
+openssl x509 -noout -modulus -in  Certkey.pem 
+openssl x509 -noout -modulus -in  CAkey.pem 
+cd certs\
+openssl x509 -noout -modulus -in  lk.lk.crt 
+cdtablist
+python3 flaskT.py 
+cdjs
+exp
+npp item.js
+ping 3 -t
+ipy3
+cdv
+ipy3
+net stop wlanSvc
+netsh interface set interface wlan0 enabled
+netsh interface 
+netsh interface show
+netsh interface show wlan
+netsh interface show wlan0
+netsh interface show 12
+netsh interface show 10
+netsh interface dump
+netsh interface dump|npp
+netsh set
+netsh 
+qp Win.getAllNetworkInterfaces()
+qp '\n',Win.getAllNetworkInterfaces()
+qp '\n','='*44,'\n',Win.getAllNetworkInterfaces()
+alias network  @qp '\n','='*44,'\n',Win.getAllNetworkInterfaces()
+netsh interface show 11
+netsh interface show 
+netsh interface show interface 
+npp
+netsh wlan connect
+netsh wlan connect ssid=Buildozer
+netsh wlan add profile filename=qgb
+netsh wlan connect name=Buildozer
+ping  bai
+ip
+ping 3
+ping.bat ba
+network
+net wlan show drivers
+netsh wlan show drivers
+alias wlanDriver netsh wlan show drivers
+netsh wlan export profile name=Buildozer
+netsh wlan export profile
+npp "WLAN-Buildozer .xml" 
+set|grep system32
+set|grep windir
+netsh wlan add profile filename="WLAN-Buildozer .xml" 
+netsh wlan connect name="Buildozer"
+wlan
+alias wifi wlan %*
+alias wifi @wlan %*
+wifi 
+wifi TP_516
+
+netsh wlan show profile
+alias getwifi netsh wlan show profile
+unalias getwifi
+alias getWifi netsh wlan show profile
+getWifi
+unalias getwifi 1213
+getwifi
+wifi test
+netsh interface set interface wlan disable
+netsh interface set interface wlan enabled
+nppbat wlan
+wifi
+netsh wlan connect name="Buildozer "
+alias wc netsh wlan connect name="Buildozer "
+wc
+ipy3w
+ipy3
+%T%%
+%T%
+start ipython3
+nppbat ipy
+start ipy3
+npp flaskT.py
+ipy
+set qp=
+ipy 2
+git pull cq master
+git pull origin master
+up.bat tablist\js
+npp
+gcq npp
+cd npp
+up.bat
+up.bat init
+git commit --amend
+git log
+alias  gpushForce git push -f q master
+git push 
+git push --help
+nppbat  gpushForce 
+notepad++.exe G:\QGB\babun\cygwin\home\qgb\wshell\gpushForce.bat
+gpushForce.bat 
+alias gitChangeCommit git commit --amend
+up.bat ContexMenu
+browsergo
+qpsu
+up.bat MultiClipboard]
+up.bat MultiClipboard
+up.bat .gitignore
+gpc
+alias gpcq gpc
+cdjs
+git status
+alias gs git status
+npp .git\config 
+git config -l
+git push
+pwd
+gs
+ping coding.net
+nppwspy nettool
+ping https://coding.net/u/qgb/p/js/git/raw/master/qgb.js
+exp
+gpom
+ipy3
+cdv
+python3 flaskt.py 
+Qs
+shutdown.exe /?
+shutdown.exe /?head
+shutdown.exe z
+shutdown.exe /h
+WIFI
+cdwspy
+nppbat ipy3
+set
+set|grep PYT
+set|grep T
+ipy3
+cdxxcrt.bat 
+cd ..
+crt Certkey.pem 
+crt Ca.pem 
+crt Cakey.pem 
+cdqp
+nppwspy curl
+acurl http://192.168.2.123:1111/G%3A/QGB/babun/cygwin/lib/python2.7/qgb/U.py
+exp
+nircmd.exe mutesysvolume
+nppbat monitoroff
+nircmd mutesysvolume
+alias nircmd %~dp0exe/nircmd/nircmd %*
+nircmd 
+nircmd /?
+nircmd /h
+nircmd -help
+alias -cd cdnircmd 2
+cds exx
+cds exe
+cd nircmd\
+alias -cd cdnircmd 
+cdnircmd
+ls
+nircmd.chm
+nircmd.exe mutesysvolume 1
+nircmd.exe mutesysvolume 0
+alias mute nircmd  mutesysvolume 1
+alias unMute nircmd  mutesysvolume 0
+cdjs
+mute
+unmute
+alias silence @mute
+silence
+google silence
+wlan
+WIFI
+IP
+WV
+WIFU
+WIFI
+cccccccc
+g:
+G:\TEST\github\pteredor\pteredor.py
+python3 G:\TEST\github\pteredor\pteredor.py
+alias teredo python3 G:\TEST\github\pteredor\pteredor.py
+teredo
+g:
+G:\TEST\github\pteredor\pteredor.py
+python3 G:\TEST\github\pteredor\pteredor.py
+alias teredo python3 G:\TEST\github\pteredor\pteredor.py
+teredo
+netsh int teredo show state
+ip
+ping.exe  -6
+ netsh int ipv6 show teredo state
+cdxxnet
+cd ..
+tertdo.bat 
+cd ..
+netsh interface teredo
+netsh interface teredo show
+netsh interface teredo show state
+cdxxnet ..
+tertdo.bat 
+ netsh int ipv6 show teredo state
+cdxxnet
+cd ..
+tertdo.bat 
+cd ..
+netsh interface teredo
+netsh interface teredo show
+cdxxnet ..
+tertdo.bat 
+
+netsh interface teredo show state
+alias netsht netsh interface teredo show state
+ip
+ip /all
+ipconfig /all
+00-00-00-00-00-00-00-E0
+ping -6 ipv6.google.com
+ping.exe teredo.ipv6.microsoft.com
+teredo
+netsht
+ping.exe teredo.ipv6.microsoft.com
+teredo
+netsht
+WB
+WC
+IP
+WIFI
+WLAN
+netsh interface teredo show state
+alias netsht netsh interface teredo show state
+ip
+ip /all
+ipconfig /all
+00-00-00-00-00-00-00-E0
+ping -6 ipv6.google.com
+ping.exe teredo.ipv6.microsoft.com
+teredo
+netsht
+ping.exe teredo.ipv6.microsoft.com
+teredo
+netsht
+WB
+WC
+WIFI
+WLAN
+2222IP
+IP
+WC
+WLAN
+2222IP
+IP
+WB
+WIFI
+CDS
+alias wlan echo 555
+wlan
+"wlan (2).bat" 
+alias wlan echo 555
+wlan
+"wlan (2).bat" 
+npp C:\Users\Administrator\.condarc
+conda config --set ssl_verify false.
+cdadb
+cds adb
+adbd
+adbk
+adbc 112
+adbs
+IP
+WB
+WIFI
+CDS
+alias wlan echo 555
+wlan
+"wlan (2).bat" 
+pt
+pip3 install scrapy
+conda
+conda innfo
+where.exe conda
+conda3 innfo
+conda3 info
+conda3 config --set ssl_verify false
+conda3 install scrapy
+ssh
+ssh -i G:\QGB\rsa.key -p 8022 192.168.2.112
+where.exe ssh
+ssh-keygen
+ssh -p 8022 192.168.2.112 
+ls
+ipy3
+ls
+ipy3
+jupyter
+pip3 install jupyter_contrib_nbextensions
+jupyter3.exe contrib nbextension install --user
+jupyter.exe contrib nbextension install --user
+set path
+G:\QGB\Anaconda3\Scripts\jupyter.exe contrib nbextension install --user
+pip3 show jupyter_contrib_nbextensions
+pip3 show jupyter_contrib_nbextensions
+jupyter contrib nbextension install --user
+jupyter.exe contrib nbextension install --user
+jupyter 
+cdc
+alias cdc 
+python -v
+exit
+alias cdc 
+python -v
+npp wshell.bat 
+notepad++ wshell.bat 
+start  /b  wSetx.bat
+exit
+exit
+x
+exit
+exit
+x
+g:
+echo %F%
+alias adb @"G:\Android\SDK\platform-tools\adb.exe"
+a
+alias adb @"G:\Android\SDK\platform-tools\adb.exe" %*
+adbd
+adbs
+ADBS
+python -m xmlrpc.server 
+python3 -m xmlrpc.server 
+exit
+ADBS
+python -m xmlrpc.server 
+python3 -m xmlrpc.server 
+exit
+ip
+ip|head
+python3 manage.py srever 0.0.0.0:8000
+django
+python3 manage.py server 0.0.0.0:8000
+python3 manage.py runserver 0.0.0.0:8000
+python3 manage.py server 0.0.0.0:8000
+python3 manage.py runserver 0.0.0.0:8000
+alias mfyq  G:\QGB\Anaconda3\python.exe  manage.py runsrever 0.0.0.0:8000
+alias mfyq  G:\QGB\Anaconda3\python.exe  manage.py runserver 0.0.0.0:8000
+mfyq
+alias mf  G:\QGB\Anaconda3\python.exe  manage.py runserver 0.0.0.0:8000
+mf
+mf
+alias mf  G:\QGB\Anaconda3\python.exe  manage.py runserver 0.0.0.0:8000
+mf
+alias mfyq  G:\QGB\Anaconda3\python.exe  manage.py runserver 0.0.0.0:8000
+mfyq
+alias mf  G:\QGB\Anaconda3\python.exe  manage.py runserver 0.0.0.0:8000
+mf
+mf
+alias mf  G:\QGB\Anaconda3\python.exe  manage.py runserver 0.0.0.0:8000
+mf
+cd wxqq
+echo %ipyargs%%
+set ipyargs=
+echo %ipyargs%
+ipy3
+mf
+mf
+uprk
+git push origin master
+git push origin master -f
+gprk mifengyuqing
+ll
+exit
+echo %ipyargs%
+mf
+ip3
+ipy3
+cd ..
+pip3 install qrcode
+pip3 search  qrcode
+python3 manage.py createsuperuser
+alias mf  G:\QGB\Anaconda3\python.exe  manage.py runserver 0.0.0.0:8000
+mf
+cd wxqq
+echo %ipyargs%%
+set ipyargs=
+echo %ipyargs%
+mf
+ipy3
+md test
+del test
+md t
+cd t
+django-admin.exe  startproject
+django-admin.exe  startproject dt
+django-admin.exe  runserver
+django-admin.exe  runserver 0.0.0.0:1122
+django-admin.exe 
+django-admin.exe check
+ll
+e
+cd ..
+cd dt
+ls
+ls -al
+python3 manage.py runserver 0.0.0.0:1122
+echo %ipyargs%
+ipy3
+mf
+ipy3
+mf
+cdt
+pwd
+cd BaiduPCS-Go-v3.5.6-windows-x64\
+ls
+alias -exe BaiduPCS-Go.exe 
+alias
+unalias -exe
+alias baiduPan %CD%/BaiduPCS-Go.exe 
+baiduPan.bat 
+ipy3
+echo %F%
+alias adb @"G:\Android\SDK\platform-tools\adb.exe"
+a
+alias adb @"G:\Android\SDK\platform-tools\adb.exe" %*
+adbd
+adbs
+ADBS
+python -m xmlrpc.server 
+python3 -m xmlrpc.server 
+exit
+git clone https://github.com/hnrunke/mifengyuqing
+mv mifengyuqing mifengyuqing0
+git clone https://github.com/hnrunke/mifengyuqing mf
+git clone https://hnrunke@github.com/hnrunke/mifengyuqing mf
+alias gcmf git clone https://hnrunke@github.com/hnrunke/mifengyuqing mf
+npp b
+npp 
+npmup
+nppws gcmf
+ls
+mv mifengyuqing 0
+gcmf
+e
+cd mifengyuqing\
+uprk
+dijango
+pip3 install django_crontab
+python3 manage.py server 
+uprk  woooooooooooooow
+gpom
+uprk  
+alias baiduPan %CD%/BaiduPCS-Go.exe 
+baiduPan.bat 
+mf
+ipy3
+IPY3
+e
+cd mifengyuqing\
+uprk
+dijango
+pip3 install django_crontab
+python3 manage.py server 
+uprk  woooooooooooooow
+gpom
+uprk  
+alias baiduPan %CD%/BaiduPCS-Go.exe 
+baiduPan.bat 
+ipy3
+IPY3
+ipconfig
+python3 manage.py makemigrations    
+python3 manage.py migrate
+mf
+ipconfig
+python3 manage.py makemigrations    
+python3 manage.py migrate
+mf
+python3 manage.py migrate
+mf
+uprk
+cdadb
+adb pull /sdcard/netCapture.pcap c://?
+adb pull /sdcard/netCapture.pcap c://!
+cdnote
+jupy
+qpsu
+e
+ip
+uprk
+ip
+cdnote
+jupy
+e
+ip
+uprk
+c
+ip
+cd c:\amd
+c:
+ls
+qpsu
+npp flastT.py 
+owd
+pwd
+python3 flastT.py 
+pwd
+python3 flastT.py 
+cdq
+cdqp
+ws
+cds
+cdsexe
+e
+c:
+ipy3
+e
+c:
+django-admin.exe 
+ipy3
+ipy3
+django_shell.bat 
+mac
+nppws mac
+ipconfig /all
+ipy3
+ipy3
+python3 manage.py  /?
+python3 manage.py  
+python3 manage.py    check
+django_shell.bat 
+mf
+pwd
+jupy
+python3 manage.py shell -i ipython
+alias django_shell  python3 manage.py shell -i ipython
+browsergo
+cdadb
+adbc1 121
+adbs
+cdmf
+django_shell.bat 
+cdmf
+django_shell.bat 
+e:
+ls
+dir
+cds exe
+alias
+npppy alias
+nppws alias
+cdqs ssh
+e
+ip
+ppwd
+pwd
+ip
+ip
+cdmf
+mf
+ip
+ppwd
+CDS
+cdmf
+pwd
+explorer .
+cdqs
+cdsw
+cd RDPWrap-v1.6.2\
+e
+ip
+pp
+clink
+cdext
+cdqs
+e
+ipy3
+ip /all
+conda install picamera
+conda3 install picamera
+pip3 install  picamera
+as p3i pip3 install %*
+p3i Videocapture
+cdt
+p3i Videocapture
+nppws cdt
+echo %gsst%
+echo %gst%
+nppws wsetx
+cdt
+echo %gst%
+cdt
+e
+eeceee
+exit
+echo %gst%
+nppws wsetx
+cdt
+e
+eeceee
+exit
+echo %%
+cdpy
+cds
+python %~dp0py/cd.py
+python py/cd.py
+python py/cd.py 1
+npp py/cd.py 
+python py/cd.py 
+cdt
+echo %gst%
+x
+c:
+ipy3
+e
+django-admin.exe 
+ipy3
+ipy3
+django_shell.bat 
+mac
+nppws mac
+ipconfig /all
+ipy3
+ipy3
+python3 manage.py  /?
+python3 manage.py  
+python3 manage.py    check
+django_shell.bat 
+mf
+pwd
+jupy
+python3 manage.py shell -i ipython
+alias django_shell  python3 manage.py shell -i ipython
+browsergo
+cdadb
+adbc1 121
+adbs
+cdmf
+django_shell.bat 
+cdmf
+django_shell.bat 
+e:
+ls
+dir
+cds exe
+alias
+npppy alias
+nppws alias
+cdqs ssh
+e
+ip
+ppwd
+pwd
+ip
+ip
+cdmf
+mf
+ip
+ppwd
+CDS
+cdmf
+pwd
+explorer .
+cdqs
+cdsw
+cd RDPWrap-v1.6.2\
+e
+ip
+pp
+clink
+cdext
+cdqs
+e
+ipy3
+ip /all
+conda install picamera
+conda3 install picamera
+pip3 install  picamera
+as p3i pip3 install %*
+p3i Videocapture
+cdt
+p3i Videocapture
+nppws cdt
+echo %gst%
+nppws wsetx
+cdt
+echo %gst%
+cdt
+e
+eeceee
+exit
+echo %gst%
+nppws wsetx
+cdt
+eeceee
+exit
+echo %%
+cdpy
+cds
+python %~dp0py/cd.py
+python py/cd.py
+python py/cd.py 1
+npp py/cd.py 
+python py/cd.py 
+set gst=\
+as pycd python %dp~0py/cd.py
+as pycd python %~dp0py/cd.py
+pycd
+nppws  wsetx
+echo %gsst%
+cd ?
+e
+echo gst%%
+gst
+set "t=1233"
+set "t=123  sd  3"
+echo %T%
+nppwspy cd
+set gst=&wsetx
+cd #  gst path no space ,  otherwise err in bat @set "gst=.."".. "
+cd C:\Program Files\Docker Toolbox\kitematic\
+set "gst=23q"
+set "gst=23q&545"
+echo echo %gst%
+echo "%gst%"
+set "gst=C:&cd C:/test/"
+g:
+as g
+gg
+%gst%
+wsetx
+setx gst %gst%
+cd /
+setx gst "%gst%"
+set gst=
+echo %gst%
+c
+c:
+g
+cdt
+x
+setx gst %gst%
+cd /
+setx gst "%gst%"
+c
+cdt
+echo %gst%
+c:
+g
+set gst=
+wsetx
+x
+es
+ip
+cdmf
+mf
+cdmf
+mf
+cdmf
+mf
+e
+ip
+ping 192.168.1.156
+pp
+G:\BaiduNetdiskDownload\TeamViewer_Setup.exe
+npp
+regPy
+set gst=
+wsetx
+x
+iRotate.exe 
+cdqgb
+cd !qgb_history_data\
+e
+ping lk.lk.lk
+nppws pch
+ping DESKTOP-8GFJDGB
+pch\
+pch
+pp
+regpy
+ls
+npp
+pch
+reg_windir_n.bat 
+notepad++ C:\WINDOWS\n.bat
+x
+x
+ping 192.168.1.163
+shutdown.exe /?
+shutdown.exe /h /t 0
+shutdown.exe /h 
+x
+browsergo
+x
+as -s keyboardtestutility.exe
+as ks  keyboardtestutility.bat
+cccccccccc
+cds
+mv ks.bat  kt.bat
+kt
+cdsw
+ls
+e
+cd HWinfo\
+as HWiNFO64.exe -s
+as hw HWiNFO64
+gw
+hw
+chkdsk.exe 
+es
+cds
+mv ks.bat  kt.bat
+kt
+cdsw
+ls
+e
+cd HWinfo\
+as HWiNFO64.exe -s
+as hw HWiNFO64
+gw
+hw
+chkdsk.exe 
+es
+%t%
+300-469-400
+req.view_argsreq.view_args\
+req.view_args
+\
+%T%
+%T%
+cds
+ls
+npp bat.
+as nws start "" cmd /k clink
+nws
+cdadb
+adbd
+adbs
+pch
+es
+es
+pch
+cd C:\Users\Administrator\AppData\Roaming\abckantumini\10AB_allall\
+dir
+md ABCminixktt.exe\qgb....
+ls
+e
+md ABCminixktt.exe\qgb....\
+npp
+cd mf
+cd mf
+cd_ mf
+cd mf
+gc https://github.com/TCPsoftware/IFEO
+pp
+cdsw
+e
+cd cpu-z_1.86-cn\
+as -s cpuz_x64.exe 
+cdt
+g
+cpuz_x64.bat 
+cdadb
+adbd
+e
+browsergo
+cd mf
+cd C:\Users\q\AppData\Roaming\abckantumini\10AB_allall
+rmd ABCminixktt.exe 
+pp
+cd C:\Users\q\AppData\Roaming\tbad\tbadsyqd\
+rmd tbadsyqd.exe 
+git
+exit
+pch
+git
+exit
+]
+screenOff.bat 
+````````
+KEYT
+CDSW
+ll
+as keyt keyboardtestutility
+keyt
+netsh interface ip  set address source=static addr=192.168.1.4 mask=255.255.255.0 name=1
+adbs
+z
+npp
+cd \TEST\
+ls
+gc https://github.com/Genymobile/scrcpy
+cd scrcpy\
+cdgithub
+e
+ip
+ip /all
+pch
+cdxxnet
+cd ..
+qgb_get_cert.bat 
+telnet
+echo %t%
+as ca_generate %t%
+cd mf
+cd_ mf
+cd mf
+ping baidu.com
+ping 192.168.1.1
+ip /all
+sw
+req.view_argsreq.view_args\
+req.view_args
+\
+%T%
+ls
+as powerShell_pkg
+as powerShell_pkg @rem
+npp
+echo "G:\QGB\software\xxnet\code\3.12.2\python27\1.0\python.exe"  "G:\QGB\software\xxnet\code\3.12.2\launcher\start.py"|npp
+echo "G:\QGB\software\xxnet\code\3.12.2\python27\1.0\python.exe"  "G:\QGB\software\xxnet\code\3.12.2\launcher\start.py" > qgb_get_cert.bat
+npp qgb
+sp
+cdqs
+cd scrcpy-win64\
+adb tcpip 5555
+adbs
+as adbw adb tcpip 5555
+adbw
+adbc 103
+scrcpy
+adbd
+adbc1 103
+adbk
+bgo
+pwd
+scrcpy
+adbd
+adbc1 103
+adbk
+bgo
+pwd
+ls
+dir
+r
+cd %windir%
+c:
+e
+cds
+n
+net use
+net use /?
+g
+ip
+!nstall
+g
+ip
+!nstall
+ipy3
+py2
+qp
+regPy.bat 
+es
+runke2018
+hosts
+cdsw
+e
+hosts
+cdsw
+e
+pch
+ip /all
+cd ..
+e
+set
+es
+qp 1
+qp 1
+hosts
+curl ipip.net
+curl ip.ipip.net
+cds
+npp

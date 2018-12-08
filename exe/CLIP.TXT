@@ -1,0 +1,63 @@
+ ==============================================================================
+             CLIP - Copy the specified text file to the clip board
+        Copyright (c) 1998,99 by Dave Navarro, Jr. (dave@basicguru.com)
+ ==============================================================================
+
+ As a relative "old-timer" in the computer world, I am still partial to
+ running DOS or "console" applications in Windows 95/98/NT.  I almost
+ always have several 4DOS boxes open at the same time.
+
+ Part of my job is to correspond with a number of programmers that use my
+ company's product.  And as a result, I email a lot of source code examples
+ and other often used text files.  I wrote CLIP so that I could quickly copy
+ a text file from a command prompt into the clipboard for pasting into
+ Eudora, WinCIM or Microsoft Word.
+
+ ------------------------------------------------------------------------------
+
+ To copy a text file to te clipboard, simply type:
+
+   CLIP filename.txt
+
+ and the file will be copied into the clipboard as a text file.  You can
+ then simply paste it into any application that supports the Windows
+ clipboard.
+
+ To read any text in the clipboard and write it to a text file, simply
+ type:
+
+   CLIP filename.ext /r
+
+ and any text data in the clipboard will be written to the specified file.
+ If no text data is present, the file is not created.  If the file already
+ exists, it will be overwritten.
+
+ CLIP also supports redirection and pipes.  You can copy the output of any
+ applications that writes to STDOUT into the clipboard:
+
+   DIR | CLIP.EXE
+
+ Or simply redirect text:
+
+   CLIP < filename.txt
+
+ You can also clip bitmap (.BMP) files to the clipboard:
+
+   CLIP filename.bmp
+
+ Any file with a .BMP extension is assumed to be a standard Windows .BMP file.
+ Otherwise a text file is assumed.
+
+ ------------------------------------------------------------------------------
+
+ This product is freeware.  There is no fee for personal use.  It may not be
+ distributed as part of a commercial product without this original text file
+ describing the product.
+
+ If you have any comments or suggestions, please feel free to email me.  The
+ latest version of this product may be downloaded from my web site at
+ http://www.basicguru.com/cmdtools/
+
+ Thanks!
+
+ --Dave

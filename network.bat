@@ -1,0 +1,1 @@
+@qp '\n','='*44,'\n';U.pprint(Win.getAllNetworkInterfaces(),indent=4)

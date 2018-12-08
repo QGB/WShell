@@ -1,1 +1,1 @@
-@python D:\temp\sqlmap-master\sqlmap.py %*
+@python G:\QGB\Anaconda3\Lib\site-packages\sqlmap\sqlmap.py %*

@@ -1,0 +1,1 @@
+G:\Android\SDK\tools\bin\avdmanager.bat list avd

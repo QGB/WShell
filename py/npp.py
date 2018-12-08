@@ -1,15 +1,22 @@
 #coding=utf-8
 import S
-sf=r''':\Program Files\Notepad++\notepad++.exe'''
+
 sf=r'C:\Users\Administrator\AppData\Roaming\Notepad++\notepad++.exe'
 if not os.path.exists(sf):
-	sf=r':\QGB\Notepad++\notepad++.exe'
+	sf1=r':\QGB\npp\notepad++.exe'
+	sf2=r''':\Program Files\Notepad++\notepad++.exe'''
 	for i in 'cdefgq':
-		i+=sf
-		if os.path.exists(i):
-			sf=i
+		# i+=sf
+		if os.path.exists(i+sf1):
+			sf=i+sf1
 			break
-
+			
+		if os.path.exists(i+sf1):
+			sf=i+sf2
+			break
+		
+			
+			
 if len(S.a)==1:
 	sin=U.getStdin().strip()
 	r=F.getPaths(sin)

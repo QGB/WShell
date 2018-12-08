@@ -1,0 +1,1 @@
+@G:&@cd G:\Android\SDK\platform-tools\%*

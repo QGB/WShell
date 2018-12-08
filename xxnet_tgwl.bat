@@ -1,0 +1,1 @@
+netsh int ipv6 set teredo enterpriseclient win10.ipv6.microsoft.com.

@@ -1,5 +1,8 @@
 #coding=utf-8
+#TODO 增加一个选项，把一个命令及其参数  自动转换成 cmdArg1Arg2.bat  ,而不需要指定一个名字。。。这个选项用什么表示比较好？
 import S
+import sys
+from qgb import *
 a= sys.argv
 gim2=2###min short length
 giMax=99
@@ -46,6 +49,8 @@ def _start(lnk=False):
 	if len(a)==2:
 		if sp:a.append(sp)
 		else:
+			a[1]=T.sub(U.getCmd(),S.a[0],'').strip()#忽略空格路径影响
+			U.ipy()
 			a[1]=S.path.abspath(a[1])
 			a.append(a[1])
 			if U.debug():print a,F.getNameWithoutExt(a[1])
@@ -55,7 +60,9 @@ def _start(lnk=False):
 		a[2]=S.path.abspath(a[2])
 		
 		if S.path.exists(a[2]):
-			if not lnk:
+			if lnk:
+				a[2]='"{}"'.format(a[2])
+			else:
 				a[2]=start.format(a[2])
 		else:
 			help_()
@@ -90,12 +97,12 @@ def _cd():
 		help_()
 	exit()
 	
-gdParms={('-p','-py'):_py,('-S','-s','-start'):_start,('-L','-l','-lnk'):_lnk,('-c','-cd','-CD'):_cd}
+gdParms={('-p','-py'):_py,('-start','--start','-s','-S'):_start,('-L','-l','-lnk'):_lnk,('-c','-cd','-CD'):_cd}
 
 # print gdParms
 # exit()
-def help_():
-	print 'Help:  alias short [longCmd] ',gdParms.keys()
+def help_(msg='alias short [longCmd] '+str(gdParms.keys())):
+	print 'Help: ',msg
 	print '     ',a,gRemoved_P or '' 
 	exit()
 
@@ -103,7 +110,11 @@ def write(name,txt):
 	name=path(name)
 	if old(name):U.pause()
 	# print (name,txt)
-	U.save(F.write(name,txt,autoArgs=False))
+	# U.gbPrintErr=False #禁用F.write错误提示
+	U.save(F.write(name,txt,autoArgs=False) or help_('can\'t write '+name))  #
+	'''U.load()#'False\n'
+	#Error  [Errno 22] invalid mode ('wb') or filename: 'G:/QGB/babun/cygwin/home/qgb/wshell/-?.bat'  G:/QGB/babun/cygwin/home/qgb/wshell/-?.bat <pteredor.py >sucess!
+	'''
 	print  name,'<'+txt[:50],
 	if len(txt)>50:
 		print '...',
@@ -128,6 +139,7 @@ def path(a):
 
 	
 def old(a):
+	# print S.a,a
 	if not F.exists(a):return False
 	s=''
 	try:
@@ -162,29 +174,30 @@ def main():
 	# ic=25
 	# if old(a[1]):ic=0      '='*ic,
 
-	if len(a)==2 and U.stdin.isatty():
-		print 'Input one line cmd:'
-		try:
-			a.append(raw_input())
-			if len(a[2])<gim2:raise Exception('input too short!')
-		except:help_()
-		# print raw_input()
- 	if not U.stdin.isatty():
-		a.append(U.readStdin())
-		
+	if len(a)==2:
+		if U.stdin.isatty():
+			print 'Input one line cmd:'
+			try:
+				a.append(raw_input())
+				if len(a[2])<gim2:raise Exception('input too short!')
+			except:help_()
+		else:	# if not U.stdin.isatty():
+			a.append(U.readStdin())
+	else:
+		cmd=T.sub(U.getCmd(),S.a[1],'').strip()
+		if cmd:a[2]=cmd
 	if len(a)<3:
 		help_()		
 		
+	if '&' in a[2]:a[2]=a[2].strip('"')
+	
+	if not a[2]:help_(msg='a[2] is null')
 	# a[1]=path(a[1])
 	# if U.debug():print S.a,a;print U.getCmd()#sys.argv也被修改了
-	
-	a[2]=T.sub(U.getCmd(),S.a[1],'').strip()#a[1] 已经在前面被修改过啦！！
+	#a[1] 已经在前面被修改过啦！！
 	
 	# for i in range(len(a)-3):
-		# a[2]+=' '+T.string(a[3+i])
-
-		
-	# print a
+		# a[2]+=' '+T.string(a[3+i])		
 	write(a[1],a[2])
 
 

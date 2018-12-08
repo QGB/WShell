@@ -1,0 +1,1 @@
+ping.exe -6 ipv6.test-ipv6.com %*

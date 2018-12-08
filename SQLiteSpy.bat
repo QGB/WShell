@@ -1,0 +1,1 @@
+@start "" "G:\QGB\software\SQLiteSpy.exe"

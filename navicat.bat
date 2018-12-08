@@ -1,0 +1,1 @@
+@start "" "G:\QGB\software\Navicat for MySQL\navicat.exe"

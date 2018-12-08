@@ -1,1 +1,1 @@
-git clone %*
+git clone %* --depth=1

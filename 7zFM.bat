@@ -1,0 +1,1 @@
+@start "" "G:\QGB\babun\cygwin\home\qgb\wshell\exe\7-Zip\7zFM.exe"

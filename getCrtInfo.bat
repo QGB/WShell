@@ -1,0 +1,1 @@
+openssl x509 -noout -subject -in %*

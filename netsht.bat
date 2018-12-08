@@ -1,0 +1,1 @@
+netsh interface teredo show state

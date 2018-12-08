@@ -1,0 +1,1 @@
+python3 G:\TEST\github\pteredor\pteredor.py

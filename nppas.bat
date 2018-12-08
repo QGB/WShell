@@ -1,0 +1,1 @@
+notepad++ %~dp0py\alias.py

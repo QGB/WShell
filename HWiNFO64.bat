@@ -1,0 +1,1 @@
+@start "" "G:\QGB\sys_sw\HWinfo\HWiNFO64.exe"

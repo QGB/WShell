@@ -1,14 +1,7 @@
 : @d:
+@if not defined gst (call wSetx.bat) 
 
-
-
-
-
-@for /f "delims=" %%i in ('python %~dp0py/cd.py %*') do @set cdPath=%%i
-
-: @echo "%cdpath%"
-
-@%cdpath%
+@%gst%%*
 
 
 : @%wsdriver%

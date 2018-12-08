@@ -1,0 +1,1 @@
+npp %qpsu%%1.py

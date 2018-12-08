@@ -1,0 +1,1 @@
+C:\test\BaiduPCS-Go-v3.5.6-windows-x64/BaiduPCS-Go.exe

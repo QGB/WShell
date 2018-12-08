@@ -1,0 +1,1 @@
+nircmd  mutesysvolume 1

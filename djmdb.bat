@@ -1,0 +1,1 @@
+dj_merge_db.bat %*

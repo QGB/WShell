@@ -1,0 +1,1 @@
+notepad++ %~dp0py/%1.py
