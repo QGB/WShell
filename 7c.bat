@@ -1,0 +1,1 @@
+qp Win.setpos(Win.getWindow('LND-AL30'),x=56,y=56,w=int(966*1.93),h=966) 

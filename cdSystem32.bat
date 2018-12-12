@@ -1,0 +1,1 @@
+@C:&@cd %windir%\System32\%*

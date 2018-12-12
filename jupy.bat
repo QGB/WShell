@@ -1,4 +1,4 @@
-start "" G:\QGB\Anaconda3\python.exe G:\QGB\Anaconda3\Scripts\jupyter-notebook-script.py --ip=0.0.0.0 %*
+@cdnote & start "" G:\QGB\Anaconda3\python.exe G:\QGB\Anaconda3\Scripts\jupyter-notebook-script.py --ip=0.0.0.0 %*
 
 @REM (
 @REM echo #coding:utf-8  this end can not be deleted and unable to append any char (^)

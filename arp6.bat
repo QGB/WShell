@@ -1,0 +1,1 @@
+netsh interface ipv6 show neighbors

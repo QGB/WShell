@@ -1,0 +1,1 @@
+k6 run -u 9 -d 10s http_get.js
