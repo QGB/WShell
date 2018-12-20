@@ -5998,3 +5998,27 @@ as -cd cdgit_C
 git-cmd.exe 
 start git-bash.exe 
 MobaXterm.bat 
+as MIC C:\Windows\System32  whoami /groups
+npp
+cdc
+mic
+qp3 input(545)
+qpsu
+G:\QGB\Anaconda3\python.exe  C:\!\WinHotspot\winhotspot.py
+netsh wlan start hostednetwork
+cdscrcpy.bat 
+as scrc scrcpy.bat 
+scrc
+adbi G:\TEST\old_android_project\inject\bin\Test.apk -s 5591845b
+adbi -s 5591845b G:\TEST\old_android_project\inject\bin\Test.apk 
+adb install -s 5591845b G:\TEST\old_android_project\inject\bin\Test.apk
+adb install G:\TEST\old_android_project\inject\bin\Test.apk  -s 5591845b
+adbs -s 5591845b
+adb --help
+adb --help|grep dev
+set ANDROID_SERIAL=MSM8926
+as adb_in_u9180 set ANDROID_SERIAL=MSM8926
+adbi G:\TEST\old_android_project\inject\bin\Test.apk
+adbd
+as adb_in_F22 set ANDROID_SERIAL=5591845b
+adbs
