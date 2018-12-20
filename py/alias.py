@@ -50,7 +50,7 @@ def _start(lnk=False):
 		if sp:a.append(sp)
 		else:
 			a[1]=T.sub(U.getCmd(),S.a[0],'').strip()#忽略空格路径影响
-			U.ipy()
+			# U.ipy()
 			a[1]=S.path.abspath(a[1])
 			a.append(a[1])
 			if U.debug():print a,F.getNameWithoutExt(a[1])

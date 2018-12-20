@@ -1,1 +1,2 @@
-@cdshell %*
+@cd %wsPath%%*
+@%wsDriver%

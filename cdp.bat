@@ -1,0 +1,1 @@
+@G:&@cd G:\QGB\!Project\%*

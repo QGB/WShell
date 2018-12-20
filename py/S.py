@@ -1,8 +1,32 @@
-import sys,os
-qpsu=os.getenv('QPSU') or r'G:\QGB\babun\cygwin\lib\python2.7\qgb'
+import sys,os,platform
+def iswin():
+	if platform.system().startswith('Windows'):return True
+	else:return False
+glnix=['nix','linux','darwin']
+def isnix():
+	return [i for i in glnix if i in platform.system().lower()]
+	# return one_in('nix','linux','darwin',platform.system().lower())
+def istermux():
+	return 'com.termux' in sys.executable
+
+def iscyg():
+	return 'cygwin' in  platform.system().lower()
+	
+def exists(path):
+	if os.path.exists(path):
+		return path
+	else:
+		return ''
+qpsu=os.getenv('QPSU') 
+if not qpsu:
+	if iswin() or iscyg():qpsu=r'G:\QGB\babun\cygwin\lib\python2.7\qgb'
+	if isnix():qpsu=exists(os.getenv('HOME')+'/qgb') or exists('/root/qgb')
+	if istermux():
+		qpsu=exists('/sdcard/!/qgb') or exists(os.getenv('HOME')+'/qgb') or exists('/sdcard/qgb') 
 sys.path.append(qpsu[:-4])
 try:
 	from qgb import *
+	sys.path.pop()
 except Exception as e:
 	import pdb;pdb.set_trace()
 	raise Exception('#error import qgb in S.py',e)
@@ -38,11 +62,41 @@ except Exception as e:
 	copy(qpsu,p+'qgb',ext='.pyc',no='.git')
 	
 	
-	# exit()
 
+def getStdinPath():
+	sin=U.readStdin();tmp=''
+	if not sin:return
+	if '\n' in sin:
+		for i in sin.split('\n'):
+			i=path.abspath(i)
+			if ':\$RECYCLE' in i:tmp=i;continue
+			if path.exists(i):return i
+		return tmp
+	sin=path.abspath(sin)
+	if path.exists(sin):return sin
+	
+	return ''
+	
+def stdinToa():
+	sp=getStdinPath()
+	if sp and len(a)<3:
+		a.append(sp)
+		return True
+	return False
+# print getStdinPath()
+# U.exit()
+	
+	
+def getShellPath(fileName=''):
+	fileName=fileName.replace('\\','/')
+	if path.isabs(fileName):
+		return fileName
+	else:
+		p=path.abspath(__file__)
+		for i in 1,2:p=path.dirname(p)
+		return p.replace('\\','/')+'/'+fileName
 
-# 'd:\pm'
-# print [qpsu]
+	
 
 
 def es(a):
@@ -88,40 +142,6 @@ def autoPath(a):
 	pass
 
 
-def getStdinPath():
-	sin=U.readStdin();tmp=''
-	if not sin:return
-	if '\n' in sin:
-		for i in sin.split('\n'):
-			i=path.abspath(i)
-			if ':\$RECYCLE' in i:tmp=i;continue
-			if path.exists(i):return i
-		return tmp
-	sin=path.abspath(sin)
-	if path.exists(sin):return sin
-	
-	return ''
-	
-def stdinToa():
-	sp=getStdinPath()
-	if sp and len(a)<3:
-		a.append(sp)
-		return True
-	return False
-# print getStdinPath()
-# U.exit()
-	
-	
-def getShellPath(fileName=''):
-	fileName=fileName.replace('\\','/')
-	if path.isabs(fileName):
-		return fileName
-	else:
-		p=path.abspath(__file__)
-		for i in 1,2:p=path.dirname(p)
-		return p.replace('\\','/')+'/'+fileName
-
-	
 
 # print p
 
@@ -141,6 +161,7 @@ if __name__!='__main__':
 	if frame.f_code.co_name=='patched_import':frame=frame.f_back#pycharm
 	name=__backImport()
 	file=name+'.py'
-	cmd=Win.getCmd().strip()
-	arg=T.sub(cmd,a[0],'').strip()
+	if iswin():
+		cmd=Win.getCmd().strip()
+		arg=T.sub(cmd,a[0],'').strip()
 #################################################

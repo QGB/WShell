@@ -1,0 +1,1 @@
+set NDK_PROJECT_PATH=G:\TEST\github\CameraHook/app/src/main/java

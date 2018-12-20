@@ -1,1 +1,1 @@
-@start "" "G:\QGB\babun\cygwin\home\qgb\wshell\exe\keymap\KeyMap.exe"
+@cd %wsPath%exe/keymap & %wsDriver% & start "" "G:\QGB\babun\cygwin\home\qgb\wshell\exe\keymap\KeyMap.exe"
