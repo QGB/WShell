@@ -184,7 +184,9 @@ def main():
 		else:	# if not U.stdin.isatty():
 			a.append(U.readStdin())
 	else:
-		cmd=T.sub(U.getCmd(),S.a[1],'').strip()
+		cmd=U.getCmd()
+		cmd=T.sub(cmd,'alias.py','').strip()
+		cmd=T.sub(cmd,S.a[1],'').strip()
 		if cmd:a[2]=cmd
 	if len(a)<3:
 		help_()		

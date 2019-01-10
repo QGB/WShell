@@ -1,1 +1,1 @@
-@C:&@cd C:\Program Files\Docker Toolbox\%*
+@C:&@cd C:\Program Files\Docker\Docker\resources\bin\%*

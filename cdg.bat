@@ -1,1 +1,1 @@
-@E:&@cd E:\github\%*
+@g:&@cd g:\test\github\%*

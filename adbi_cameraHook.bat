@@ -1,0 +1,1 @@
+adb install -r "G:\TEST\github\CameraHook\app\build\outputs\apk\app-debug.apk"

@@ -1,0 +1,1 @@
+scrcpy_7c.bat

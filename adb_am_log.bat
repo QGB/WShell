@@ -1,0 +1,1 @@
+adb -d logcat -b events -v time -d | grep am_

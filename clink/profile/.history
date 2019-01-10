@@ -6022,3 +6022,100 @@ adbi G:\TEST\old_android_project\inject\bin\Test.apk
 adbd
 as adb_in_F22 set ANDROID_SERIAL=5591845b
 adbs
+G:\QGB\Anaconda3\python.exe  C:\!\WinHotspot\winhotspot.py
+netsh wlan start hostednetwork
+cdscrcpy.bat 
+adbd
+adbs
+cdmf
+mf
+django_shell.bat 
+cdq
+e
+cds
+up
+up
+cd ..\qgb_su\
+ndk9
+ndk
+e
+cds
+up
+cd app
+ll
+cd src
+cd main\
+cd java\
+ndk9
+new
+ndk
+cdt
+cdt github
+gc https://github.com/vito11/CameraHook
+moba
+MobaXterm.bat 
+gc https://github.com/liuxuanhai/USB_Camera
+cd C:\Program Files\Git\
+c:
+as -cd cdgit_C
+git-cmd.exe 
+start git-bash.exe 
+MobaXterm.bat 
+cat ndk-build
+cat ndk-build.bat
+cat ndk-build.cmd
+as ndk9  "%CD%\ndk-build.cmd" %*
+cd inject\
+ll
+ndk9
+cd ..
+cd github\
+pwd
+gcqgb
+gcq qjsu
+gcq qjsu qgb
+cdscrcpy.bat 
+nppws gcq 
+gcq qshell
+adb_in_u9180.bat 
+adb push qshell /sdcard//?
+adb push qshell "/sdcard/!/"
+adb_in_F22
+ls
+root_F22.bat 
+npp root_F22.bat 
+G:\QGB\software\scrcpy-win64\f\虚拟视频(音视频精准同步)[2018.10.13].apk
+adbi G:\QGB\software\scrcpy-win64\f\虚拟视频(音视频精准同步)[2018.10.13].apk
+adbd
+nppws scrcpy
+adbk
+scrc
+adbp G:\TEST\SR1-SuperSU-v2.78-SR1\arm64
+adbs
+adbU9180.bat 
+adbpl
+adbpl /data/data/de.robv.android.xposed.installer/bin/XposedBridge.jar
+adbi G:\TEST\old_android_project\methodHook\bin\methodHook.apk
+cdgithub
+cdgit
+cdg
+which cdg
+cdg.bat 
+where cdg.bat 
+where cdg.bat |npp
+sleep
+sleep --help
+as win10_sleep rundll32.exe powrProf.dll,SetSuspendState
+cdmf
+e
+x
+excel
+as Chocolatey_install
+npp
+cds
+e
+id
+x
+x
+%T%
+es

@@ -1,0 +1,1 @@
+ndk9 & adbp G:\TEST\github\CameraHook\app\src\main\java\libs\armeabi-v7a\injector

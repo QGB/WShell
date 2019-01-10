@@ -1,0 +1,1 @@
+adb -s RPDBB18414212707 shell

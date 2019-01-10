@@ -1,1 +1,1 @@
-adb install "%*"
+adb install -r "%*"

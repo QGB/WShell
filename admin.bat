@@ -1,0 +1,1 @@
+runas /user:administrator "%~dp0runws.bat %*"
