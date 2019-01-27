@@ -1,0 +1,1 @@
+update user set host = '%' where user = 'root';flush privileges;

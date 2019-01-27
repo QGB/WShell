@@ -1,0 +1,1 @@
+@G:&@cd G:\TEST\ipy\%*

@@ -6119,3 +6119,411 @@ x
 x
 %T%
 es
+cd C:\Program Files\Git\
+e
+cdgit
+c:
+as -cd cdgit_C
+git-cmd.exe 
+start git-bash.exe 
+MobaXterm.bat 
+as MIC C:\Windows\System32  whoami /groups
+npp
+cdc
+mic
+qp3 input(545)
+qpsu
+G:\QGB\Anaconda3\python.exe  C:\!\WinHotspot\winhotspot.py
+netsh wlan start hostednetwork
+cdscrcpy.bat 
+as scrc scrcpy.bat 
+scrc
+adbi G:\TEST\old_android_project\inject\bin\Test.apk -s 5591845b
+adbi -s 5591845b G:\TEST\old_android_project\inject\bin\Test.apk 
+adb install -s 5591845b G:\TEST\old_android_project\inject\bin\Test.apk
+adb install G:\TEST\old_android_project\inject\bin\Test.apk  -s 5591845b
+adbs -s 5591845b
+adb --help
+adb --help|grep dev
+set ANDROID_SERIAL=MSM8926
+as adb_in_u9180 set ANDROID_SERIAL=MSM8926
+adbi G:\TEST\old_android_project\inject\bin\Test.apk
+adbd
+as adb_in_F22 set ANDROID_SERIAL=5591845b
+adbs
+G:\QGB\Anaconda3\python.exe  C:\!\WinHotspot\winhotspot.py
+netsh wlan start hostednetwork
+cdscrcpy.bat 
+adbd
+adbs
+cdmf
+mf
+django_shell.bat 
+cdq
+e
+cds
+up
+up
+cd ..\qgb_su\
+ndk9
+ndk
+e
+cds
+cd app
+ll
+cd src
+cd main\
+cd java\
+ndk9
+new
+ndk
+cdt github
+gc https://github.com/vito11/CameraHook
+moba
+MobaXterm.bat 
+gc https://github.com/liuxuanhai/USB_Camera
+cd C:\Program Files\Git\
+c:
+as -cd cdgit_C
+git-cmd.exe 
+start git-bash.exe 
+MobaXterm.bat 
+cat ndk-build
+cat ndk-build.bat
+cat ndk-build.cmd
+as ndk9  "%CD%\ndk-build.cmd" %*
+cd inject\
+ll
+ndk9
+cd ..
+cd github\
+pwd
+gcqgb
+gcq qjsu
+gcq qjsu qgb
+cdscrcpy.bat 
+nppws gcq 
+gcq qshell
+adb_in_u9180.bat 
+adb push qshell /sdcard//?
+adb push qshell "/sdcard/!/"
+adb_in_F22
+ls
+root_F22.bat 
+npp root_F22.bat 
+G:\QGB\software\scrcpy-win64\f\虚拟视频(音视频精准同步)[2018.10.13].apk
+adbi G:\QGB\software\scrcpy-win64\f\虚拟视频(音视频精准同步)[2018.10.13].apk
+adbd
+nppws scrcpy
+adbk
+scrc
+adbp G:\TEST\SR1-SuperSU-v2.78-SR1\arm64
+adbs
+adbU9180.bat 
+adbpl
+adbpl /data/data/de.robv.android.xposed.installer/bin/XposedBridge.jar
+adbi G:\TEST\old_android_project\methodHook\bin\methodHook.apk
+which cdg
+cdg.bat 
+where cdg.bat 
+where cdg.bat |npp
+sleep
+sleep --help
+as win10_sleep rundll32.exe powrProf.dll,SetSuspendState
+cdmf
+e
+x
+excel
+as Chocolatey_install
+npp
+cds
+e
+cdgt
+reg_windir_n.bat 
+n
+cdsw
+cd RDPWrap-v1.6.2\
+e
+pch
+cpuz
+cd  cpu-z_1.86-cn\
+cpuz_x64.exe z
+cdsw
+ll
+cd RDPWrap-v1.6.2\20181228\
+ip
+net view
+ipconfig /all
+pip3 install elasticsearch
+pip3 install elasticsearch-dsl
+ns
+sqlmap -u http://ycxfj.gov.cn/news_read.asp?id=768
+ping www.hnjdzy.net
+sqlmap -u http://www.ycxfj.gov.cn/news_read.asp?id=768
+z
+keymap
+msg 233
+msg /?
+msg * 2
+msgbox
+1
+as msgbox_sys msg.exe * %*
+msgbox_sys.bat 4532
+sp
+cdt
+cd ipy\
+npp i.py
+ping okfw.net
+NPPWS REGPY
+cdgithub
+cdgit
+cdg
+ls
+speedtest-go.exe 
+e
+up 0
+谢邀。
+深度好文，重温碧桂园血始谢邀。
+做为碧桂园德州齐河项目的竞争对手，感觉自己还是有资格回答这个问题的。
+原答案：
+碧桂园方面发表了对该事故的官方回应，回应如下：
+　　上午8时许，公司总部大楼装修材料掉落，造成1名员工手臂被砸伤，伤者已送医院治疗，身体无大碍。
+　　经现场勘查，事故初步判定系当年施工单位未严格按照要求操作且隐蔽检查不到位所致，本着对员工人身安全高度负责的态度，将立即对总部大楼挂石进行全面排查并视情更换。
+我们来盘点一下2018碧桂园都发生了哪些恶性事故，可就是有人贪便宜去购买，殊不知，便宜是真的很难出好货的，哈哈୧(๑•̀⌄•́๑)૭。
+1：4月7日，广西崇左碧桂园项目二期一工地发生坍塌，致1死1伤。
+2：6月24号，上海奉贤区海湾镇，碧桂园一个在建的售楼处发生模架坍塌事故，导致1人死亡9人受伤。
+3：7月2日，河南省安阳市中华路，碧桂园在建工地发生火灾，浓烟滚滚，调派兴业路中队、黄河大道中队、特勤中队共12车53人赶赴现场处置。所幸并无人员伤亡。
+4：7月12日，碧桂园杭州萧山项目边上出现了一个大坑，当日早晨六点，已经有人发现工地基坑坑壁上出现了裂痕，两小时后，基坑边缘路面塌陷。基坑下面的水泥桩都歪倒了，梁也断掉了。一辆黄色的挖掘机被泥沙埋剩挖臂！
+5：7月26日，安徽六安碧桂园一建筑工地围墙和活动板房发生坍塌。27日，市政府通报称，事故发生时短时风速达7级，事故后16人被送医，其中6人死亡，多人受伤。
+经过一系列事件，碧桂园的公众形象已经毁得差不多了，为次碧桂园宣布碧桂园旗下所有项目立即停工三天，排查和整改安全隐患。但是，搞笑的是，在7月31日，碧桂园宣布：98%工地已通过验收复工！
+更令人意想不到的是，刚验收完毕，第二天，碧桂园又火了。
+江苏启东碧桂园中邦上海城二期工地内，浓烟滚滚，一正在施工的建筑楼顶发生火灾，十分钟后消防人员进入现场，火势得最终控制。
+在短短40天，碧桂园建筑工地7条人命，几处火宅，这不是个能挥挥手抹去的小新闻。
+为此，公关小组四处奔走，维护着碧桂园的形象，还在8月3号，特意安排了一场“全国媒体见面会”，广邀各流量媒体人、记者到场。而后被曝出，记者在现场领到了大红包，还有伴手礼：香奈儿包！
+回到这件事情本身，就四个字：偷工减料。抠到对自己的员工也残忍的一种地步了。
+关于瓷砖为什么掉落的细节，来自网友的总结，侵删。
+1：瓷砖吸水率问题
+　　基本墙砖的吸水率≥10%，如果吸水率过低，会造成瓷砖不吸水，不能与水泥砂浆很好的粘接，增加脱落的机会；如果过高，会过多吸水造成坯体膨胀而开裂。
+　　建议：购买瓷砖时一定要测试好瓷砖的吸水率。对不同吸水率的瓷砖要采用不同的铺贴方法。
+2：瓷砖背浆未清理干净
+　　瓷砖厂在修边的时候会留下一层灰浆，有的瓷砖生产过程中，胚底有一层隔热的氧化镁，99%的人都认为，通过泡水这层灰浆或粉末会自动消失，没有进行清理，就直接泡水铺贴。这层灰浆会阻隔水泥砂浆与瓷砖的粘接，从而造成脱落。
+　　建议：使用瓷砖前，一定要把瓷砖背面清理干净。
+3：水泥砂浆不合格
+　　水泥的标号不符合。过高会散热快，水分容易蒸发，发生裂缝；过低会影响粘接力。水泥砂浆配比不合格，会影响水泥砂浆粘不住瓷砖，干燥后会二者脱离。
+　　建议：选择水泥砂子要仔细，使用时配比要均匀，且要搅拌均匀，最好搅拌后饧3分钟再使用。
+4：铺贴前，泡水不足
+　　瓷砖泡水不足，铺贴后会吸收水泥砂浆里的水分，造成空鼓，最终导致脱落。
+　　建议：要充分泡水，以泡水没有气泡为准。
+5：水泥砂浆涂抹不均匀、未形成满贴
+　　有些师傅为了节约时间，快速涂抹，看似很流利的动作，却没有抹均匀，这样就会造成空鼓，发生脱落现象。
+　　建议：涂抹瓷砖是个工夫活，不要只追求速度，而忘记质量。涂抹时一定要小心仔细，而且瓷砖放好后一定要适度的按压，让瓷砖和水泥砂浆更好的粘接。如果用胶粘剂，也要涂抹均匀，粘接及时。
+6：墙体变化及老化
+　　基性刚面存在变形，结构变形易造成瓷砖开裂、空鼓和脱落。墙体老化也会造成瓷砖脱落。
+　　这个陶客也没有很好的解决办法，只能再铺贴前检测是否适合铺贴瓷砖，或墙体加固。
+7：墙基未浇水
+　　铺贴前，墙基未浇水湿润，会吸收水泥砂浆与瓷砖里的水分，影响砂浆的凝结，无法充分粘接。
+　　建议：铺贴前一天用水浇湿基层，将湿度控制在30%—70%。
+8：铺贴未留缝
+　　铺贴不预留合适的缝隙，会因热胀冷缩等原因，瓷砖相互挤压，出现翘脚、空鼓等现象，从而导致脱落。
+　　建议：铺贴时一定要预留足够的缝隙，而且不同的瓷砖预留的缝隙也不同。
+9：基层清理未做好
+　　基层清理不处理好，其中的灰尘杂质会吸收水泥砂浆与瓷砖里是水分，并影响粘接力度，导致空鼓或脱落。
+　　建议：不仅铺贴后要做好清洁，铺贴前也要做好清理工作。
+10：温差变化大、外部环境影响
+　　瓷砖会受温度变化进行热胀冷缩，未及时进行保护，就会出现空鼓脱落。受外界重力的影响也会出现空鼓脱落。其中穿堂风也会造成瓷砖脱落。
+　　建议：在温差变化大的时候，一定要及时做好保护，并尽量避免外界重力的冲击。
+　　以上总结：瓷砖脱落的原因大多数是施工工艺和使用环境的问题，因瓷砖本身问题而引起脱落的还是极少极少的。如果因为瓷砖吸水率、水泥砂浆配比不合格所造成的瓷砖脱落，其实都可以使用瓷砖胶或粘结剂来解决问题，
+碧桂园，你可长点心吧，感觉你这个对手越来越掉队了。
+视频封面
+编辑于 2019-01-06・著作权归作者所有
+夜残
+你要是再说说你家公司的事故，以及对全国地产公司事故率做个统计那才是牛逼[微笑]
+小怪
+深度好文，重温碧桂园血始
+git reset -_hard
+as grh git reset --hard
+grh
+gpl
+up
+pch
+cd mfyq\
+git commit -m "www"
+gitk
+gpush 1
+cd ..
+git clone https://github.com/QGB/mfyq
+cd mfyq
+git log
+git reset
+git reset --help
+nppws t
+t "
+IF """==""" (echo 233)
+IF "^""=="^"" (echo 233)
+IF "^^""=="^^"" (echo 233)
+IF "1"=="1" (echo 233)
+IF "1"=="\"" (echo 233)
+IF "1"=="\^"" (echo 233)
+IF "1"=="^^" (echo 233)
+IF "1"=="^^^" (echo 233)
+IF "1"=="^^^"" (echo 233)
+IF "1"=="^^"" (echo 233)
+IF "\""=="\"" (echo 233)
+IF "\""=="\""  (echo 233)
+echo ""
+echo "
+echo "|findstr "\""
+echo " | findstr "\""
+echo 233 |grep 4
+echo " 
+echo " | findstr 1
+echo \" | findstr 
+echo ^" | findstr 
+echo ^" | findstr "\""
+echo ^^"
+echo ^"
+find
+t "453"
+t "453""  "
+t "453"  "
+git
+gpush origin 1
+gpush origin del_read
+t "453""  "
+t "453"  "
+git
+gpush origin 1
+gpush origin del_read
+mysql
+es
+update user set host = '%' where user = 'root';
+cd C:\application\MySQL\bin\
+mysql -u root
+mysql -u root -p
+pch
+es
+cdqs
+ls
+cd "Navicat for MySQL\
+e
+ip
+mysql -u root
+mysql -u root -p
+pch
+es
+cdqs
+ls
+cd "Navicat for MySQL\
+e
+ip
+cds
+\\TSCLIENT\G\QGB\babun\cygwin\home\qgb\wshell\reg_qgb
+\\TSCLIENT\G\QGB\babun\cygwin\home\qgb\wshell\reg_mstsc
+n
+ipy3
+npp G:\QGB\Anaconda3\lib\site-packages\matplotlib-2.1.0-py3.6-nspkg.pth
+ws
+clink
+clink inject
+cdpy2
+cdconda
+cdconda3
+python
+reg_ws_path
+x
+pch
+p1 7
+cd ..
+gc https://github.com/willwinworld/web-related
+cd web-related\
+e
+cd mysite\
+django_startapp.bat 
+qp3 3
+ipy3
+py3
+ip
+cdsw
+cdqs
+e
+e
+en
+chcp
+chcp 435
+chcp /?
+chcp 437
+whoami
+x
+pch
+netstat -ano 
+cds
+e
+cd sw
+cdsw
+cd RDPWrap-v1.6.2\
+e
+pch
+qp3 3
+ipy3
+py3
+%T%
+mod=__import__(mod) 
+which clink
+where clink
+where.exe clink
+nppws clink
+x
+x
+arp -s 192.168.1.46 A0-C5-89-36-3D-0F
+notepad++
+chcp 437
+whoami
+cdf
+git log
+port_proxy
+pch
+cdq
+echo cut -d: -f1 /etc/passwd >> show-users
+up
+pp
+sp
+z
+x
+p1 7
+cd ..
+gc https://github.com/willwinworld/web-related
+cd web-related\
+e
+cd mysite\
+django_startapp.bat 
+qp3 3
+ipy3
+py3
+ip
+cdsw
+cdqs
+e
+en
+chcp
+chcp 435
+chcp /?
+chcp 437
+whoami
+cdf
+e
+up init
+git rebase -i 93d119a
+gitk
+git_undo_last_commit
+git rebase --ABORT
+git rebase -i HEAD~3
+git rebase --abort
+git rebase -i HEAD~2
+git rebase -i HEAD~1
+ll
+git log
+gps
+git rebase --continue
+cdesk
+grep cloud.huawei.com.har |grep latitude
+cat cloud.huawei.com.har |grep latitude

@@ -32,8 +32,11 @@ set QGB=%wsDriver%\QGB\
 
 set conda=%QGB%Anaconda2\
 set conda3=%QGB%Anaconda3\
+
+set path=%conda%;%path%
+REM set path=%conda%;%conda%Scripts;%conda%Library\bin;%path%
 set path=%conda3%;%conda3%Scripts;%conda3%Library\bin;%path%
-set path=%conda%;%conda%Scripts;%conda%Library\bin;%path%
+
 set QPSU=%QGB%babun\cygwin\lib\python2.7\qgb\
 
 set path=%APPDATA%\npm\;%path%
