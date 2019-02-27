@@ -11,9 +11,17 @@ goto end
 
 
 :setqp
+set wsPath=%~dp0
+for %%i in (%~dp0) do @set wsDriver=%%~di
+set QGB=%wsDriver%\QGB\
+IF NOT DEFINED py3path (set py3path=%QGB%Anaconda3\)
+
+
 for %%i in (python.exe) do @set py=%%~$PATH:i
 
 for %%i in ( %py%) do @set pyPath=%%~dpi
+
+
 
 
 for /f "delims=" %%i in ('qpsu.bat "clipboard=f" "escape=t" "c=t"') do @set qp=%%i
