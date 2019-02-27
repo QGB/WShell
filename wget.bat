@@ -1,1 +1,1 @@
-"G:\QGB\babun\cygwin\bin\wget.exe" %*
+"%QGB%babun\cygwin\bin\wget.exe" %*

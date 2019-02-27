@@ -1,1 +1,1 @@
-@G:&@cd G:\TEST\ipy\%*
+@%wsDriver% &@cd G:\TEST\ipy\%*

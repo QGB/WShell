@@ -1,1 +1,1 @@
-@G:&@cd G:\QGB\sys_sw\RDPWrap-v1.6.2\%*
+@%wsDriver% &@cd %QGB%sys_sw\RDPWrap-v1.6.2\%*

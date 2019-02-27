@@ -1,1 +1,1 @@
-G:\QGB\Anaconda2\Scripts\flask-script.py %*
+%QGB%Anaconda2\Scripts\flask-script.py %*

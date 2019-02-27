@@ -1,1 +1,1 @@
-@start "" "G:\QGB\software\SoundWire Server\SoundWireServer.exe"
+@start "" "%QGB%software\SoundWire Server\SoundWireServer.exe"

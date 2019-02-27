@@ -1,1 +1,1 @@
-set QT_QPA_PLATFORM_PLUGIN_PATH=G:\QGB\Anaconda2\Library\plugins\PyQt5\
+set QT_QPA_PLATFORM_PLUGIN_PATH=%QGB%Anaconda2\Library\plugins\PyQt5\

@@ -1,1 +1,1 @@
-@start "" "G:\QGB\sys_sw\cpu-z_1.86-cn\cpuz_x64.exe"
+@start "" "%QGB%sys_sw\cpu-z_1.86-cn\cpuz_x64.exe"

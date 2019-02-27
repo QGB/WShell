@@ -19,7 +19,7 @@ def exists(path):
 		return ''
 qpsu=os.getenv('QPSU') 
 if not qpsu:
-	if iswin() or iscyg():qpsu=r'G:\QGB\babun\cygwin\lib\python2.7\qgb'
+	if iswin() or iscyg():qpsu=r'%QGB%babun\cygwin\lib\python2.7\qgb'
 	if isnix():qpsu=exists(os.getenv('HOME')+'/qgb') or exists('/root/qgb')
 	if istermux():
 		qpsu=exists('/sdcard/!/qgb') or exists(os.getenv('HOME')+'/qgb') or exists('/sdcard/qgb') 

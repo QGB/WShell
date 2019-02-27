@@ -1,1 +1,1 @@
-@start "" "G:\QGB\Chrome\Application\chrome.exe"
+@start "" "%QGB%Chrome\Application\chrome.exe"

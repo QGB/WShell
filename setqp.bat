@@ -20,7 +20,7 @@ for /f "delims=" %%i in ('qpsu.bat "clipboard=f" "escape=t" "c=t"') do @set qp=%
 
 
 setx qp "%qp%"
-setx pyPath "%pyPath%"
+setx pyPath %pyPath%\
 
 
 :end

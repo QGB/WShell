@@ -1,1 +1,1 @@
-@g:&@cd g:\test\github\%*
+@%wsDriver% &@cd g:\test\github\%*

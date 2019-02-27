@@ -1,1 +1,1 @@
-@G:&@cd G:\Program Files\Git\usr\bin\%*
+@%wsDriver% &@cd G:\Program Files\Git\usr\bin\%*

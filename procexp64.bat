@@ -1,1 +1,1 @@
-@start "" "G:\QGB\sys_sw\procexp64.exe"
+@start "" "%QGB%sys_sw\procexp64.exe"

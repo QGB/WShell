@@ -1,1 +1,1 @@
-@G:&@cd G:\QGB\software\xxnet\code\3.8.5\launcher\web_ui\%*
+@%wsDriver% &@cd %QGB%software\xxnet\code\3.8.5\launcher\web_ui\%*

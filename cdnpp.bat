@@ -1,1 +1,1 @@
-@G:&@cd G:\QGB\npp\%*
+@%wsDriver% &@cd %QGB%npp\%*

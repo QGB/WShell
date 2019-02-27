@@ -1,1 +1,1 @@
-@G:&@cd G:\Android\SDK\platform-tools\%*
+@%wsDriver% &@cd G:\Android\SDK\platform-tools\%*

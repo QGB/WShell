@@ -1,1 +1,1 @@
-@start "" "G:\QGB\software\SQLiteSpy.exe"
+@start "" "%QGB%software\SQLiteSpy.exe"

@@ -1,1 +1,1 @@
-python G:\QGB\babun\cygwin\lib\python2.7\qgb\%1.py
+python %QGB%babun\cygwin\lib\python2.7\qgb\%1.py

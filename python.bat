@@ -1,1 +1,1 @@
-G:\QGB\Anaconda2\python.exe %* 
+%QGB%Anaconda2\python.exe %* 

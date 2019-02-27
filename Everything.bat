@@ -1,1 +1,1 @@
-@start "" "G:\QGB\Everything\Everything.exe"
+@start "" "%QGB%Everything\Everything.exe"

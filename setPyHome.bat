@@ -1,1 +1,1 @@
-setx PYTHONHOME G:\QGB\Anaconda2\
+setx PYTHONHOME %QGB%Anaconda2\

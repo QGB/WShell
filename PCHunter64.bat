@@ -1,1 +1,1 @@
-@start "" "G:\QGB\sys_sw\PCHunter_free\PCHunter64.exe"
+@start "" "%QGB%sys_sw\PCHunter_free\PCHunter64.exe"

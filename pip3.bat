@@ -1,1 +1,1 @@
-G:\QGB\Anaconda3\Scripts\pip.exe --trusted-host pypi.org --trusted-host files.pythonhosted.org --trusted-host pypi.python.org %*
+%QGB%Anaconda3\Scripts\pip.exe --trusted-host pypi.org --trusted-host files.pythonhosted.org --trusted-host pypi.python.org %*

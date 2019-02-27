@@ -1,1 +1,1 @@
-@start "" "G:\QGB\sys_sw\ScanPort.exe"
+@start "" "%QGB%sys_sw\ScanPort.exe"

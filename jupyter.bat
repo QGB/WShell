@@ -1,1 +1,1 @@
-G:\QGB\Anaconda3\python.exe G:\QGB\Anaconda3\Scripts\jupyter-notebook-script.py %*
+%QGB%Anaconda3\python.exe %QGB%Anaconda3\Scripts\jupyter-notebook-script.py %*

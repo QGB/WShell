@@ -1,1 +1,1 @@
-@G:&@cd G:\QGB\Anaconda2\%*
+@%wsDriver% &@cd %QGB%Anaconda2\%*

@@ -14,7 +14,7 @@ for i in pids:
 	for w in i:
 		if w.WindowText().endswith(gsTitle):
 			if w not in ws:ws.append(w)
-F.dill_dump(obj=ws,file='browserGo_ws')	
+# F.dill_dump(obj=ws,file='browserGo_ws')	
 U.pprint(U.il( ws)  )
 if U.ct(ws)==0:Win.setCurPos(giClickY,giClickY)
 def istop():

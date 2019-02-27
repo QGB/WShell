@@ -1,1 +1,1 @@
-@g:&@cd g:\Program Files (x86)\pdf2htmlEX-win32-0.14.6-upx-with-poppler-data\%*
+@%wsDriver% &@cd g:\Program Files (x86)\pdf2htmlEX-win32-0.14.6-upx-with-poppler-data\%*

@@ -1,1 +1,1 @@
-@G:&@cd G:\QGB\nodejs\%*
+@%wsDriver% &@cd %QGB%nodejs\%*

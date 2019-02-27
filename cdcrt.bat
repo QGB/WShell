@@ -1,0 +1,1 @@
+@%wsDriver% &@cd %QGB%software\xxnet\data\gae_proxy\%*

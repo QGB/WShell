@@ -1,1 +1,1 @@
-G:\QGB\Anaconda3\Scripts\jupyter.exe nbconvert %*
+%QGB%Anaconda3\Scripts\jupyter.exe nbconvert %*

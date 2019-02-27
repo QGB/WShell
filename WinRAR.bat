@@ -1,1 +1,1 @@
-@start "" "G:\QGB\software\WinRAR\WinRAR.exe"
+@start "" "%QGB%software\WinRAR\WinRAR.exe"

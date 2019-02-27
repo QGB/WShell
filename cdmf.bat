@@ -1,1 +1,1 @@
-@G:&@cd G:\QGB\!RK\mifengyuqing\%*
+@%wsDriver% &@cd %QGB%!RK\mifengyuqing\%*

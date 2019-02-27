@@ -1,1 +1,1 @@
-@start "" "G:\QGB\sys_sw\keyboardtestutility.exe"
+@start "" "%QGB%sys_sw\keyboardtestutility.exe"

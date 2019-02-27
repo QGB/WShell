@@ -1,1 +1,1 @@
-@G:&@cd G:\QGB\!Project\%*
+@%wsDriver% &@cd %QGB%!Project\%*

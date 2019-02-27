@@ -1,1 +1,1 @@
-@G:&@cd G:\TEST\github\zmirror\%*
+@%wsDriver% &@cd G:\TEST\github\zmirror\%*

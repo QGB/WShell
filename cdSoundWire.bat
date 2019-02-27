@@ -1,1 +1,1 @@
-@G:&@cd G:\QGB\software\SoundWire Server\%*
+@%wsDriver% &@cd %QGB%software\SoundWire Server\%*

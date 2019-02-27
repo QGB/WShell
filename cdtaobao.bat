@@ -1,1 +1,1 @@
-@G:&@cd G:\QGB\babun\cygwin\home\qgb\chromExt\taobao\%*
+@%wsDriver% &@cd %QGB%babun\cygwin\home\qgb\chromExt\taobao\%*

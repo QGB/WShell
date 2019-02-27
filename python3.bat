@@ -1,5 +1,5 @@
 @echo off
-if not defined QGB (G:\QGB\Anaconda3\python.exe %*) else (goto qgb)
+if not defined QGB (%QGB%Anaconda3\python.exe %*) else (goto qgb)
 goto end
 
 :qgb

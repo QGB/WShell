@@ -22,7 +22,7 @@ goto end
 
 : --no-confirm-exit 
 
-: set PATH=G:\Python27\;G:\QGB\babun\cygwin\home\qgb\wshell
+: set PATH=G:\Python27\;%QGB%babun\cygwin\home\qgb\wshell
 ::test 
 
 : @echo %qp%

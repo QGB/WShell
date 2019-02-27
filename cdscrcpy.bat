@@ -1,1 +1,1 @@
-@G:&@cd G:\QGB\software\scrcpy-win64\%*
+@%wsDriver% &@cd %QGB%software\scrcpy-win64\%*

@@ -1,1 +1,1 @@
-@G:&@cd G:\QGB\babun\cygwin\home\qgb\QShell\%*
+@%wsDriver% &@cd %QGB%babun\cygwin\home\qgb\QShell\%*

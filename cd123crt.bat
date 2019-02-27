@@ -1,1 +1,1 @@
-@G:&@cd G:\test\data\gae_proxy\certs\%*
+@%wsDriver% &@cd G:\test\data\gae_proxy\certs\%*

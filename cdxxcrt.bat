@@ -1,1 +1,1 @@
-@G:&@cd G:\QGB\software\xxnet\data\gae_proxy\certs\%*
+@%wsDriver% &@cd %QGB%software\xxnet\data\gae_proxy\certs\%*

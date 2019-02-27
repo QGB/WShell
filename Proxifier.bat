@@ -1,1 +1,1 @@
-@start "" "G:\QGB\software\Proxifier PE\Proxifier.exe"
+@start "" "%QGB%software\Proxifier PE\Proxifier.exe"

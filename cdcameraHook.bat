@@ -1,1 +1,1 @@
-@G:&@cd G:\TEST\github\CameraHook\%*
+@%wsDriver% &@cd G:\TEST\github\CameraHook\%*

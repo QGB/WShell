@@ -1,1 +1,1 @@
-@G:&@cd G:\QGB\software\xxnet\data\%*
+@%wsDriver% &@cd %QGB%software\xxnet\data\%*

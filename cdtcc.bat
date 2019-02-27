@@ -1,1 +1,1 @@
-@G:&@cd G:\QGB\py\%*
+@%wsDriver% &@cd %QGB%py\%*
