@@ -6,4 +6,5 @@ IF NOT DEFINED py3path (set py3path=%QGB%Anaconda3\)
 
 
 
-%py3path%python.exe -c "import sys,os;sys.path.append('G:/QGB/babun/cygwin/lib/python2.7');from qgb import *;U.cb.set(r''' site:zhihu.com ''')"
+%py3path%python.exe -c "import sys,os;sys.path.append(r'%QGB%babun/cygwin/lib/python2.7');from qgb import *;U.cb.set(r''' site:zhihu.com ''')"
+

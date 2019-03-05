@@ -1,3 +1,0 @@
-
-adb pull %* %cd%\f
-

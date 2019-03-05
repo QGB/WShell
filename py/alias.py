@@ -8,7 +8,7 @@ gim2=2###min short length
 giMax=99
 def _py():
 	if len(a)!=2 or '/' in a[1] or '\\' in a[1]:
-		print '-p name illegal(/,\\,.)'
+		print('-p name illegal(/,\\,.)')
 		help_()
 	
 	
@@ -53,7 +53,7 @@ def _start(lnk=False):
 			# U.ipy()
 			a[1]=S.path.abspath(a[1])
 			a.append(a[1])
-			if U.debug():print a,F.getNameWithoutExt(a[1])
+			if U.debug():print(a,F.getNameWithoutExt(a[1])  )
 			a[1]=F.getNameWithoutExt(a[1])
 	if len(a)==3:		
 		a[1]==path(a[1])
@@ -82,8 +82,10 @@ def _cd():
 	if len(a)==2:
 		if not a[1].startswith('cd'):
 			a[1]='cd'+a[1]
-			print 'cd cmd is [',a[1],']'
-		if len(a[1])>giMax:print a[1],'Too long ![:%s]'%giMax;exit()
+			print('cd cmd is [',a[1],']')
+		if len(a[1])>giMax:
+			print(a[1],'Too long ![:%s]'%giMax)
+			exit()
 			
 		p=U.pwd()
 		sp='\\'
@@ -102,8 +104,8 @@ gdParms={('-p','-py'):_py,('-start','--start','-s','-S'):_start,('-L','-l','-lnk
 # print gdParms
 # exit()
 def help_(msg='alias short [longCmd] '+str(gdParms.keys())):
-	print 'Help: ',msg
-	print '     ',a,gRemoved_P or '' 
+	print('Help: ',msg)
+	print('     ',a,gRemoved_P or '' )
 	exit()
 
 def write(name,txt):
@@ -115,10 +117,10 @@ def write(name,txt):
 	'''U.load()#'False\n'
 	#Error  [Errno 22] invalid mode ('wb') or filename: 'G:/QGB/babun/cygwin/home/qgb/wshell/-?.bat'  G:/QGB/babun/cygwin/home/qgb/wshell/-?.bat <pteredor.py >sucess!
 	'''
-	print  name,'<'+txt[:50],
+	U.p(name,'<'+txt[:50] )
 	if len(txt)>50:
-		print '...',
-	print '>sucess!'
+		U.p( '...')
+	U.pln( '>sucess!')
 	
 	
 def path(a):
@@ -146,12 +148,12 @@ def old(a):
 		s=U.read(a)
 	except Exception as e:print e;return False
 	if len(s)<gim2:return False
-	print '-'*10,'old','-'*10
-	print s[:100]
+	print('-'*10,'old','-'*10)
+	print(s[:100])
 	if len(s)>200:
-		print '.............'
-		print s[-100:]
-	print '-'*25
+		print('.............')
+		print(s[-100:])
+	print('-'*25)
 	return True
 
 gRemoved_P=[]
@@ -176,7 +178,7 @@ def main():
 
 	if len(a)==2:
 		if U.stdin.isatty():
-			print 'Input one line cmd:'
+			print('Input one line cmd:')
 			try:
 				a.append(raw_input())
 				if len(a[2])<gim2:raise Exception('input too short!')
