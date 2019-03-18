@@ -1,4 +1,4 @@
-@echo off
+REM @echo off
 
 IF NOT DEFINED qp (goto setqp)
 IF NOT DEFINED pyPath (goto setqp)

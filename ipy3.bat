@@ -1,10 +1,10 @@
-@echo off
+REM @echo off
 
-call setqp.bat
+call %~dp0setqp.bat
 
 
 :ipy3
 
-ipython3 %ipyArgs% %*
+%~dp0ipython3 %ipyArgs% %*
 
 : --no-confirm-exit 

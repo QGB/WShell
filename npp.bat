@@ -1,1 +1,1 @@
-@python2 %~dp0py/npp.py %*
+@%py3path%python %~dp0py/npp.py %*

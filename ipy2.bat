@@ -1,3 +1,3 @@
 @echo off
-call setqp.bat
-ipython2 %ipyArgs% %*
+call %~dp0setqp.bat
+%~dp0ipython2 %ipyArgs% %*

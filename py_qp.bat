@@ -1,1 +1,1 @@
-python -c "import sys,os;sys.path.append('G:/QGB/babun/cygwin/lib/python2.7');from qgb import *;print %*"
+python -c "import sys,os;sys.path.append(r'%QGB%babun/cygwin/bin');from qgb import *;print %*"

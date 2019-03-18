@@ -1,0 +1,1 @@
+curl myip.ipip.net  --socks5 127.0.0.1:21080

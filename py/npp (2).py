@@ -1,7 +1,5 @@
 #coding=utf-8
 import S
-from qgb import *
-import sys,os
 
 sf=r'C:\Users\Administrator\AppData\Roaming\Notepad++\notepad++.exe'
 if not os.path.exists(sf):
@@ -48,7 +46,7 @@ if len(S.a)<2 or not S.a[1]:
 		value,file=U.load(returnFile=True)
 	except Exception as e:
 		'''没有读取到save value'''
-		if U.debug():print(e,U.load(returnFile=True) )
+		if U.debug():print e,U.load(returnFile=True)
 		value=''
 		# if U.DEBUG:U.repl()
 		#因为本文件一次性运行，所以基本不会有DEBUG 机会。。
@@ -67,5 +65,5 @@ else:
 		U.pprint(F.ls(S.a[1]))
 		U.pause('!!! Would you like open these?    Ctrl+C to break')
 
-print(S.a)
+print S.a
 U.run(S.a)

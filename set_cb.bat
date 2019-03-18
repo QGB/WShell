@@ -1,1 +1,1 @@
-%QGB%Anaconda3\python.exe -c "import sys,os;sys.path.append('G:/QGB/babun/cygwin/lib/python2.7');from qgb import *;U.cb.set(r'''%*''')"
+%QGB%Anaconda3\python.exe -c "import sys,os;sys.path.append(r'%QGB%babun/cygwin/bin');from qgb import *;U.cb.set(r'''%*''')"

@@ -1,5 +1,5 @@
 @echo off
-REM if defined QGB (goto end)
+if defined QGB (goto end)
 
 set path=%path%
 set path=C:\Cygwin\bin;%path%
@@ -37,7 +37,7 @@ set path=%conda%;%path%
 REM set path=%conda%;%conda%Scripts;%conda%Library\bin;%path%
 set path=%conda3%;%conda3%Scripts;%conda3%Library\bin;%path%
 
-set QPSU=%QGB%babun\cygwin\bin\qgb\
+set QPSU=%QGB%babun/cygwin/bin/qgb/
 
 set path=%APPDATA%\npm\;%path%
 set path=%QGB%nodejs\;%path%
@@ -48,7 +48,7 @@ set path=%~dp0exe;%path%
 
 @REM if not defined MOBANOACL (start  /b  wSetx.bat)
 @REM if not defined MOBANOACL (%~dp0exe/pos 77 -12)
-@REM in mobaXterm window wrong
+@REM in mobaXterm window 
 
 echo @"%~dpnx0" > %windir%\ws.cmd
  : pause

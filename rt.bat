@@ -1,1 +1,1 @@
-qp Win.setWPos(Win.getWindowHandleByTitle('ScanPort'),y=-230,w=360,h=240,top=True,x=-350+1920+340)
+qp Win.setWPos(Win.getWindowHandleByTitle('ScanPort') or exit(),y=-230,w=360,h=240,top=True,x=-350+1920+340)

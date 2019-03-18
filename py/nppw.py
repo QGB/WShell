@@ -1,5 +1,5 @@
 #coding=utf-8
-import sys;'qgb.U' in sys.modules or sys.path.append('G:/QGB/babun/cygwin/lib/python2.7/');from qgb import *;C=c=U.clear;NPP=npp=U.npp
+import sys;'qgb.U' in sys.modules or sys.path.append('G:/QGB/babun/cygwin/bin/');from qgb import *;C=c=U.clear;NPP=npp=U.npp
 from pywinauto import Application
 app=Application()
 

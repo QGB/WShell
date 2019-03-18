@@ -1,5 +1,5 @@
 #coding=utf-8
-import sys;'qgb.U' in sys.modules or sys.path.append('G:/QGB/babun/cygwin/lib/python2.7/');from qgb import *
+import sys;'qgb.U' in sys.modules or sys.path.append('G:/QGB/babun/cygwin/bin/');from qgb import *
 _1=npp()                                                                # 1
 _2=get_ipython().magic(u'pwd ')                                         # 2
 get_ipython().magic(u'cd G:\\QGB\\babun\\cygwin\\home\\qgb\\chromExt\\Adsample-extension\\adguard')  # 3
