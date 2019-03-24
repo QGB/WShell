@@ -6866,3 +6866,53 @@ nc -lp 1122|E:\QGB\babun\cygwin\bin\hexdump
 nc --help
 nc -w 3 -lp 1122|E:\QGB\babun\cygwin\bin\hexdump
 ipy3
+lls
+ls
+nc
+nc -lp 1122|hexdump
+nc -lp 1122|E:\QGB\babun\cygwin\bin\hexdump
+nc --help
+nc -w 3 -lp 1122|E:\QGB\babun\cygwin\bin\hexdump
+ipy3
+lls
+ls
+ipython
+%T%
+setx_node
+cds
+ip
+where.exe nc
+nc
+nc -lp 1122|hexdump
+nc -lp 1122|E:\QGB\babun\cygwin\bin\hexdump
+nc --help
+nc -w 3 -lp 1122|E:\QGB\babun\cygwin\bin\hexdump
+ipy3
+gpcl
+gpl
+gpcq
+up
+cdqp
+cdq
+ipy
+ls
+nc
+nc -lp 1122|hexdump
+nc -lp 1122|E:\QGB\babun\cygwin\bin\hexdump
+nc --help
+nc -w 3 -lp 1122|E:\QGB\babun\cygwin\bin\hexdump
+ipy3
+lls
+ls
+ipython
+if __name__.endswith('qgb.N'):from qgb import py
+else:
+sys.path.append('..');import py #py3 works
+%T%
+qq63445]
+cd ../..
+python -V
+python3 -m qgb
+python3 -m qgb eval
+python3 -m qgb.N
+%t%

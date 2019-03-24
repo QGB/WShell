@@ -1,1 +1,1 @@
-@"G:\Android\SDK\platform-tools\adb.exe" %*
+@"%QGB%software\scrcpy-win64\adb.exe" %*
